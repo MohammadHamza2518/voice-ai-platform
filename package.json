@@ -3,21 +3,19 @@
   "version": "1.0.0",
   "description": "Multi-Tenant Enterprise Voice AI Calling & Lead Prospecting Platform",
   "main": "server/index.js",
+  "type": "module",
   "scripts": {
-    "install:all": "cd client && npm install && cd ../server && npm install",
-    "build": "cd client && npm install && npm run build && cd ../server && npm install",
-    "start": "node server/index.js",
-    "server": "cd server && npm start",
-    "client": "cd client && npm run dev"
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/index.js"
   },
-  "keywords": [
-    "voice-ai",
-    "telephony",
-    "vapi",
-    "real-estate",
-    "healthcare",
-    "speed-to-lead"
-  ],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.13.0"
+  },
   "author": "Mohammad Hamza",
   "license": "ISC"
 }
