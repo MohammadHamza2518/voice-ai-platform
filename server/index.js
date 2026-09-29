@@ -749,6 +749,34 @@ app.delete('/api/portal/client/:clientId/leads/:leadId', (req, res) => {
   res.json({ success: true, leads });
 });
 
+// Import CSV Leads
+app.post('/api/portal/client/:clientId/leads/import', (req, res) => {
+  const client = store.getClientById(req.params.clientId);
+  if (!client) return res.status(404).json({ error: 'Client not found' });
+  const { leads } = req.body;
+  if (!Array.isArray(leads) || leads.length === 0) {
+    return res.status(400).json({ error: 'Valid leads array required' });
+  }
+  const formatted = leads.map((l, i) => ({
+    id: `lead_csv_${Date.now()}_${i + 1}`,
+    name: l.name || `Contact ${i + 1}`,
+    phone: l.phone || '+971 50 000 0000',
+    company: l.company || client.name,
+    role: l.role || 'Prospect',
+    city: l.city || 'Local',
+    intentScore: l.intentScore ? parseInt(l.intentScore) : Math.floor(82 + Math.random() * 16),
+    budget: l.budget || 'Inquiry',
+    niche: l.niche || client.industry,
+    source: 'CSV Upload',
+    status: 'new',
+    addedAt: new Date().toISOString()
+  }));
+  const existing = store.getLeads(client.id);
+  const combined = [...formatted, ...existing].slice(0, 500);
+  store.saveLeads(client.id, combined);
+  res.json({ success: true, count: formatted.length, total: combined.length, leads: combined });
+});
+
 // Trigger an Outbound Call to a Customer's Phone (Real or Demo Mode)
 app.post('/api/portal/dial', async (req, res) => {
   const { clientId, customerPhone, customerName, purpose, direction = 'outbound' } = req.body;
