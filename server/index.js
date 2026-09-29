@@ -83,7 +83,19 @@ app.get('/api/admin/clients', (req, res) => {
 
 // Create new client & auto-provision AI Agent
 app.post('/api/admin/clients', (req, res) => {
-  const { name, industry, contactPerson, email, phone, monthlyRetainer, allocatedMinutes, country } = req.body;
+  const { 
+    name, 
+    industry, 
+    contactPerson, 
+    email, 
+    phone, 
+    monthlyRetainer, 
+    allocatedMinutes, 
+    country,
+    toughTongueScenarioId,
+    logo,
+    assignedNumber
+  } = req.body;
 
   if (!name) {
     return res.status(400).json({ error: 'Client name is required' });
@@ -93,20 +105,26 @@ app.post('/api/admin/clients', (req, res) => {
   const slug = name.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
   const clientId = `client_${slug}_${Date.now().toString().slice(-4)}`;
 
-  const defaultAssignedNumber = selectedCountry === 'india'
-    ? '+91 80 ' + Math.floor(1000000 + Math.random() * 9000000)
-    : selectedCountry === 'canada'
-    ? '+1 647 ' + Math.floor(1000000 + Math.random() * 9000000)
-    : '+971 4 ' + Math.floor(1000000 + Math.random() * 9000000);
+  const defaultAssignedNumber = assignedNumber || (
+    selectedCountry === 'india'
+      ? '+91 80 ' + Math.floor(1000000 + Math.random() * 9000000)
+      : selectedCountry === 'canada'
+      ? '+1 647 ' + Math.floor(1000000 + Math.random() * 9000000)
+      : '+971 4 ' + Math.floor(1000000 + Math.random() * 9000000)
+  );
 
   const defaultCurrency = selectedCountry === 'india' ? 'INR' : selectedCountry === 'canada' ? 'CAD' : 'AED';
   const defaultRetainer = selectedCountry === 'india' ? '₹25,000/mo' : selectedCountry === 'canada' ? '$2,200 CAD/mo' : '2,500 AED/mo';
+
+  const defaultScenarioId = toughTongueScenarioId || (
+    selectedCountry === 'india' ? '6abbefb8077df1a1f09c02e1' : '6abbefa48b398e50c7c059dd'
+  );
 
   const newClient = {
     id: clientId,
     name,
     slug,
-    logo: `https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=120&auto=format&fit=crop&q=80`,
+    logo: logo || `https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=120&auto=format&fit=crop&q=80`,
     industry: industry || 'Real Estate',
     contactPerson: contactPerson || 'Business Owner',
     email: email || '',
@@ -114,6 +132,9 @@ app.post('/api/admin/clients', (req, res) => {
     country: selectedCountry,
     currency: defaultCurrency,
     assignedNumber: defaultAssignedNumber,
+    toughTongueScenarioId: defaultScenarioId,
+    carrier: selectedCountry === 'india' ? 'Tata Teleservices PRI' : selectedCountry === 'canada' ? 'Telus Wholesale SIP' : 'e& (Etisalat) Direct SIP',
+    planTier: 'Enterprise Dedicated Trunk',
     monthlyRetainer: monthlyRetainer || defaultRetainer,
     allocatedMinutes: parseInt(allocatedMinutes) || 1000,
     usedMinutes: 0,
@@ -209,6 +230,12 @@ app.put('/api/admin/clients/:id', (req, res) => {
   const updated = store.updateClient(req.params.id, req.body);
   if (!updated) return res.status(404).json({ error: 'Client not found' });
   res.json(updated);
+});
+
+// Delete client
+app.delete('/api/admin/clients/:id', (req, res) => {
+  store.deleteClient(req.params.id);
+  res.json({ success: true, message: 'Client removed successfully' });
 });
 
 // List all agents configuration (Super Admin ONLY)

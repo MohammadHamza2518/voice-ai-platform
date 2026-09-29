@@ -11,7 +11,7 @@ import {
 import CallDrawer from './CallDrawer';
 import RealDialpad from './RealDialpad';
 
-export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmin }) {
+export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmin, fromAdmin = false }) {
   const [clientData, setClientData] = useState(null);
   const [calls, setCalls] = useState([]);
   const [selectedCall, setSelectedCall] = useState(null);
@@ -436,6 +436,40 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
 
   return (
     <div className="min-h-screen bg-[#05070D] text-slate-100 flex flex-col font-sans selection:bg-indigo-500/30 selection:text-indigo-300">
+      {/* Admin Impersonation Floating Top Banner (ONLY shown when Admin accesses client portal) */}
+      {fromAdmin && (
+        <div className="bg-gradient-to-r from-indigo-950 via-purple-950 to-indigo-950 border-b border-indigo-500/30 px-4 md:px-6 py-2.5 flex items-center justify-between text-xs text-indigo-200 sticky top-0 z-50 backdrop-blur-xl shadow-lg shadow-black/40">
+          <div className="flex items-center gap-2.5">
+            <span className="px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-300 font-mono font-bold uppercase text-[10px] border border-indigo-500/40 flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              👑 Agency Admin Access Mode
+            </span>
+            <span className="text-slate-300 hidden sm:inline">
+              Currently managing: <strong className="text-white font-semibold">{clientData?.name || clientId}</strong>
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText(`${window.location.origin}/#/portal/${clientId}`);
+                alert(`Direct Client Portal link copied for ${clientData?.name}!\n\n${window.location.origin}/#/portal/${clientId}\n\nYou can send this link directly to your client.`);
+              }}
+              className="px-3 py-1 rounded-lg bg-white/[0.06] hover:bg-white/10 text-slate-300 hover:text-white border border-white/10 text-xs font-semibold transition cursor-pointer flex items-center gap-1.5"
+              title="Copy shareable link for client"
+            >
+              <Copy size={12} />
+              <span>Share Client Link</span>
+            </button>
+            <button
+              onClick={onBackToAdmin}
+              className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white font-bold text-xs transition cursor-pointer flex items-center gap-1.5 shadow-md shadow-indigo-500/30 active:scale-95"
+            >
+              <span>← Return to Admin Panel</span>
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Top White-Label Tenant Header */}
       <header className="border-b border-white/[0.08] bg-[#080C16]/90 px-6 py-4 sticky top-0 z-40 backdrop-blur-xl shadow-lg shadow-black/40">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { 
   Building2, Users, Bot, Sliders, Shield, Key, Plus, 
   DollarSign, Activity, PhoneCall, Check, ExternalLink, RefreshCw, Save, 
-  Radio, Copy, CheckCircle2, Zap, Globe, Sparkles, Clock, ArrowUpRight, Search
+  Radio, Copy, CheckCircle2, Zap, Globe, Sparkles, Clock, ArrowUpRight, Search,
+  Trash2, Link, CheckCheck
 } from 'lucide-react';
 
 export default function SuperAdmin({ onSelectClientView }) {
@@ -10,12 +11,15 @@ export default function SuperAdmin({ onSelectClientView }) {
   const [clients, setClients] = useState([]);
   const [agents, setAgents] = useState([]);
   const [settings, setSettings] = useState(null);
+  const [toughTongueStatus, setToughTongueStatus] = useState(null);
   const [activeTab, setActiveTab] = useState('clients'); // clients | agent_studio | api_settings
   const [selectedAgentClient, setSelectedAgentClient] = useState('');
   const [editingAgent, setEditingAgent] = useState(null);
   const [showAddClientModal, setShowAddClientModal] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
   const [copiedDid, setCopiedDid] = useState(null);
+  const [copiedLink, setCopiedLink] = useState(null);
+  const [toastMessage, setToastMessage] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
 
   // New Client Form State
@@ -27,35 +31,47 @@ export default function SuperAdmin({ onSelectClientView }) {
     email: '',
     phone: '+971 50 ',
     monthlyRetainer: '2,500 AED/mo',
-    allocatedMinutes: 1200
+    allocatedMinutes: 1200,
+    toughTongueScenarioId: '6abbefa48b398e50c7c059dd',
+    customScenarioId: '',
+    logo: ''
   });
 
   // Settings State
   const [apiKeyInput, setApiKeyInput] = useState('');
   const [phoneIdInput, setPhoneIdInput] = useState('');
 
+  const showToast = (msg) => {
+    setToastMessage(msg);
+    setTimeout(() => setToastMessage(null), 3500);
+  };
+
   const fetchAdminData = async () => {
     try {
-      const [resOverview, resClients, resAgents, resSettings] = await Promise.all([
+      const [resOverview, resClients, resAgents, resSettings, resTT] = await Promise.all([
         fetch('/api/admin/overview'),
         fetch('/api/admin/clients'),
         fetch('/api/admin/agents'),
-        fetch('/api/admin/settings')
+        fetch('/api/admin/settings'),
+        fetch('/api/admin/toughtongue/status').catch(() => null)
       ]);
 
-      if (resOverview.ok) setOverview(await resOverview.json());
-      if (resClients.ok) {
+      if (resOverview?.ok) setOverview(await resOverview.json());
+      if (resClients?.ok) {
         const clientList = await resClients.json();
         setClients(clientList);
         if (clientList.length > 0 && !selectedAgentClient) {
           setSelectedAgentClient(clientList[0].id);
         }
       }
-      if (resAgents.ok) setAgents(await resAgents.json());
-      if (resSettings.ok) {
+      if (resAgents?.ok) setAgents(await resAgents.json());
+      if (resSettings?.ok) {
         const s = await resSettings.json();
         setSettings(s);
         setPhoneIdInput(s.vapiPhoneNumberId || '');
+      }
+      if (resTT?.ok) {
+        setToughTongueStatus(await resTT.json());
       }
     } catch (err) {
       console.error('Error fetching admin data:', err);
@@ -118,18 +134,49 @@ export default function SuperAdmin({ onSelectClientView }) {
     }
   };
 
+  const handleCopyClientPortalLink = (clientId, clientName) => {
+    const url = `${window.location.origin}/#/portal/${clientId}`;
+    navigator.clipboard.writeText(url);
+    setCopiedLink(clientId);
+    showToast(`Direct Client Portal link copied for ${clientName}! Share this URL with your client.`);
+    setTimeout(() => setCopiedLink(null), 2500);
+  };
+
+  const handleDeleteClient = async (clientId, clientName) => {
+    if (!window.confirm(`Are you sure you want to delete "${clientName}"? This will remove all their call logs and configurations.`)) return;
+    try {
+      const res = await fetch(`/api/admin/clients/${clientId}`, { method: 'DELETE' });
+      if (res.ok) {
+        showToast(`Tenant "${clientName}" deleted successfully.`);
+        fetchAdminData();
+      } else {
+        alert('Failed to delete client');
+      }
+    } catch (e) {
+      alert('Error deleting client: ' + e.message);
+    }
+  };
+
   const handleCreateClient = async (e) => {
     e.preventDefault();
     if (!newClient.name) return alert('Client name is required');
+
+    const scenarioIdToUse = newClient.toughTongueScenarioId === 'custom' 
+      ? newClient.customScenarioId 
+      : newClient.toughTongueScenarioId;
 
     try {
       const res = await fetch('/api/admin/clients', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newClient)
+        body: JSON.stringify({
+          ...newClient,
+          toughTongueScenarioId: scenarioIdToUse
+        })
       });
       if (res.ok) {
         setShowAddClientModal(false);
+        showToast(`Tenant "${newClient.name}" provisioned and connected!`);
         setNewClient({
           name: '',
           country: 'dubai',
@@ -138,9 +185,15 @@ export default function SuperAdmin({ onSelectClientView }) {
           email: '',
           phone: '+971 50 ',
           monthlyRetainer: '2,500 AED/mo',
-          allocatedMinutes: 1200
+          allocatedMinutes: 1200,
+          toughTongueScenarioId: '6abbefa48b398e50c7c059dd',
+          customScenarioId: '',
+          logo: ''
         });
         fetchAdminData();
+      } else {
+        const d = await res.json();
+        alert(d.error || 'Failed to create client');
       }
     } catch (err) {
       alert('Error creating client: ' + err.message);
@@ -483,30 +536,71 @@ export default function SuperAdmin({ onSelectClientView }) {
                           </div>
                         </td>
 
-                        {/* Column 5: Autonomous Voice Engine */}
+                        {/* Column 5: Autonomous Voice Engine & ToughTongue */}
                         <td className="py-4 px-5">
                           <div className="font-semibold text-slate-200 text-xs flex items-center gap-1.5">
                             <Zap size={13} className="text-indigo-400" />
                             <span>{client.agent?.name || 'Autonomous Lead Qualifier'}</span>
                           </div>
-                          <div className="text-[10px] font-mono text-slate-400 mt-1">
-                            {client.agent?.voiceProvider || 'Cartesia Sonic Engine'}
+                          <div className="text-[10px] font-mono text-indigo-300 mt-1 flex items-center gap-1.5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                            <span>ToughTongue: {client.toughTongueScenarioId ? client.toughTongueScenarioId.slice(0, 8) + '...' : 'Auto'}</span>
                           </div>
                         </td>
 
-                        {/* Column 6: Workspace Access Action */}
+                        {/* Column 6: Client Portal Access & Actions */}
                         <td className="py-4 px-5 text-right">
-                          <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              onSelectClientView(client.id);
-                            }}
-                            className="px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-600/20 to-cyan-600/20 hover:from-indigo-600 hover:to-cyan-600 text-indigo-300 hover:text-white border border-indigo-500/30 hover:border-transparent text-xs font-semibold transition-all duration-200 flex items-center gap-1.5 ml-auto shadow-sm hover:shadow-lg hover:shadow-indigo-500/25 active:scale-95 cursor-pointer"
-                            title={`Launch workspace for ${client.name}`}
-                          >
-                            <span>Launch Workspace</span>
-                            <ArrowUpRight size={13} />
-                          </button>
+                          <div className="flex items-center justify-end gap-2">
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                onSelectClientView(client.id);
+                              }}
+                              className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-md shadow-indigo-500/20 active:scale-95 cursor-pointer"
+                              title={`Access portal for ${client.name}`}
+                            >
+                              <span>🚀 Access Portal</span>
+                              <ArrowUpRight size={13} />
+                            </button>
+
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleCopyClientPortalLink(client.id, client.name);
+                              }}
+                              className={`p-2 rounded-xl border text-xs transition cursor-pointer ${
+                                copiedLink === client.id
+                                  ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
+                                  : 'bg-white/[0.04] hover:bg-white/10 text-slate-300 hover:text-white border-white/[0.08]'
+                              }`}
+                              title="Copy Direct Shareable Client Portal Link"
+                            >
+                              {copiedLink === client.id ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} />}
+                            </button>
+
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setActiveTab('agent_studio');
+                                setSelectedAgentClient(client.id);
+                              }}
+                              className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/10 text-slate-400 hover:text-indigo-300 border border-white/[0.08] text-xs transition cursor-pointer"
+                              title="Configure AI Agent for this client"
+                            >
+                              <Bot size={14} />
+                            </button>
+
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleDeleteClient(client.id, client.name);
+                              }}
+                              className="p-2 rounded-xl bg-white/[0.04] hover:bg-rose-500/20 text-slate-500 hover:text-rose-400 border border-white/[0.08] text-xs transition cursor-pointer"
+                              title="Delete Client"
+                            >
+                              <Trash2 size={14} />
+                            </button>
+                          </div>
                         </td>
                       </tr>
                     );
@@ -740,6 +834,35 @@ Key Objectives:
                     />
                   </div>
 
+                  {/* ToughTongue Live WebRTC Scenario ID */}
+                  <div>
+                    <label className="text-[11px] font-mono font-bold text-slate-400 uppercase tracking-wider block mb-1.5 flex items-center justify-between">
+                      <span className="flex items-center gap-1.5">
+                        <Radio size={13} className="text-cyan-400" />
+                        <span>ToughTongue Live Voice Scenario ID (White-Label WebRTC)</span>
+                      </span>
+                      <span className="text-[10px] text-cyan-400 font-mono">Real-Time Zero Latency</span>
+                    </label>
+                    <input
+                      type="text"
+                      value={clients.find(c => c.id === selectedAgentClient)?.toughTongueScenarioId || ''}
+                      onChange={(e) => {
+                        const val = e.target.value;
+                        setClients(prev => prev.map(c => c.id === selectedAgentClient ? { ...c, toughTongueScenarioId: val } : c));
+                        fetch(`/api/admin/clients/${selectedAgentClient}`, {
+                          method: 'PUT',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ toughTongueScenarioId: val })
+                        });
+                      }}
+                      placeholder="e.g. 6abbefa48b398e50c7c059dd"
+                      className="w-full bg-[#0A0E1A] border border-white/[0.08] rounded-xl px-3.5 py-2.5 text-xs text-white font-mono focus:outline-none focus:border-cyan-500 transition"
+                    />
+                    <p className="text-[10px] text-slate-500 mt-1">
+                      Sarah (Dubai Closer): <code className="text-slate-400">6abbefa48b398e50c7c059dd</code> • Priya (Clinic Hinglish): <code className="text-slate-400">6abbefb8077df1a1f09c02e1</code>
+                    </p>
+                  </div>
+
                   <div>
                     <label className="text-[11px] font-mono font-bold text-slate-400 uppercase tracking-wider block mb-1.5">
                       Autonomous Behavior Prompt (LLM Telephony Core)
@@ -929,6 +1052,66 @@ Key Objectives:
                 </div>
               </div>
 
+              {/* ToughTongue Voice Agent Preset */}
+              <div>
+                <label className="text-slate-400 font-mono font-bold uppercase text-[10px] block mb-1">
+                  Autonomous Voice Agent (ToughTongue White-Label)
+                </label>
+                <div className="space-y-2">
+                  {[
+                    { id: '6abbefa48b398e50c7c059dd', name: 'Sarah - Dubai Luxury Closer', sub: 'Cartesia British/Neutral • High-intent qualifying & appointment booking' },
+                    { id: '6abbefb8077df1a1f09c02e1', name: 'Priya - Clinic & Sales Specialist', sub: 'Deepgram Hinglish • Warm urban Indian phone consultation' },
+                    { id: 'custom', name: 'Custom ToughTongue Scenario ID', sub: 'Enter custom scenario ID from your ToughTongue dashboard' }
+                  ].map(sc => (
+                    <label 
+                      key={sc.id} 
+                      className={`flex items-start gap-2.5 p-2.5 rounded-xl border cursor-pointer transition ${
+                        newClient.toughTongueScenarioId === sc.id
+                          ? 'bg-indigo-600/15 border-indigo-500/50 text-white'
+                          : 'bg-white/[0.02] border-white/[0.06] text-slate-400 hover:text-white'
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="scenarioChoice"
+                        checked={newClient.toughTongueScenarioId === sc.id}
+                        onChange={() => setNewClient({ ...newClient, toughTongueScenarioId: sc.id })}
+                        className="mt-0.5 text-indigo-500 focus:ring-0"
+                      />
+                      <div className="flex-1">
+                        <div className="font-semibold text-xs text-slate-200">{sc.name}</div>
+                        <div className="text-[10px] text-slate-500">{sc.sub}</div>
+                      </div>
+                    </label>
+                  ))}
+                </div>
+
+                {newClient.toughTongueScenarioId === 'custom' && (
+                  <input
+                    type="text"
+                    required
+                    placeholder="Paste ToughTongue Scenario ID (e.g. 6abbefa48b398e...)"
+                    value={newClient.customScenarioId}
+                    onChange={(e) => setNewClient({ ...newClient, customScenarioId: e.target.value })}
+                    className="w-full mt-2 bg-[#0A0E1A] border border-white/[0.08] rounded-xl px-3.5 py-2 text-white font-mono focus:outline-none focus:border-indigo-500"
+                  />
+                )}
+              </div>
+
+              {/* DP / Logo URL */}
+              <div>
+                <label className="text-slate-400 font-mono font-bold uppercase text-[10px] block mb-1">
+                  Organization Logo / DP (Optional Image URL)
+                </label>
+                <input
+                  type="url"
+                  placeholder="https://.../logo.png (leave empty for auto business monogram)"
+                  value={newClient.logo}
+                  onChange={(e) => setNewClient({ ...newClient, logo: e.target.value })}
+                  className="w-full bg-[#0A0E1A] border border-white/[0.08] rounded-xl px-3.5 py-2.5 text-white focus:outline-none focus:border-indigo-500 transition font-mono"
+                />
+              </div>
+
               <div className="flex items-center justify-end gap-3 pt-4 border-t border-white/[0.08]">
                 <button
                   type="button"
@@ -941,11 +1124,19 @@ Key Objectives:
                   type="submit"
                   className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold transition shadow-lg shadow-indigo-500/25 cursor-pointer"
                 >
-                  Provision & Launch Workspace
+                  Provision & Connect Client
                 </button>
               </div>
             </form>
           </div>
+        </div>
+      )}
+
+      {/* Toast Notification */}
+      {toastMessage && (
+        <div className="fixed bottom-6 right-6 z-50 bg-[#0E1528] border border-indigo-500/50 text-white px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 animate-in slide-in-from-bottom duration-200">
+          <CheckCircle2 size={18} className="text-emerald-400 shrink-0" />
+          <span className="text-xs font-semibold">{toastMessage}</span>
         </div>
       )}
     </div>

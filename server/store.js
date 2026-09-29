@@ -420,6 +420,16 @@ class Store {
     return null;
   }
 
+  deleteClient(id) {
+    this.data.clients = (this.data.clients || []).filter(c => c.id !== id);
+    this.data.agents = (this.data.agents || []).filter(a => a.clientId !== id);
+    if (this.data.leads && this.data.leads[id]) {
+      delete this.data.leads[id];
+    }
+    this.save();
+    return true;
+  }
+
   getAgents() {
     return this.data.agents || [];
   }
