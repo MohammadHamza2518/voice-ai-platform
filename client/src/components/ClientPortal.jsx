@@ -51,8 +51,12 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
   const [batchDialing, setBatchDialing] = useState(false);
   const [batchDialResult, setBatchDialResult] = useState(null);
   const [leadSearchQuery, setLeadSearchQuery] = useState('');
-  const [leadStatusFilter, setLeadStatusFilter] = useState('all');
   const [callingLeadId, setCallingLeadId] = useState(null);
+
+  // Live White-Label ToughTongue Voice Agent State
+  const [liveVoiceModalOpen, setLiveVoiceModalOpen] = useState(false);
+  const [liveIframeSrc, setLiveIframeSrc] = useState('');
+  const [startingVoice, setStartingVoice] = useState(false);
 
   // Fetch client profile and calls
   const fetchData = async () => {
@@ -150,6 +154,30 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
       ...prev,
       faq: (prev?.faq || []).filter((_, i) => i !== index)
     }));
+  };
+
+  const handleStartLiveVoiceCall = async (leadContext = null) => {
+    try {
+      setStartingVoice(true);
+      const res = await fetch(`/api/portal/client/${clientId}/voice-session`, {
+        method: 'POST'
+      });
+      const data = await res.json();
+      if (res.ok && data.iframeSrc) {
+        let src = data.iframeSrc;
+        if (leadContext) {
+          src += `&userName=${encodeURIComponent(leadContext.name)}&t_customer_name=${encodeURIComponent(leadContext.name)}&t_company_name=${encodeURIComponent(leadContext.company || '')}`;
+        }
+        setLiveIframeSrc(src);
+        setLiveVoiceModalOpen(true);
+      } else {
+        alert(data.error || 'Unable to start live voice session');
+      }
+    } catch (e) {
+      alert('Error launching voice session: ' + e.message);
+    } finally {
+      setStartingVoice(false);
+    }
   };
 
   const fetchLeads = async () => {
@@ -1384,16 +1412,60 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
           </div>
         )}
 
-        {/* TAB 3: SPEED DIALER */}
+        {/* TAB 5: TEST LIVE AI CALL */}
         {activeTab === 'dialer' && (
-          <div className="flex justify-center py-6">
-            <RealDialpad 
-              clientId={clientId} 
-              onCallCompleted={(newCall) => {
-                fetchData();
-                if (newCall) setSelectedCall(newCall);
-              }} 
-            />
+          <div className="max-w-3xl mx-auto space-y-6 py-4">
+            {/* Live WebRTC Voice Call Card (ToughTongue White-Labeled) */}
+            <div className="bg-gradient-to-br from-[#0D1224] via-[#090D17] to-[#0A0E1A] border border-indigo-500/30 rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-bold border border-emerald-500/20 uppercase tracking-wider flex items-center gap-1.5">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-ping" />
+                      Live AI Agent Ready
+                    </span>
+                    <span className="text-xs text-slate-400 font-mono">Sub-500ms Voice</span>
+                  </div>
+                  <h3 className="text-xl font-extrabold text-white">
+                    Talk Live with {clientData?.country === 'india' ? 'Priya (Hinglish Clinic Assistant)' : 'Sarah (Dubai Real Estate Closer)'}
+                  </h3>
+                  <p className="text-xs text-slate-300 max-w-xl leading-relaxed">
+                    Test your AI assistant right now in your browser using your microphone. Hear how naturally it answers customer questions, explains pricing, and locks in appointments in real time.
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => handleStartLiveVoiceCall()}
+                  disabled={startingVoice}
+                  className="bg-gradient-to-r from-indigo-500 via-indigo-600 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 text-white font-extrabold px-7 py-4 rounded-2xl shadow-xl shadow-indigo-500/25 flex items-center justify-center gap-3 text-sm transition-all active:scale-95 cursor-pointer disabled:opacity-50 shrink-0"
+                >
+                  {startingVoice ? (
+                    <>
+                      <Loader2 size={18} className="animate-spin" />
+                      <span>Connecting to Voice Agent...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Radio size={18} className="animate-pulse" />
+                      <span>🎙️ Start Live Voice Call</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+
+            {/* Traditional Phone Keypad */}
+            <div className="flex flex-col items-center">
+              <span className="text-xs text-slate-400 mb-3">Or simulate phone line dispatch:</span>
+              <RealDialpad 
+                clientId={clientId} 
+                onCallCompleted={(newCall) => {
+                  fetchData();
+                  if (newCall) setSelectedCall(newCall);
+                }} 
+              />
+            </div>
           </div>
         )}
 
@@ -2096,6 +2168,71 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
                     <span>Save & Apply DP</span>
                   </>
                 )}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Live AI Voice Call Modal (ToughTongue WebRTC White-Labeled) */}
+      {liveVoiceModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+          <div className="relative w-full max-w-2xl bg-[#090D17] border border-indigo-500/30 rounded-3xl overflow-hidden shadow-2xl shadow-indigo-500/20 flex flex-col">
+            {/* Modal Header */}
+            <div className="px-6 py-4 bg-[#0D1220] border-b border-white/[0.08] flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="h-3 w-3 rounded-full bg-emerald-400 animate-ping" />
+                <div>
+                  <h3 className="text-sm font-bold text-white flex items-center gap-2">
+                    <span>Live AI Voice Call Session</span>
+                    <span className="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-mono">
+                      ACTIVE (Sub-500ms)
+                    </span>
+                  </h3>
+                  <p className="text-xs text-slate-400">
+                    Speaking with: <strong className="text-white">{clientData?.country === 'india' ? 'Priya (Aesthetic Clinic Receptionist)' : 'Sarah (Luxury Real Estate Closer)'}</strong>
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  setLiveVoiceModalOpen(false);
+                  setLiveIframeSrc('');
+                  fetchData();
+                }}
+                className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-400 hover:text-white transition cursor-pointer"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            {/* Embedded Live WebRTC Voice Frame */}
+            <div className="w-full bg-[#05070D] flex items-center justify-center min-h-[500px]">
+              {liveIframeSrc && (
+                <iframe
+                  src={liveIframeSrc}
+                  className="w-full h-[520px] border-0"
+                  allow="microphone; camera"
+                  title="Live AI Voice Call"
+                />
+              )}
+            </div>
+
+            {/* Modal Footer */}
+            <div className="px-6 py-3 bg-[#0D1220] border-t border-white/[0.08] flex items-center justify-between text-xs text-slate-400">
+              <span className="flex items-center gap-1.5">
+                <ShieldCheck size={14} className="text-indigo-400" />
+                <span>Microphone enabled • 100% Private Voice Encryption</span>
+              </span>
+              <button
+                onClick={() => {
+                  setLiveVoiceModalOpen(false);
+                  setLiveIframeSrc('');
+                  fetchData();
+                }}
+                className="px-4 py-1.5 rounded-lg bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-xs font-semibold transition cursor-pointer"
+              >
+                End Call
               </button>
             </div>
           </div>

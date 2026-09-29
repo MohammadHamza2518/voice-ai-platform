@@ -323,6 +323,77 @@ app.put('/api/portal/client/:clientId/knowledge', (req, res) => {
   res.json({ success: true, knowledgeBase: updated.knowledgeBase });
 });
 
+// ToughTongue AI Live White-Label Voice Session Generator
+app.post('/api/portal/client/:clientId/voice-session', async (req, res) => {
+  try {
+    const client = store.getClientById(req.params.clientId);
+    if (!client) return res.status(404).json({ error: 'Client not found' });
+
+    const settings = store.getSettings();
+    const token = settings.toughTongueApiKey || process.env.TOUGHTONGUE_API_KEY || 'vDOi7KxceJMvUHjLOvS_wF7uAxZb2Cgehvj30dltpNQ';
+
+    // Scenario ID: use client's configured scenario or fallback to Sarah (Apex) or Priya (Zenith)
+    const scenarioId = client.toughTongueScenarioId || (client.country === 'india' ? '6abbefb8077df1a1f09c02e1' : '6abbefa48b398e50c7c059dd');
+
+    const ttRes = await fetch('https://api.toughtongueai.com/api/public/scenario-access-token', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        scenario_id: scenarioId,
+        valid_for_hours: 24
+      })
+    });
+
+    if (!ttRes.ok) {
+      const errData = await ttRes.text();
+      return res.status(500).json({ error: 'Failed to create voice session: ' + errData });
+    }
+
+    const data = await ttRes.json();
+    // Append white-label parameters so ToughTongue branding is 100% hidden
+    const whiteLabeledSrc = `${data.iframe_src}&hidePoweredBy=true&bg=05070D&color=indigo&name=${encodeURIComponent(client.name + ' AI Voice Assistant')}`;
+
+    res.json({
+      success: true,
+      scenarioId,
+      accessToken: data.access_token,
+      expiresAt: data.expires_at,
+      iframeSrc: whiteLabeledSrc
+    });
+  } catch (err) {
+    console.error('Error generating voice session:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ToughTongue Agency Telephony Engine Status
+app.get('/api/admin/toughtongue/status', async (req, res) => {
+  try {
+    const settings = store.getSettings();
+    const token = settings.toughTongueApiKey || process.env.TOUGHTONGUE_API_KEY || 'vDOi7KxceJMvUHjLOvS_wF7uAxZb2Cgehvj30dltpNQ';
+
+    const balRes = await fetch('https://api.toughtongueai.com/api/public/balance', {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+
+    let balance = null;
+    if (balRes.ok) {
+      balance = await balRes.json();
+    }
+
+    res.json({
+      configured: Boolean(token),
+      balance,
+      provider: 'ToughTongue AI (White-Label Autonomous Engine)'
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Get client calls with filters
 app.get('/api/portal/calls/:clientId', (req, res) => {
   const { status, search } = req.query;

@@ -22,6 +22,7 @@ const initialData = {
   settings: {
     vapiApiKey: process.env.VAPI_API_KEY || '',
     vapiPhoneNumberId: process.env.VAPI_PHONE_NUMBER_ID || '',
+    toughTongueApiKey: process.env.TOUGHTONGUE_API_KEY || 'vDOi7KxceJMvUHjLOvS_wF7uAxZb2Cgehvj30dltpNQ',
     agencyName: 'Synthetix AI Telecom',
     agencySupportEmail: 'hamza@synthetix.ai',
     currency: 'AED' // or INR
@@ -37,6 +38,7 @@ const initialData = {
       email: 'sales@apexproperties.ae',
       phone: '+971 50 492 8819',
       assignedNumber: '+971 4 821 9920',
+      toughTongueScenarioId: '6abbefa48b398e50c7c059dd',
       monthlyRetainer: '2,500 AED/mo',
       country: 'dubai',
       currency: 'AED',
@@ -59,6 +61,7 @@ const initialData = {
       email: 'director@zenithclinic.in',
       phone: '+91 98201 44821',
       assignedNumber: '+91 80 4719 3320',
+      toughTongueScenarioId: '6abbefb8077df1a1f09c02e1',
       monthlyRetainer: '₹25,000/mo',
       country: 'india',
       currency: 'INR',
