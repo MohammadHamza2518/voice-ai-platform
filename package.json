@@ -5,8 +5,7 @@
   "main": "server/index.js",
   "type": "module",
   "scripts": {
-    "postinstall": "cd client && npm install && npm run build",
-    "build": "cd client && npm install && npm run build",
+    "build": "echo Pre-built bundle ready",
     "start": "node server/index.js"
   },
   "dependencies": {
