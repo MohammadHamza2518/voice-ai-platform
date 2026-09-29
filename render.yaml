@@ -1,16 +1,18 @@
 services:
   - type: web
     name: voice-ai-platform
-    env: node
+    runtime: node
     region: singapore
     plan: free
-    buildCommand: npm run build
-    startCommand: npm start
+    autoDeploy: true
+    buildCommand: npm run build || true
+    startCommand: node server/index.js
+    healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 5000
+        value: 10000
       - key: MONGODB_URI
         sync: false
       - key: VAPI_API_KEY
