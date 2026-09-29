@@ -209,7 +209,7 @@ export default function SuperAdmin({ onSelectClientView }) {
   return (
     <div className="min-h-screen bg-[#05070D] text-slate-100 flex flex-col font-sans selection:bg-indigo-500/30 selection:text-indigo-300">
       {/* Top Carrier Operator Header */}
-      <header className="border-b border-white/[0.08] bg-[#080C16]/90 px-6 py-4 sticky top-0 z-40 backdrop-blur-xl shadow-lg shadow-black/40">
+      <header className="border-b border-white/[0.08] bg-[#080C16] px-6 py-4 shadow-lg shadow-black/20">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             {/* Telecom Logo Icon */}

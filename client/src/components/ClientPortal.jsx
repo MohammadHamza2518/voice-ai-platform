@@ -438,7 +438,7 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
     <div className="min-h-screen bg-[#05070D] text-slate-100 flex flex-col font-sans selection:bg-indigo-500/30 selection:text-indigo-300">
       {/* Admin Impersonation Floating Top Banner (ONLY shown when Admin accesses client portal) */}
       {fromAdmin && (
-        <div className="bg-gradient-to-r from-indigo-950 via-purple-950 to-indigo-950 border-b border-indigo-500/30 px-4 md:px-6 py-2.5 flex items-center justify-between text-xs text-indigo-200 sticky top-0 z-50 backdrop-blur-xl shadow-lg shadow-black/40">
+        <div className="bg-gradient-to-r from-indigo-950 via-purple-950 to-indigo-950 border-b border-indigo-500/30 px-4 md:px-6 py-2.5 flex items-center justify-between text-xs text-indigo-200">
           <div className="flex items-center gap-2.5">
             <span className="px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-300 font-mono font-bold uppercase text-[10px] border border-indigo-500/40 flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
@@ -471,34 +471,30 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
       )}
 
       {/* Top White-Label Tenant Header */}
-      <header className="border-b border-white/[0.08] bg-[#080C16]/90 px-6 py-4 sticky top-0 z-40 backdrop-blur-xl shadow-lg shadow-black/40">
+      <header className="border-b border-white/[0.08] bg-[#080C16] px-4 md:px-6 py-4 shadow-lg shadow-black/20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             {/* Interactive DP (Display Picture) Avatar with Hover & Camera Trigger */}
             <div 
               onClick={handleOpenDpModal}
-              className="relative group cursor-pointer"
+              className="relative w-12 h-12 rounded-xl shrink-0 group cursor-pointer overflow-hidden border border-white/10 shadow-md"
               title="Click to change organization Profile Picture (DP) / Logo"
             >
               {clientData?.logo ? (
                 <img 
                   src={clientData.logo} 
                   alt="Logo" 
-                  className="w-13 h-13 rounded-2xl object-cover border border-white/10 shadow-md shrink-0 group-hover:brightness-75 transition-all"
+                  className="w-12 h-12 object-cover block group-hover:brightness-75 transition-all"
                 />
               ) : (
-                <div className="w-13 h-13 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-base shrink-0 group-hover:bg-indigo-500/20 transition-all">
+                <div className="w-12 h-12 bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold text-base group-hover:bg-indigo-500/20 transition-all">
                   <Building2 size={24} />
                 </div>
               )}
               {/* Hover Camera Overlay */}
-              <div className="absolute inset-0 rounded-2xl bg-black/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white transition-opacity border border-indigo-500/40 backdrop-blur-[2px]">
-                <Camera size={16} />
-                <span className="text-[8px] font-mono mt-0.5 font-bold uppercase tracking-wider">Edit DP</span>
-              </div>
-              {/* Bottom Right Badge */}
-              <div className="absolute -bottom-1 -right-1 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full p-1 border-2 border-[#080C16] shadow-md group-hover:scale-110 transition-transform">
-                <Camera size={10} />
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white transition-opacity backdrop-blur-[2px]">
+                <Camera size={14} />
+                <span className="text-[7px] font-mono mt-0.5 font-bold uppercase tracking-wider">Edit</span>
               </div>
             </div>
 
