@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { store } from './store.js';
 
@@ -950,9 +951,11 @@ app.post('/api/webhooks/vapi', (req, res) => {
 app.use(express.static(CLIENT_DIST));
 app.get('*', (req, res, next) => {
   if (req.path.startsWith('/api')) return next();
-  res.sendFile(path.join(CLIENT_DIST, 'index.html'), (err) => {
-    if (err) next();
-  });
+  const indexPath = path.join(CLIENT_DIST, 'index.html');
+  if (fs.existsSync(indexPath)) {
+    return res.sendFile(indexPath);
+  }
+  res.status(404).send('Frontend build not found. Running postinstall build.');
 });
 
 // Start Server

@@ -5,6 +5,7 @@
   "main": "server/index.js",
   "type": "module",
   "scripts": {
+    "postinstall": "cd client && npm install && npm run build",
     "build": "cd client && npm install && npm run build",
     "start": "node server/index.js"
   },
