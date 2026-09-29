@@ -6,7 +6,7 @@ import {
   Server, Zap, CheckCircle2, Shield, Radio, Globe, Copy, Check, ArrowUpRight,
   Camera, Upload, Image, X, BookOpen, Plus, Trash2, Edit3, MessageSquare,
   MapPin, Package, HelpCircle, Save, CheckCheck, Send,
-  Users, UserPlus, Target, Database, CheckSquare, Square, FileSpreadsheet, Loader2
+  Users, UserPlus, Target, Database, CheckSquare, Square, FileSpreadsheet, Loader2, PhoneCall
 } from 'lucide-react';
 import CallDrawer from './CallDrawer';
 import RealDialpad from './RealDialpad';
@@ -51,6 +51,7 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
   const [batchDialing, setBatchDialing] = useState(false);
   const [batchDialResult, setBatchDialResult] = useState(null);
   const [leadSearchQuery, setLeadSearchQuery] = useState('');
+  const [leadStatusFilter, setLeadStatusFilter] = useState('all');
   const [callingLeadId, setCallingLeadId] = useState(null);
 
   // Live White-Label ToughTongue Voice Agent State
