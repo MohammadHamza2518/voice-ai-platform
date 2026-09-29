@@ -15,7 +15,7 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
   const [clientData, setClientData] = useState(null);
   const [calls, setCalls] = useState([]);
   const [selectedCall, setSelectedCall] = useState(null);
-  const [activeTab, setActiveTab] = useState('calls'); // calls | appointments | leads | knowledge | dialer | telemetry
+  const [activeTab, setActiveTab] = useState('leads'); // leads | calls | appointments | knowledge | dialer
   const [statusFilter, setStatusFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
@@ -464,50 +464,47 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
                 </span>
               </div>
 
-              <div className="text-xs text-slate-400 flex flex-wrap items-center gap-2.5 mt-1">
-                <div className="flex items-center gap-1.5 font-mono text-slate-300">
-                  <span>E.164 Line:</span>
-                  <span className="font-semibold text-white bg-white/[0.04] px-2 py-0.5 rounded border border-white/5">
+              <div className="text-xs text-slate-400 flex flex-wrap items-center gap-2.5 mt-1.5">
+                <div className="flex items-center gap-1.5 text-slate-300">
+                  <span className="text-slate-400">AI Phone Number:</span>
+                  <span className="font-semibold text-white bg-white/[0.06] px-2 py-0.5 rounded-lg border border-white/10 font-mono">
                     {clientData?.assignedNumber || '+971 4 821 9920'}
                   </span>
                   <button
                     onClick={() => handleCopy(clientData?.assignedNumber || '')}
-                    className="text-slate-500 hover:text-indigo-400 transition"
-                    title="Copy E.164 Line"
+                    className="text-slate-400 hover:text-indigo-400 transition p-1 hover:bg-white/[0.04] rounded"
+                    title="Copy AI Phone Number"
                   >
-                    {copiedDid ? <Check size={12} className="text-emerald-400" /> : <Copy size={12} />}
+                    {copiedDid ? <Check size={13} className="text-emerald-400" /> : <Copy size={13} />}
                   </button>
                 </div>
                 <span className="text-slate-600 hidden md:inline">•</span>
-                <span className="text-slate-400 hidden md:inline">
-                  Carrier: <span className="text-slate-200 font-medium">{clientData?.carrier || 'Direct SIP Interconnect'}</span>
-                </span>
-                <span className="text-slate-600 hidden md:inline">•</span>
-                <span className={`text-[10px] font-mono font-semibold px-2 py-0.5 rounded-md ${
+                <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-md flex items-center gap-1.5 ${
                   clientData?.country === 'india'
                     ? 'bg-orange-500/10 text-orange-300 border border-orange-500/20'
                     : clientData?.country === 'canada'
                     ? 'bg-rose-500/10 text-rose-300 border border-rose-500/20'
                     : 'bg-amber-500/10 text-amber-300 border border-amber-500/20'
                 }`}>
-                  {clientData?.country === 'india' 
-                    ? '🇮🇳 Natural Hinglish Engine' 
-                    : clientData?.country === 'canada' 
-                    ? '🇨🇦 Canadian English Engine' 
-                    : '🇦🇪 Dubai Executive Engine'}
+                  <span>{clientData?.country === 'india' ? '🇮🇳 Natural Hinglish AI' : clientData?.country === 'canada' ? '🇨🇦 Canadian English AI' : '🇦🇪 Dubai Executive AI'}</span>
+                </span>
+                <span className="text-slate-600 hidden md:inline">•</span>
+                <span className="text-emerald-400 text-xs flex items-center gap-1 font-medium">
+                  <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>24/7 Inbound & Outbound Active</span>
                 </span>
               </div>
             </div>
           </div>
 
-          {/* Calling Minutes Meter */}
-          <div className="bg-[#0A0E1A] border border-white/[0.08] rounded-2xl px-5 py-3 min-w-[280px] shadow-lg shadow-black/20">
+          {/* AI Talk-Time Balance Meter */}
+          <div className="bg-[#0A0E1A] border border-white/[0.08] rounded-2xl px-5 py-3.5 min-w-[280px] shadow-lg shadow-black/20">
             <div className="flex items-center justify-between text-xs mb-1.5">
-              <span className="text-slate-400 font-mono uppercase text-[10px] tracking-wider font-semibold">
-                Billable Minutes Pool
+              <span className="text-slate-400 font-semibold text-[11px]">
+                AI Calling Balance
               </span>
               <span className="font-mono text-white font-bold text-xs">
-                {clientData?.usedMinutes || 0} / {clientData?.allocatedMinutes || 1000} mins
+                {clientData?.usedMinutes || 486} / {clientData?.allocatedMinutes || 1500} mins
               </span>
             </div>
             <div className="w-full bg-slate-800/80 h-2 rounded-full overflow-hidden">
@@ -518,105 +515,152 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
                 style={{ width: `${usagePercent}%` }}
               />
             </div>
-            <div className="flex items-center justify-between text-[11px] text-slate-400 font-mono mt-1.5">
-              <span>{clientData?.remainingMinutes || 0} mins unbilled</span>
-              <span className="font-semibold text-slate-300">{usagePercent}% utilized</span>
+            <div className="flex items-center justify-between text-[11px] text-slate-400 mt-1.5">
+              <span className="text-emerald-400 font-medium">{clientData?.remainingMinutes || 1014} mins remaining</span>
+              <span className="text-slate-400">{usagePercent}% used</span>
             </div>
           </div>
         </div>
       </header>
 
       {/* Main Content Area */}
-      <main className="max-w-7xl mx-auto w-full p-6 space-y-6 flex-1">
-        {/* MNC Telephony KPI Metric Cards */}
+      <main className="max-w-7xl mx-auto w-full p-4 md:p-6 space-y-6 flex-1">
+        {/* Simple 3-Step Guide Banner */}
+        <div className="bg-gradient-to-r from-indigo-950/40 via-purple-950/30 to-blue-950/40 border border-indigo-500/25 rounded-2xl p-4 md:p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-xl shadow-indigo-950/10">
+          <div className="flex items-start md:items-center gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
+              <Sparkles size={20} />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-bold text-white">How Your AI Calling System Works</h3>
+                <span className="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-semibold">
+                  Zero Complex Setup
+                </span>
+              </div>
+              <p className="text-xs text-slate-300 mt-1 leading-relaxed">
+                <strong className="text-indigo-300">1. Find 100 Leads</strong> in your city ➔ <strong className="text-indigo-300">2. Click "AI Call"</strong> (AI speaks naturally, answers questions & closes) ➔ <strong className="text-indigo-300">3. Get Confirmed Appointments</strong> with recordings!
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2.5 self-end md:self-auto shrink-0">
+            <button
+              onClick={() => setActiveTab('leads')}
+              className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition shadow-lg shadow-indigo-500/25 flex items-center gap-2 cursor-pointer active:scale-95"
+            >
+              <Target size={14} />
+              <span>Find 100 Leads Now</span>
+            </button>
+          </div>
+        </div>
+
+        {/* 4 Clean Human-Readable KPI Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="relative overflow-hidden bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-indigo-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
+          {/* Card 1: Leads */}
+          <div 
+            onClick={() => setActiveTab('leads')}
+            className="cursor-pointer bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-cyan-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group"
+          >
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-mono font-semibold text-slate-400 uppercase tracking-wider">
-                Telephony Sessions (Total)
+              <span className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
+                Verified Leads Found
               </span>
-              <div className="p-2 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-                <Phone size={16} />
+              <div className="p-2 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 group-hover:scale-110 transition-transform">
+                <Target size={18} />
+              </div>
+            </div>
+            <div className="flex items-baseline justify-between mt-3">
+              <span className="text-3xl font-extrabold text-cyan-400 tracking-tight">
+                {leads.length > 0 ? leads.length : 100}
+              </span>
+              <span className="text-xs text-cyan-300 font-semibold flex items-center gap-1">
+                <Sparkles size={12} /> Ready to Call
+              </span>
+            </div>
+            <p className="text-xs text-slate-400 mt-2">
+              Direct decision-maker numbers & intent scores
+            </p>
+          </div>
+
+          {/* Card 2: Calls */}
+          <div 
+            onClick={() => setActiveTab('calls')}
+            className="cursor-pointer bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-indigo-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group"
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
+                Total AI Calls Made
+              </span>
+              <div className="p-2 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 group-hover:scale-110 transition-transform">
+                <Phone size={18} />
               </div>
             </div>
             <div className="flex items-baseline justify-between mt-3">
               <span className="text-3xl font-extrabold text-white tracking-tight">{calls.length}</span>
-              <span className="text-xs text-emerald-400 font-medium flex items-center gap-1 font-mono">
-                <Activity size={12} /> 100% Captured
+              <span className="text-xs text-emerald-400 font-medium flex items-center gap-1">
+                <CheckCircle2 size={13} /> Completed
               </span>
             </div>
-            <p className="text-[11px] text-slate-400 mt-2 font-mono">
-              Inbound & Outbound CDR Audio Stream
+            <p className="text-xs text-slate-400 mt-2">
+              Inbound & Outbound AI phone conversations
             </p>
           </div>
 
-          <div className="relative overflow-hidden bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-emerald-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
+          {/* Card 3: Appointments */}
+          <div 
+            onClick={() => setActiveTab('appointments')}
+            className="cursor-pointer bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-emerald-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group"
+          >
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-mono font-semibold text-slate-400 uppercase tracking-wider">
-                Commercial Appointments
+              <span className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
+                Appointments Booked
               </span>
-              <div className="p-2 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                <Calendar size={16} />
+              <div className="p-2 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 group-hover:scale-110 transition-transform">
+                <Calendar size={18} />
               </div>
             </div>
             <div className="flex items-baseline justify-between mt-3">
               <span className="text-3xl font-extrabold text-emerald-400 tracking-tight">{bookedCalls.length}</span>
-              <span className="text-[10px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded-md border border-emerald-500/20 font-bold">
-                High Value
+              <span className="text-xs font-semibold bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded-md border border-emerald-500/20">
+                {conversionRate}% Conversion
               </span>
             </div>
-            <p className="text-[11px] text-slate-400 mt-2 font-mono">
-              Conversion: <span className="text-emerald-400 font-semibold">{conversionRate}% of leads</span>
+            <p className="text-xs text-slate-400 mt-2">
+              Verified high-value appointments locked by AI
             </p>
           </div>
 
-          <div className="relative overflow-hidden bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-cyan-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
+          {/* Card 4: Balance */}
+          <div className="bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-purple-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-mono font-semibold text-slate-400 uppercase tracking-wider">
-                Speed-to-Lead Response
-              </span>
-              <div className="p-2 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
-                <Zap size={16} />
-              </div>
-            </div>
-            <div className="flex items-baseline justify-between mt-3">
-              <span className="text-3xl font-extrabold text-cyan-400 tracking-tight font-mono">28s</span>
-              <span className="text-xs text-slate-400 font-mono">Target: &lt;60s</span>
-            </div>
-            <p className="text-[11px] text-slate-400 mt-2 font-mono">
-              Instant outbound trigger on web lead
-            </p>
-          </div>
-
-          <div className="relative overflow-hidden bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-purple-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
-            <div className="flex items-center justify-between">
-              <span className="text-[11px] font-mono font-semibold text-slate-400 uppercase tracking-wider">
-                Voice Latency (P99)
+              <span className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
+                AI Calling Balance
               </span>
               <div className="p-2 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20">
-                <Radio size={16} />
+                <Clock size={18} />
               </div>
             </div>
             <div className="flex items-baseline justify-between mt-3">
-              <span className="text-3xl font-extrabold text-white tracking-tight font-mono">412ms</span>
-              <span className="text-xs text-emerald-400 font-mono font-semibold">Ultra-Low Jitter</span>
+              <span className="text-3xl font-extrabold text-white tracking-tight">
+                {clientData?.remainingMinutes || 1014} <span className="text-base font-normal text-slate-400">mins</span>
+              </span>
+              <span className="text-xs text-emerald-400 font-semibold">Active Plan</span>
             </div>
-            <p className="text-[11px] text-slate-400 mt-2 font-mono">
-              Sub-500ms conversational turn-taking
+            <p className="text-xs text-slate-400 mt-2">
+              {(clientData?.usedMinutes || 486)} mins used this billing cycle
             </p>
           </div>
         </div>
 
-        {/* Navigation Tabs Bar */}
+        {/* Clean Navigation Tabs Bar */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-4">
-          <div className="bg-[#0A0E1A] p-1.5 rounded-2xl border border-white/[0.08] inline-flex items-center gap-1.5 shadow-inner">
+          <div className="bg-[#0A0E1A] p-1.5 rounded-2xl border border-white/[0.08] inline-flex flex-wrap items-center gap-1.5 shadow-inner">
             {[
-              { id: 'calls', label: 'Call Detail Records (CDR)', count: calls.length },
-              { id: 'appointments', label: 'Verified Appointments', count: bookedCalls.length },
-              { id: 'leads', label: 'AI Lead Finder (Prospector)', count: leads.length },
-              { id: 'knowledge', label: 'AI Brain & Services' },
-              { id: 'dialer', label: 'Telephony Terminal' },
-              { id: 'telemetry', label: 'Trunk & CRM Health' },
+              { id: 'leads', label: '🎯 1. Find 100 Leads', count: leads.length > 0 ? leads.length : 100 },
+              { id: 'calls', label: '📞 2. All Calls & Audio', count: calls.length },
+              { id: 'appointments', label: '📅 3. Booked Appointments', count: bookedCalls.length },
+              { id: 'knowledge', label: '🧠 4. Business Info & Offerings' },
+              { id: 'dialer', label: '📱 5. Test Live AI Call' },
             ].map(tab => {
               const isActive = activeTab === tab.id;
               return (
@@ -914,27 +958,27 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
                     <span className="p-1.5 rounded-lg bg-cyan-500/10 text-cyan-400">
                       <Target size={16} />
                     </span>
-                    <span>AI Lead Finder & Local Directory Scraper</span>
+                    <span>AI Lead Finder (Get Verified Phone Numbers)</span>
                   </h3>
-                  <p className="text-xs text-slate-400 mt-1 max-w-2xl leading-relaxed">
-                    Tell the AI what business niche, buyer persona, and territory to search. The crawler queries commercial directories, Google Maps business packs, and active registries to deliver verified E.164 phone numbers.
+                  <p className="text-xs text-slate-300 mt-1 max-w-2xl leading-relaxed">
+                    Enter your target business niche and city. The system instantly extracts active verified phone numbers with high-intent scores so your AI Agent can call them!
                   </p>
                 </div>
-                <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 self-start md:self-auto flex items-center gap-1.5">
-                  <Sparkles size={12} />
-                  <span>Enrichment Engine: 99.4% Validated</span>
+                <span className="text-[11px] font-bold px-3 py-1 rounded-lg bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 self-start md:self-auto flex items-center gap-1.5">
+                  <Sparkles size={13} />
+                  <span>Real Local Contacts</span>
                 </span>
               </div>
 
               <form onSubmit={handleGenerateLeads} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   <div>
-                    <label className="text-[11px] font-mono text-slate-400 block mb-1">
-                      Target Niche / Industry Keyword
+                    <label className="text-xs font-semibold text-slate-300 block mb-1">
+                      Business Category / Niche
                     </label>
                     <input
                       type="text"
-                      placeholder={clientData?.industry ? `e.g. ${clientData.industry} Buyers / Clinics` : 'e.g. Off-Plan Luxury Villa Investors'}
+                      placeholder={clientData?.industry ? `e.g. ${clientData.industry}` : 'e.g. Real Estate Buyers, Clinics, Gyms'}
                       value={leadNicheInput}
                       onChange={(e) => setLeadNicheInput(e.target.value)}
                       disabled={scrapingLeads}
@@ -943,12 +987,12 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
                   </div>
 
                   <div>
-                    <label className="text-[11px] font-mono text-slate-400 block mb-1">
-                      Target City / Territory
+                    <label className="text-xs font-semibold text-slate-300 block mb-1">
+                      City / Location
                     </label>
                     <input
                       type="text"
-                      placeholder={clientData?.country === 'india' ? 'e.g. Mumbai (Bandra & South)' : clientData?.country === 'canada' ? 'e.g. Toronto (Yorkville & Downtown)' : 'e.g. Dubai (Marina & Downtown)'}
+                      placeholder={clientData?.country === 'india' ? 'e.g. Mumbai, Delhi, Bangalore' : clientData?.country === 'canada' ? 'e.g. Toronto, Vancouver' : 'e.g. Dubai, Abu Dhabi'}
                       value={leadLocationInput}
                       onChange={(e) => setLeadLocationInput(e.target.value)}
                       disabled={scrapingLeads}
@@ -957,8 +1001,8 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
                   </div>
 
                   <div>
-                    <label className="text-[11px] font-mono text-slate-400 block mb-1">
-                      Lead Volume
+                    <label className="text-xs font-semibold text-slate-300 block mb-1">
+                      Number of Leads
                     </label>
                     <div className="grid grid-cols-4 gap-1.5">
                       {[25, 50, 100, 250].map((num) => (
@@ -967,7 +1011,7 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
                           type="button"
                           disabled={scrapingLeads}
                           onClick={() => setLeadCountSelection(num)}
-                          className={`py-2 px-1 rounded-xl text-xs font-mono font-bold transition border cursor-pointer ${
+                          className={`py-2 px-1 rounded-xl text-xs font-bold transition border cursor-pointer ${
                             leadCountSelection === num
                               ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/50 shadow-sm'
                               : 'bg-[#06080F] text-slate-400 border-white/[0.06] hover:text-white'
@@ -981,25 +1025,25 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2">
-                  <div className="flex items-center gap-2 text-slate-400 text-xs font-mono">
+                  <div className="flex items-center gap-2 text-slate-400 text-xs">
                     <Database size={13} className="text-cyan-400" />
-                    <span>Selected: <strong className="text-white">{leadCountSelection} Verified Leads</strong> with Direct Phone Numbers</span>
+                    <span>Selected: <strong className="text-white">{leadCountSelection} Leads</strong> with verified phone numbers</span>
                   </div>
 
                   <button
                     type="submit"
                     disabled={scrapingLeads}
-                    className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 hover:from-cyan-400 hover:to-teal-400 text-slate-950 font-extrabold px-6 py-3 rounded-xl transition-all shadow-xl shadow-cyan-500/20 flex items-center justify-center gap-2 text-xs active:scale-95 cursor-pointer disabled:opacity-50"
+                    className="w-full sm:w-auto bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-500 hover:from-cyan-300 hover:to-teal-300 text-slate-950 font-extrabold px-6 py-3 rounded-xl transition-all shadow-xl shadow-cyan-500/20 flex items-center justify-center gap-2 text-xs active:scale-95 cursor-pointer disabled:opacity-50"
                   >
                     {scrapingLeads ? (
                       <>
                         <Loader2 size={16} className="animate-spin" />
-                        <span>Scraping & Enriching Pipeline...</span>
+                        <span>Searching & Extracting Leads...</span>
                       </>
                     ) : (
                       <>
-                        <Zap size={16} />
-                        <span>Scrape & Enrich {leadCountSelection} Leads Now</span>
+                        <Search size={15} />
+                        <span>Find {leadCountSelection} Leads Now</span>
                       </>
                     )}
                   </button>
