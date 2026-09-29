@@ -1,0 +1,3224 @@
+{
+  "settings": {
+    "vapiApiKey": "",
+    "vapiPhoneNumberId": "",
+    "agencyName": "Synthetix AI Telecom",
+    "agencySupportEmail": "hamza@synthetix.ai",
+    "currency": "AED"
+  },
+  "clients": [
+    {
+      "id": "client_apex_01",
+      "name": "Apex Luxury Properties Dubai",
+      "slug": "apex-luxury",
+      "logo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=200&auto=format&fit=crop&q=80",
+      "industry": "Real Estate",
+      "contactPerson": "Farhan Tariq (Director of Sales)",
+      "email": "sales@apexproperties.ae",
+      "phone": "+971 50 492 8819",
+      "assignedNumber": "+971 4 821 9920",
+      "monthlyRetainer": "2,500 AED/mo",
+      "country": "dubai",
+      "currency": "AED",
+      "planTier": "Enterprise Dedicated Trunk",
+      "carrier": "e& (Etisalat) Direct SIP Trunk",
+      "sipTrunkStatus": "Operational (42ms)",
+      "crmIntegration": "Salesforce Enterprise (Synced)",
+      "allocatedMinutes": 1500,
+      "usedMinutes": 514,
+      "status": "active",
+      "createdAt": "2026-08-15T09:00:00Z",
+      "knowledgeBase": {
+        "businessDescription": "Premier luxury real estate brokerage specializing in high-yield waterfront residences and penthouses in Dubai Marina & Palm Jumeirah.",
+        "operatingHours": "Monday - Sunday: 9:00 AM - 9:00 PM GST",
+        "location": "Level 28, Marina Plaza, Dubai Marina, UAE",
+        "services": [
+          {
+            "name": "3BHK Ultra-Luxury Marina Waterfront",
+            "price": "From 2,600,000 AED",
+            "details": "Full Marina view, private elevator, infinity pool access, handed over Q4 2026."
+          },
+          {
+            "name": "2BHK Downtown Executive Residence",
+            "price": "From 1,850,000 AED",
+            "details": "Burj Khalifa skyline view, 5 min to Dubai Mall, 8% net guaranteed rental yield."
+          },
+          {
+            "name": "Palm Jumeirah Signature Penthouse",
+            "price": "From 8,500,000 AED",
+            "details": "Private beach access, Italian marble finishing, smart home automation."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the developer payment plan?",
+            "answer": "20% booking deposit, 60% linked to construction milestones, 20% on key handover."
+          },
+          {
+            "question": "Can foreign investors get UAE Golden Visa?",
+            "answer": "Yes, property investments of 2 Million AED or above qualify for the 10-Year Renewable UAE Golden Visa."
+          },
+          {
+            "question": "Are private site visits available this weekend?",
+            "answer": "Yes, VIP private walkthroughs are open Saturday and Sunday with our Managing Director."
+          }
+        ],
+        "postCallAction": "Automated WhatsApp VIP Brochure & Showroom Calendar Invite dispatch"
+      }
+    },
+    {
+      "id": "client_zenith_02",
+      "name": "Zenith Aesthetic & Hair Clinic",
+      "slug": "zenith-clinic",
+      "logo": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=120&auto=format&fit=crop&q=80",
+      "industry": "Specialized Healthcare / Aesthetics",
+      "contactPerson": "Dr. Sameer Kapoor (Medical Director)",
+      "email": "director@zenithclinic.in",
+      "phone": "+91 98201 44821",
+      "assignedNumber": "+91 80 4719 3320",
+      "monthlyRetainer": "₹25,000/mo",
+      "country": "india",
+      "currency": "INR",
+      "planTier": "Growth High-Volume SLA",
+      "carrier": "Tata Communications Enterprise PRI",
+      "sipTrunkStatus": "Operational (58ms)",
+      "crmIntegration": "LeadSquared Healthcare CRM",
+      "allocatedMinutes": 1000,
+      "usedMinutes": 318,
+      "status": "active",
+      "createdAt": "2026-08-28T14:30:00Z",
+      "knowledgeBase": {
+        "businessDescription": "Leading specialized hair restoration and computerized skin aesthetic clinic in Bandra Kurla Complex (BKC), Mumbai under Dr. Sameer Kapoor.",
+        "operatingHours": "Monday - Sunday: 10:00 AM - 8:00 PM IST",
+        "location": "Bandra Kurla Complex (BKC), Mumbai, Maharashtra",
+        "services": [
+          {
+            "name": "Advanced FUE Sapphire Hair Transplant",
+            "price": "From ₹45,000",
+            "details": "High-density natural hairline reconstruction, computerized graft count, zero scarring."
+          },
+          {
+            "name": "US-FDA Approved GFC / PRP Hair Regrowth",
+            "price": "₹3,500 / session",
+            "details": "Natural autologous growth factor treatment to arrest shedding and thicken roots."
+          },
+          {
+            "name": "Q-Switched Carbon Laser Skin Glow",
+            "price": "₹2,500 / session",
+            "details": "Deep collagen stimulation, pigmentation clearance, instant red-carpet glow."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Dr. Sameer Kapoor ki consultation fees kitni hai?",
+            "answer": "Consultation fees ₹500 hai, jo procedure confirm karne par 100% bill mein adjust ho jati hai."
+          },
+          {
+            "question": "Kya hair transplant dardnaak hota hai?",
+            "answer": "Nahi, yeh needle-free local anesthesia mein hota hai, procedure ke dauran koi dard nahi hota."
+          },
+          {
+            "question": "Kya weekend par appointments available hain?",
+            "answer": "Haan, Saturday aur Sunday dono din computerized 3D scalp analysis slots available hain."
+          }
+        ],
+        "postCallAction": "Appointment Confirmation SMS + Clinic Google Maps pin + Dr. Sameer Kapoor profile"
+      }
+    },
+    {
+      "id": "client_maple_03",
+      "name": "Maple Ridge Realty & Condos Toronto",
+      "slug": "maple-ridge-toronto",
+      "logo": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=120&auto=format&fit=crop&q=80",
+      "industry": "Real Estate & Master-Planned Developments",
+      "contactPerson": "Michael Tremblay (Broker of Record)",
+      "email": "sales@mapleridgerealty.ca",
+      "phone": "+1 416 892 4100",
+      "assignedNumber": "+1 647 800 2931",
+      "monthlyRetainer": "$2,200 CAD/mo",
+      "country": "canada",
+      "currency": "CAD",
+      "planTier": "Enterprise STIR/SHAKEN Level A",
+      "carrier": "Telus / Bandwidth Direct Interconnect",
+      "sipTrunkStatus": "Operational (35ms)",
+      "crmIntegration": "HubSpot Enterprise Real Estate",
+      "allocatedMinutes": 1200,
+      "usedMinutes": 221,
+      "status": "active",
+      "createdAt": "2026-09-01T11:00:00Z",
+      "knowledgeBase": {
+        "businessDescription": "Master-planned residential development and pre-construction condo brokerage in Downtown Toronto & GTA, representing Tier-1 builders.",
+        "operatingHours": "Monday - Saturday: 10:00 AM - 6:00 PM EST",
+        "location": "King Street West & Spadina Ave, Downtown Toronto, ON",
+        "services": [
+          {
+            "name": "2-Bedroom Executive Corner Suites",
+            "price": "From $849,000 CAD",
+            "details": "EV parking included, 9-ft smooth ceilings, extended 15% deposit structure before occupancy."
+          },
+          {
+            "name": "1-Bedroom + Den Waterfront Residences",
+            "price": "From $620,000 CAD",
+            "details": "Direct Lake Ontario views, transit-oriented development, 3 min to TTC subway."
+          },
+          {
+            "name": "3-Bedroom Family Penthouse Collection",
+            "price": "From $1,280,000 CAD",
+            "details": "Wrap-around terraces, gas BBQ connections, premium Miele appliances."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Are builder closing levies and development fees capped?",
+            "answer": "Yes, development charges are legally capped at $10,000 CAD for 1-bed and $12,000 CAD for 2-bed+."
+          },
+          {
+            "question": "Can buyers with a Canadian work permit purchase?",
+            "answer": "Yes, valid work permit holders with eligible federal criteria can purchase without non-resident speculation taxes."
+          },
+          {
+            "question": "Are private presentation center showings available?",
+            "answer": "Yes, private showings are booked every Saturday from 12:00 PM to 4:00 PM EST."
+          }
+        ],
+        "postCallAction": "Email VIP Floor plans & TD Canada Trust mortgage pre-qualification link"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent_apex_01",
+      "clientId": "client_apex_01",
+      "name": "Sarah (Luxury Property Qualifier)",
+      "role": "Outbound Speed-to-Lead & Inbound Receptionist",
+      "voiceProvider": "Cartesia Sonic (British/Neutral English - 90ms)",
+      "voiceId": "sonic-en-british-neutral",
+      "languageMode": "english_dubai",
+      "transcriberLanguage": "en",
+      "model": "openai/gpt-4o-mini",
+      "vapiAssistantId": "asst_apex_live_44",
+      "firstMessage": "Good afternoon! This is Sarah from Apex Luxury Properties. I noticed you just inquired about our 3BHK residences at Dubai Marina. Do you have 60 seconds for a quick update?",
+      "systemPrompt": "You are Sarah, an elite and courteous senior sales consultant at Apex Luxury Properties Dubai.\nYour primary objective is NOT to close the deal, but to QUALIFY the lead and SECURE a site visit or VIP Zoom consultation with the Managing Director.\n\nKey Rules:\n1. Always maintain a calm, prestigious, and articulate British/International tone.\n2. Ask one question at a time.\n3. Qualify 3 criteria:\n   - Purpose: End-use (living) or pure investment (ROI)?\n   - Budget range: Under 2M AED, 2M - 4M AED, or 4M+ Ultra-luxury?\n   - Timeline: Ready to move in or off-plan 2026/2027?\n4. When qualified, immediately lock a calendar slot: Saturday 11:00 AM or Sunday 4:00 PM.\n5. If customer is rude or not interested, politely end call without arguing.",
+      "routing": {
+        "inboundDestination": "ai_agent",
+        "fallbackNumber": "+971 50 492 8819",
+        "transferOnHotLead": true
+      },
+      "status": "deployed"
+    },
+    {
+      "id": "agent_zenith_02",
+      "clientId": "client_zenith_02",
+      "name": "Priya (Clinic Front-Desk & Consultation Setter)",
+      "role": "Inbound 24/7 Receptionist & Lead Qualifier",
+      "voiceProvider": "Deepgram Aura Priya (Indian English / Hinglish)",
+      "voiceId": "aura-priya-en-in",
+      "languageMode": "hinglish_india",
+      "transcriberLanguage": "hi-Latn",
+      "model": "openai/gpt-4o-mini",
+      "vapiAssistantId": "asst_zenith_live_89",
+      "firstMessage": "Namaste! Zenith Aesthetic Clinic mein aapka swagat hai. Main Priya baat kar rahi hoon. Main aapki kya sahayata kar sakti hoon?",
+      "systemPrompt": "You are Priya, the head patient coordinator at Zenith Aesthetic & Hair Clinic.\nSpeak in polite, empathetic Indian English with natural Hinglish warmth.\n\nGoal:\n1. Greet the patient with utmost respect.\n2. Identify the treatment interested in (Hair Transplant, PRP, Skin Glow Laser, Botox).\n3. Explain that Dr. Sameer conducts a thorough computerized 3D scalp/skin analysis.\n4. Book an in-clinic consultation for ₹500 (waived if treatment confirmed).\n5. Capture patient name and preferred morning/evening slot.",
+      "routing": {
+        "inboundDestination": "ai_agent",
+        "fallbackNumber": "+91 98201 44821",
+        "transferOnHotLead": false
+      },
+      "status": "deployed"
+    },
+    {
+      "id": "agent_maple_03",
+      "clientId": "client_maple_03",
+      "name": "Chloe (Canadian Property Advisor)",
+      "role": "Inbound & Outbound Showing Coordinator",
+      "voiceProvider": "ElevenLabs Turbo v2.5 (Canadian / North American Friendly)",
+      "voiceId": "turbo-en-ca-friendly",
+      "languageMode": "english_canada",
+      "transcriberLanguage": "en-US",
+      "model": "openai/gpt-4o-mini",
+      "vapiAssistantId": "asst_maple_live_12",
+      "firstMessage": "Hi there! This is Chloe calling from Maple Ridge Realty Toronto. Thanks for checking out our new pre-construction condo release! Do you have a quick minute to chat about your search?",
+      "systemPrompt": "You are Chloe, an approachable, highly knowledgeable, and polite senior client advisor at Maple Ridge Realty Toronto.\nSpeak in natural, warm, and friendly Canadian / North American English.\nTarget Audience: Toronto & GTA homebuyers, first-time buyers, and Canadian real estate investors.\n\nKey Objectives:\n1. Always maintain a warm, welcoming, and professional Canadian tone (use natural phrases like \"Hi there\", \"Thanks for taking my call\", \"Awesome\", \"Sounds great\").\n2. Ask one clear question at a time to qualify:\n   - What type of property: Pre-construction condo or move-in ready detached/townhouse?\n   - Target area: Downtown Toronto, Mississauga, Markham, or broader GTA?\n   - Budget range in CAD: $600k-$900k, $1M-$1.5M, or $1.8M+ luxury?\n   - Mortgage status: Pre-approved with a Canadian Big 5 bank or looking for a broker referral?\n3. Lock an appointment: Book a 15-minute 1-on-1 VIP Video Consultation or Private Open House Showing for Saturday at 2:00 PM EST.\n4. If they need floor plans or pricing sent, confirm their email and phone for instant PDF dispatch.",
+      "routing": {
+        "inboundDestination": "ai_agent",
+        "fallbackNumber": "+1 416 892 4100",
+        "transferOnHotLead": true
+      },
+      "status": "deployed"
+    }
+  ],
+  "calls": [
+    {
+      "id": "call_1790696806985_2",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "outbound",
+      "customerName": "Marcus Al-Kuwari",
+      "customerPhone": "+971 50 867 6065",
+      "durationSeconds": 151,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Autonomous Speed-to-Lead Outbound call to Marcus Al-Kuwari (Senior Private Wealth Advisor at DIFC Private Family Office). Qualified AED 5.0M - 6.5M requirement. Locked verified appointment slot for next business day.",
+      "booking": {
+        "slot": "Tomorrow, 3:00 PM",
+        "type": "VIP Consultation & Presentation",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Good day! This is Sarah calling from Apex Luxury Properties Dubai. I'm reaching out regarding your interest in Off-Plan Luxury Villas."
+        },
+        {
+          "speaker": "customer",
+          "time": "00:07",
+          "text": "Yes hello, I was looking into options around Palm Jumeirah. What do you currently have available?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:14",
+          "text": "We currently have prime exclusive allocations with verified AED 5.0M - 6.5M targets. Would tomorrow at 3:00 PM suit you for a 15-minute walkthrough?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:23",
+          "text": "Yes, tomorrow at 3:00 PM works well for me. Please WhatsApp the location pin."
+        }
+      ],
+      "createdAt": "2026-09-29T15:46:46.985Z"
+    },
+    {
+      "id": "call_1790696806983_1",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "outbound",
+      "customerName": "Tariq Sterling",
+      "customerPhone": "+971 50 357 9667",
+      "durationSeconds": 170,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Autonomous Speed-to-Lead Outbound call to Tariq Sterling (Venture Capital Partner at Sobha Signature Estates). Qualified AED 5.2M - 6.7M requirement. Locked verified appointment slot for next business day.",
+      "booking": {
+        "slot": "Tomorrow, 3:00 PM",
+        "type": "VIP Consultation & Presentation",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Good day! This is Sarah calling from Apex Luxury Properties Dubai. I'm reaching out regarding your interest in Off-Plan Luxury Villas."
+        },
+        {
+          "speaker": "customer",
+          "time": "00:07",
+          "text": "Yes hello, I was looking into options around Palm Jumeirah. What do you currently have available?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:14",
+          "text": "We currently have prime exclusive allocations with verified AED 5.2M - 6.7M targets. Would tomorrow at 3:00 PM suit you for a 15-minute walkthrough?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:23",
+          "text": "Yes, tomorrow at 3:00 PM works well for me. Please WhatsApp the location pin."
+        }
+      ],
+      "createdAt": "2026-09-29T15:46:46.983Z"
+    },
+    {
+      "id": "call_1790696444126",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "inbound",
+      "customerName": "Hamza Al-Maktoum",
+      "customerPhone": "+971 50 882 1200",
+      "durationSeconds": 148,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Inbound Direct Call from Hamza Al-Maktoum to line +971 4 821 9920. Inquired regarding 3BHK Ultra-Luxury Marina Waterfront, qualified 2M+ AED budget, and reserved VIP showroom walkthrough for Sunday at 11:00 AM.",
+      "booking": {
+        "slot": "Sunday, 11:00 AM",
+        "type": "Inbound VIP Showroom Walkthrough",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Good afternoon! Thank you for calling Apex Luxury Properties Dubai Dubai. My name is Sarah at client concierge. How may I assist you today?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:08",
+          "text": "Hi Sarah, I saw your release for 3BHK Ultra-Luxury Marina Waterfront. Could you share the current pricing and handover timeline?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:17",
+          "text": "Certainly! Our 3BHK Ultra-Luxury Marina Waterfront start from From 2,600,000 AED with an 8% guaranteed rental yield and 10-Year Golden Visa eligibility. Would you like to reserve a private VIP showroom walkthrough this Sunday at 11:00 AM?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:29",
+          "text": "Yes, Sunday 11 AM is perfect for me."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:34",
+          "text": "Confirmed! Sunday at 11:00 AM is reserved for you. I have immediately dispatched the location pass and project brochure to your WhatsApp. Have a pleasant day!"
+        }
+      ],
+      "createdAt": "2026-09-29T15:40:44.126Z"
+    },
+    {
+      "id": "call_1790694723783",
+      "clientId": "client_maple_03",
+      "agentId": "agent_maple_03",
+      "direction": "outbound",
+      "customerName": "David Miller",
+      "customerPhone": "+14168924100",
+      "durationSeconds": 128,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Live Canadian English Call to David Miller. Verified Canadian buyer requirement, $850k CAD budget confirmed with TD pre-approval, and locked presentation center walkthrough for Saturday at 2:00 PM EST.",
+      "booking": {
+        "slot": "Saturday, 2:00 PM EST",
+        "type": "Private Presentation Gallery Walkthrough",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Hi there David Miller! This is Chloe (Canadian Property Advisor) reaching out from Maple Ridge Realty & Condos Toronto. Thanks for checking out our new project release! Do you have a quick minute to chat about what you are looking for?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:08",
+          "text": "Hey Chloe, yes I do! We were looking at 2-bedroom units and wanted to see what pricing is looking like in the $850k CAD range."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:16",
+          "text": "Great news! We have spacious 2-bedroom corner layouts starting from $849,000 CAD with parking included and capped development levies. Are you pre-approved with a Canadian lender?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:27",
+          "text": "Yes, we are pre-approved with TD Canada Trust. Can we come view the presentation center this weekend?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:34",
+          "text": "Awesome! I have a private walkthrough slot open this Saturday at 2:00 PM EST at our downtown presentation center. Would that work for you?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:45",
+          "text": "Saturday 2 PM works great for both of us."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:50",
+          "text": "Superb! Saturday at 2:00 PM EST is booked for you. I just sent the VIP presentation pass and directions to your phone. Have a wonderful day!"
+        }
+      ],
+      "createdAt": "2026-09-29T15:12:03.783Z"
+    },
+    {
+      "id": "call_1790694723778",
+      "clientId": "client_zenith_02",
+      "agentId": "agent_zenith_02",
+      "direction": "outbound",
+      "customerName": "Rohan Sharma",
+      "customerPhone": "+919820144821",
+      "durationSeconds": 128,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Live Natural Hinglish Call to Rohan Sharma. Verified requirement, budget discussed, and locked confirmed in-person visit for Sunday at 11:00 AM.",
+      "booking": {
+        "slot": "Sunday, 11:00 AM",
+        "type": "Sample Flat In-Person Site Visit",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Namaste Rohan Sharma! Main Priya (Clinic Front-Desk & Consultation Setter) baat kar rahi hoon Zenith Aesthetic & Hair Clinic se. Aapne inquiry submit ki thi—kya main aapka 1 minute le sakti hoon?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:08",
+          "text": "Haan ji, mujhe pricing aur availability ke baare mein janna tha."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:15",
+          "text": "Ji bilkul! Hamare units prime location mein ready hain. Kya aap ready-to-move dekh rahe hain ya investment purpose se?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:24",
+          "text": "Khud rehne ke liye dekh rahe hain family ke sath."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:30",
+          "text": "Bohot badhiya! Kal Saturday sham 4 baje ya Sunday subah 11 baje—aapke liye site visit kab convenient rahega?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:39",
+          "text": "Sunday subah 11 baje rakh lijiye."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:44",
+          "text": "Done! Sunday 11 AM ka slot confirm ho gaya hai. Location map aur brochure maine WhatsApp pe bhej diya hai. Dhanyawad!"
+        }
+      ],
+      "createdAt": "2026-09-29T15:12:03.778Z"
+    },
+    {
+      "id": "call_1790694723764",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "outbound",
+      "customerName": "Zayed Al Mansoor",
+      "customerPhone": "+971504928819",
+      "durationSeconds": 128,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Live International English Call to Zayed Al Mansoor. Verified luxury inventory preference, and scheduled VIP walkthrough for Sunday at 11:00 AM.",
+      "booking": {
+        "slot": "Sunday, 11:00 AM",
+        "type": "VIP Executive Showroom Walkthrough",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Good afternoon Zayed Al Mansoor! This is Sarah (Luxury Property Qualifier) reaching out from Apex Luxury Properties Dubai. I received your inquiry and wanted to check if this is a good moment for a quick update?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:07",
+          "text": "Yes, hi! I wanted to check your options and pricing availability in Dubai Marina."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:13",
+          "text": "Certainly! We have tailored high-floor residences with marina views starting from 2.6M AED. May I confirm if you are looking for living or pure investment?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:22",
+          "text": "For our family relocation. Can we set up a private walkthrough?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:28",
+          "text": "Absolutely! I have Sunday morning at 11:00 AM open for an exclusive VIP showroom walkthrough. Shall I reserve that for you?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:36",
+          "text": "Yes, Sunday 11 AM works perfectly."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:40",
+          "text": "Confirmed! Your VIP slot is locked and the brochure has been dispatched to your WhatsApp. Have a pleasant day!"
+        }
+      ],
+      "createdAt": "2026-09-29T15:12:03.764Z"
+    },
+    {
+      "id": "call_1790693965411",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "outbound",
+      "customerName": "Tariq Mansoor",
+      "customerPhone": "+971501234567",
+      "durationSeconds": 128,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Live International English Call to Tariq Mansoor. Verified luxury inventory preference, and scheduled VIP walkthrough for Sunday at 11:00 AM.",
+      "booking": {
+        "slot": "Sunday, 11:00 AM",
+        "type": "VIP Executive Showroom Walkthrough",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Good afternoon Tariq Mansoor! This is Sarah (Luxury Property Qualifier) reaching out from Apex Luxury Properties Dubai. I received your inquiry and wanted to check if this is a good moment for a quick update?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:07",
+          "text": "Yes, hi! I wanted to check your options and pricing availability in Dubai Marina."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:13",
+          "text": "Certainly! We have tailored high-floor residences with marina views starting from 2.6M AED. May I confirm if you are looking for living or pure investment?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:22",
+          "text": "For our family relocation. Can we set up a private walkthrough?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:28",
+          "text": "Absolutely! I have Sunday morning at 11:00 AM open for an exclusive VIP showroom walkthrough. Shall I reserve that for you?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:36",
+          "text": "Yes, Sunday 11 AM works perfectly."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:40",
+          "text": "Confirmed! Your VIP slot is locked and the brochure has been dispatched to your WhatsApp. Have a pleasant day!"
+        }
+      ],
+      "createdAt": "2026-09-29T14:59:25.411Z"
+    },
+    {
+      "id": "call_1790693960041",
+      "clientId": "client_zenith_02",
+      "agentId": "agent_zenith_02",
+      "direction": "outbound",
+      "customerName": "Vikram Malhotra",
+      "customerPhone": "+919876543210",
+      "durationSeconds": 128,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Live Natural Hinglish Call to Vikram Malhotra. Verified requirement, budget discussed, and locked confirmed in-person visit for Sunday at 11:00 AM.",
+      "booking": {
+        "slot": "Sunday, 11:00 AM",
+        "type": "Sample Flat In-Person Site Visit",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Namaste Vikram Malhotra! Main Priya (Clinic Front-Desk & Consultation Setter) baat kar rahi hoon Zenith Aesthetic & Hair Clinic se. Aapne inquiry submit ki thi—kya main aapka 1 minute le sakti hoon?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:08",
+          "text": "Haan ji, mujhe pricing aur availability ke baare mein janna tha."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:15",
+          "text": "Ji bilkul! Hamare units prime location mein ready hain. Kya aap ready-to-move dekh rahe hain ya investment purpose se?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:24",
+          "text": "Khud rehne ke liye dekh rahe hain family ke sath."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:30",
+          "text": "Bohot badhiya! Kal Saturday sham 4 baje ya Sunday subah 11 baje—aapke liye site visit kab convenient rahega?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:39",
+          "text": "Sunday subah 11 baje rakh lijiye."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:44",
+          "text": "Done! Sunday 11 AM ka slot confirm ho gaya hai. Location map aur brochure maine WhatsApp pe bhej diya hai. Dhanyawad!"
+        }
+      ],
+      "createdAt": "2026-09-29T14:59:20.041Z"
+    },
+    {
+      "id": "call_1790693953919",
+      "clientId": "client_maple_03",
+      "agentId": "agent_maple_03",
+      "direction": "outbound",
+      "customerName": "Jordan Bennett",
+      "customerPhone": "+14169908821",
+      "durationSeconds": 128,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Live Canadian English Call to Jordan Bennett. Verified Canadian buyer requirement, $850k CAD budget confirmed with TD pre-approval, and locked presentation center walkthrough for Saturday at 2:00 PM EST.",
+      "booking": {
+        "slot": "Saturday, 2:00 PM EST",
+        "type": "Private Presentation Gallery Walkthrough",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Hi there Jordan Bennett! This is Chloe (Canadian Property Advisor) reaching out from Maple Ridge Realty & Condos Toronto. Thanks for checking out our new project release! Do you have a quick minute to chat about what you are looking for?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:08",
+          "text": "Hey Chloe, yes I do! We were looking at 2-bedroom units and wanted to see what pricing is looking like in the $850k CAD range."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:16",
+          "text": "Great news! We have spacious 2-bedroom corner layouts starting from $849,000 CAD with parking included and capped development levies. Are you pre-approved with a Canadian lender?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:27",
+          "text": "Yes, we are pre-approved with TD Canada Trust. Can we come view the presentation center this weekend?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:34",
+          "text": "Awesome! I have a private walkthrough slot open this Saturday at 2:00 PM EST at our downtown presentation center. Would that work for you?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:45",
+          "text": "Saturday 2 PM works great for both of us."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:50",
+          "text": "Superb! Saturday at 2:00 PM EST is booked for you. I just sent the VIP presentation pass and directions to your phone. Have a wonderful day!"
+        }
+      ],
+      "createdAt": "2026-09-29T14:59:13.919Z"
+    },
+    {
+      "id": "call_live_9925",
+      "clientId": "client_maple_03",
+      "agentId": "agent_maple_03",
+      "direction": "outbound",
+      "customerName": "Liam MacLeod",
+      "customerPhone": "+1 416 772 9014",
+      "durationSeconds": 142,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Canadian lead interested in Downtown Toronto 2-Bedroom pre-construction condo. Budget $850,000 CAD. Pre-approved with TD Canada Trust. Confirmed private presentation gallery showing for Saturday at 2:00 PM EST.",
+      "booking": {
+        "slot": "Saturday, 2:00 PM EST",
+        "type": "Private Presentation Gallery Walkthrough",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Hi there! This is Chloe calling from Maple Ridge Realty Toronto. Thanks for checking out our new pre-construction release! Do you have a quick minute to chat about your search?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:08",
+          "text": "Hey Chloe, yes I have a minute. Are the 2-bedroom floor plans with parking still available under $900k?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:16",
+          "text": "Great news Liam! We still have a select release of high-floor 2-bedroom corner suites starting from $849,000 CAD, including EV-ready parking and extended deposit structures."
+        },
+        {
+          "speaker": "customer",
+          "time": "00:27",
+          "text": "That sounds really promising. We are looking to lock in before prices hike next month."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:33",
+          "text": "Totally understand. The developer incentives end this Sunday. Would you like to come by our presentation center this Saturday at 2:00 PM EST for a private walkthrough and to review the floor plans?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:46",
+          "text": "Saturday 2 PM works great for my wife and me."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:50",
+          "text": "Awesome! Saturday at 2:00 PM EST is booked for you Liam. I just sent the VIP access pass and address directly to your text message. Have a fantastic day!"
+        }
+      ],
+      "createdAt": "2026-09-29T11:05:00Z"
+    },
+    {
+      "id": "call_1790663704379",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "outbound",
+      "customerName": "Sheikh Hamdan",
+      "customerPhone": "+971509988776",
+      "durationSeconds": 128,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Live International English Call to Sheikh Hamdan. Verified family requirement, confirmed high-floor inventory preference, and scheduled VIP walkthrough for Sunday at 11:00 AM.",
+      "booking": {
+        "slot": "Sunday, 11:00 AM",
+        "type": "VIP Executive Showroom Walkthrough",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Good afternoon Sheikh Hamdan! This is Sarah (Luxury Property Qualifier) reaching out from Apex Luxury Properties Dubai. I received your inquiry and wanted to check if this is a good moment for a quick update?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:07",
+          "text": "Yes, hi! I wanted to check your options and pricing availability."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:13",
+          "text": "Certainly! We have tailored high-floor options available. May I confirm if you are looking for living or pure investment?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:22",
+          "text": "For our family residence. Can we set up a walkthrough?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:28",
+          "text": "Absolutely! I have Sunday morning at 11:00 AM open for an exclusive VIP walkthrough. Shall I reserve that for you?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:36",
+          "text": "Yes, Sunday 11 AM works perfectly."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:40",
+          "text": "Confirmed! Your slot is locked and the brochure has been dispatched to your WhatsApp. Have a pleasant day!"
+        }
+      ],
+      "createdAt": "2026-09-29T06:35:04.379Z"
+    },
+    {
+      "id": "call_1790663699088",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "outbound",
+      "customerName": "Rahul Sharma",
+      "customerPhone": "+919876543210",
+      "durationSeconds": 128,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Live Hinglish Call to Rahul Sharma. Verified requirement, budget discussed, and locked confirmed in-person visit for Sunday at 11:00 AM.",
+      "booking": {
+        "slot": "Sunday, 11:00 AM",
+        "type": "Sample Flat In-Person Site Visit",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Namaste Rahul Sharma! Main Sarah (Luxury Property Qualifier) baat kar rahi hoon Apex Luxury Properties Dubai se. Aapne inquiry submit ki thi—kya main aapka 1 minute le sakti hoon?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:08",
+          "text": "Haan ji, mujhe pricing aur availability ke baare mein janna tha."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:15",
+          "text": "Ji bilkul! Hamare units prime location mein ready hain. Kya aap ready-to-move dekh rahe hain ya investment purpose se?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:24",
+          "text": "Khud rehne ke liye dekh rahe hain family ke sath."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:30",
+          "text": "Bohot badhiya! Kal Saturday sham 4 baje ya Sunday subah 11 baje—aapke liye site visit kab convenient rahega?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:39",
+          "text": "Sunday subah 11 baje rakh lijiye."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:44",
+          "text": "Done! Sunday 11 AM ka slot confirm ho gaya hai. Location map aur brochure maine WhatsApp pe bhej diya hai. Dhanyawad!"
+        }
+      ],
+      "createdAt": "2026-09-29T06:34:59.088Z"
+    },
+    {
+      "id": "call_1790662917782",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "outbound",
+      "customerName": "Sheikh Hamdan",
+      "customerPhone": "+971508889999",
+      "durationSeconds": 124,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Live Outbound Call to Sheikh Hamdan. Verified requirement, answered pricing questions, and locked confirmed appointment for tomorrow at 4:30 PM.",
+      "booking": {
+        "slot": "Tomorrow, 4:30 PM",
+        "type": "Executive Video Consultation / Site Walkthrough",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Hello Sheikh Hamdan! This is Sarah (Luxury Property Qualifier) reaching out from Apex Luxury Properties Dubai. I received your inquiry and wanted to check if this is a good moment?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:07",
+          "text": "Yes, hi! I wanted to check your options and pricing availability."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:13",
+          "text": "Certainly! We have tailored packages ready. May I confirm if you prefer our prime location portfolio or custom consultation?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:22",
+          "text": "Prime portfolio would be great. Can we set up a call tomorrow?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:28",
+          "text": "Absolutely! I have tomorrow afternoon at 4:30 PM open. Shall I lock that in for you?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:35",
+          "text": "Yes, 4:30 PM works. Thank you!"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:38",
+          "text": "Confirmed! I have locked tomorrow 4:30 PM and dispatched the confirmation via WhatsApp. Have a great day!"
+        }
+      ],
+      "createdAt": "2026-09-29T06:21:57.782Z"
+    },
+    {
+      "id": "call_live_9921",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "outbound",
+      "customerName": "Rashid Al-Maktoum",
+      "customerPhone": "+971 50 839 2102",
+      "durationSeconds": 154,
+      "status": "booked",
+      "sentiment": "Highly Interested",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Customer submitted Meta ad lead 40 seconds prior. Looking for a 3BHK corner unit in Dubai Marina for family relocation. Pre-approved mortgage with Emirates NBD (budget 2.8M AED). Confirmed in-person VIP showroom visit for Sunday at 11:00 AM.",
+      "booking": {
+        "slot": "Sunday, 11:00 AM",
+        "type": "VIP Showroom Tour & Financial Counseling",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Good afternoon Rashid! This is Sarah from Apex Luxury Properties. I noticed you just inquired about our 3BHK residences at Dubai Marina. Do you have 60 seconds for a quick update?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:08",
+          "text": "Yes, hi Sarah. That was fast! I just submitted the form. What is the starting price for the 3BHK?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:15",
+          "text": "Our high-floor 3BHK residences with marina views start from 2.6 Million AED. May I ask, are you planning this for your family residence or as a rental investment?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:26",
+          "text": "For myself and family. We are relocating from London next month."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:32",
+          "text": "Welcome to Dubai in advance! Since you are moving soon, our ready-to-move sample units are open this weekend. Would Saturday 3 PM or Sunday 11 AM suit you best for a private walkthrough with our sales director?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:46",
+          "text": "Sunday 11 AM works perfectly for me."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:50",
+          "text": "Wonderful Rashid. Sunday at 11:00 AM is confirmed. I am sending the Google Maps location pin and complete brochure to your WhatsApp right now. We look forward to meeting you!"
+        }
+      ],
+      "createdAt": "2026-09-29T10:14:20Z"
+    },
+    {
+      "id": "call_live_9920",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "inbound",
+      "customerName": "Marcus Sterling",
+      "customerPhone": "+44 7700 900321",
+      "durationSeconds": 112,
+      "status": "callback",
+      "sentiment": "Warm",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "UK Investor calling to enquire about rental yields on studio and 1BHK off-plan options. Currently in a meeting, requested callback via WhatsApp with ROI projection sheet.",
+      "booking": null,
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Thank you for calling Apex Luxury Properties. My name is Sarah. How may I assist you with Dubai property investments today?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:07",
+          "text": "Hello, what kind of net ROI are you seeing on the off-plan units right now?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:12",
+          "text": "We are averaging between 8.4% to 9.2% net rental yields in our Marina and Business Bay portfolios with flexible post-handover payment plans."
+        },
+        {
+          "speaker": "customer",
+          "time": "00:23",
+          "text": "Brilliant. I am stepping into a client meeting right now. Can you have someone send the ROI projections to this UK number on WhatsApp?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:31",
+          "text": "Absolutely Marcus. I have noted down your request. Our senior investment desk will message you the PDF projections within 15 minutes."
+        }
+      ],
+      "createdAt": "2026-09-29T09:40:15Z"
+    },
+    {
+      "id": "call_live_9918",
+      "clientId": "client_apex_01",
+      "agentId": "agent_apex_01",
+      "direction": "outbound",
+      "customerName": "Sunil Mehta",
+      "customerPhone": "+91 98200 11928",
+      "durationSeconds": 42,
+      "status": "unqualified",
+      "sentiment": "Low Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Lead budget was 40 Lakhs INR (~175k AED). Property portfolio minimum starts at 1.8M AED. AI politely advised out of portfolio criteria and saved sales team from wasting 20 minutes.",
+      "booking": null,
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Hello Sunil, Sarah from Apex Luxury Properties. You submitted an inquiry regarding Dubai investments?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:06",
+          "text": "Yes, I wanted to know if I can buy a flat in Dubai for 40 Lakhs rupees."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:12",
+          "text": "Thank you for your interest Sunil. Currently our luxury freehold inventory starts from 1.8 Million AED (around 4 Crore INR). We do not have inventory in that range today, but we will keep your contact on file if entry-level projects open."
+        }
+      ],
+      "createdAt": "2026-09-29T08:22:00Z"
+    },
+    {
+      "id": "call_live_9915",
+      "clientId": "client_zenith_02",
+      "agentId": "agent_zenith_02",
+      "direction": "inbound",
+      "customerName": "Ananya Sharma",
+      "customerPhone": "+91 99102 33410",
+      "durationSeconds": 138,
+      "status": "booked",
+      "sentiment": "High Intent",
+      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
+      "summary": "Inquiry regarding Laser Hair Reduction & Skin Glow treatment before wedding next month. Booked consultation for Thursday 5:30 PM with Dr. Sameer.",
+      "booking": {
+        "slot": "Thursday, 5:30 PM",
+        "type": "Bridal Skin & Laser Assessment",
+        "verified": true
+      },
+      "transcript": [
+        {
+          "speaker": "ai",
+          "time": "00:01",
+          "text": "Namaste! Zenith Aesthetic Clinic mein aapka swagat hai. Main Priya baat kar rahi hoon. Main aapki kya sahayata kar sakti hoon?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:09",
+          "text": "Hi Priya, meri next month wedding hai aur mujhe full body laser hair reduction aur skin facial sessions ke rates janne the."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:18",
+          "text": "Congratulations Ananya ji! Bridal packages ke liye Dr. Sameer Kapoor pehle ek complimentary skin patch-test aur session plan design karte hain. Kya aap Thursday evening 5:30 PM consultation ke liye clinic visit kar sakti hain?"
+        },
+        {
+          "speaker": "customer",
+          "time": "00:31",
+          "text": "Haan, Thursday 5:30 PM perfectly fine hai."
+        },
+        {
+          "speaker": "ai",
+          "time": "00:36",
+          "text": "Superb! Aapka Thursday 5:30 PM ka slot reserve ho gaya hai. Main clinic location pin aur bridal prep guidelines abhi WhatsApp kar rahi hoon."
+        }
+      ],
+      "createdAt": "2026-09-29T07:15:10Z"
+    }
+  ],
+  "leads": {
+    "client_apex_01": [
+      {
+        "id": "lead_1790696803002_1",
+        "name": "Tariq Sterling",
+        "phone": "+971 50 357 9667",
+        "email": "tariq.sterling@sobhasignatureestates.com",
+        "company": "Sobha Signature Estates",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 92,
+        "budget": "AED 5.2M - 6.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "booked",
+        "addedAt": "2026-09-29T15:46:43.002Z",
+        "lastCalledAt": "2026-09-29T15:46:46.981Z"
+      },
+      {
+        "id": "lead_1790696803002_2",
+        "name": "Marcus Al-Kuwari",
+        "phone": "+971 50 867 6065",
+        "email": "marcus.alkuwari@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 98,
+        "budget": "AED 5.0M - 6.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "booked",
+        "addedAt": "2026-09-29T15:46:43.002Z",
+        "lastCalledAt": "2026-09-29T15:46:46.984Z"
+      },
+      {
+        "id": "lead_1790696803002_3",
+        "name": "Tariq Singhania",
+        "phone": "+971 50 975 5998",
+        "email": "tariq.singhania@apexsovereigncapital.com",
+        "company": "Apex Sovereign Capital",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 95,
+        "budget": "AED 4.1M - 5.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.002Z"
+      },
+      {
+        "id": "lead_1790696803002_4",
+        "name": "Zayd Vanderbilt",
+        "phone": "+971 50 764 1165",
+        "email": "zayd.vanderbilt@palmhorizonholdings.com",
+        "company": "Palm Horizon Holdings",
+        "role": "Family Office Trustee",
+        "city": "Palm Jumeirah",
+        "intentScore": 88,
+        "budget": "AED 3.7M - 5.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.002Z"
+      },
+      {
+        "id": "lead_1790696803003_5",
+        "name": "Yousef Mirza",
+        "phone": "+971 50 981 6246",
+        "email": "yousef.mirza@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 2.4M - 3.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_6",
+        "name": "Hamdan Merchant",
+        "phone": "+971 50 497 3405",
+        "email": "hamdan.merchant@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 91,
+        "budget": "AED 5.2M - 6.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_7",
+        "name": "Faisal Sterling",
+        "phone": "+971 50 545 5731",
+        "email": "faisal.sterling@sobhasignatureestates.com",
+        "company": "Sobha Signature Estates",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 82,
+        "budget": "AED 5.0M - 6.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_8",
+        "name": "Sultan Singhania",
+        "phone": "+971 50 183 3565",
+        "email": "sultan.singhania@sobhasignatureestates.com",
+        "company": "Sobha Signature Estates",
+        "role": "Family Office Trustee",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 4.0M - 5.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_9",
+        "name": "Mansoor Al-Sayed",
+        "phone": "+971 50 503 3959",
+        "email": "mansoor.alsayed@apexsovereigncapital.com",
+        "company": "Apex Sovereign Capital",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 5.4M - 6.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_10",
+        "name": "Dev Al-Falasi",
+        "phone": "+971 50 299 2295",
+        "email": "dev.alfalasi@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 1.9M - 3.4M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_11",
+        "name": "Saeed Vanderbilt",
+        "phone": "+971 50 900 5001",
+        "email": "saeed.vanderbilt@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 3.9M - 5.4M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_12",
+        "name": "Rashid Abbasi",
+        "phone": "+971 50 452 1379",
+        "email": "rashid.abbasi@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 84,
+        "budget": "AED 4.6M - 6.1M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_13",
+        "name": "Farhan Al-Zahra",
+        "phone": "+971 50 648 8696",
+        "email": "farhan.alzahra@bayviewwaterfrontpartners.com",
+        "company": "Bayview Waterfront Partners",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 98,
+        "budget": "AED 5.1M - 6.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_14",
+        "name": "Hamdan Merchant",
+        "phone": "+971 50 196 2494",
+        "email": "hamdan.merchant@marinabaycapital.com",
+        "company": "Marina Bay Capital",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 93,
+        "budget": "AED 2.2M - 3.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_15",
+        "name": "Yousef Al-Falasi",
+        "phone": "+971 50 564 9025",
+        "email": "yousef.alfalasi@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 5.3M - 6.8M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_16",
+        "name": "Samir Al-Maktoum",
+        "phone": "+971 50 789 5612",
+        "email": "samir.almaktoum@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Family Office Trustee",
+        "city": "Palm Jumeirah",
+        "intentScore": 91,
+        "budget": "AED 5.1M - 6.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_17",
+        "name": "Rashid Mirza",
+        "phone": "+971 50 632 6447",
+        "email": "rashid.mirza@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 94,
+        "budget": "AED 2.1M - 3.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_18",
+        "name": "Rashid Al-Sayed",
+        "phone": "+971 50 715 4919",
+        "email": "rashid.alsayed@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 85,
+        "budget": "AED 3.7M - 5.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_19",
+        "name": "Nasser Merchant",
+        "phone": "+971 50 137 6178",
+        "email": "nasser.merchant@marinabaycapital.com",
+        "company": "Marina Bay Capital",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 94,
+        "budget": "AED 2.5M - 4.0M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_20",
+        "name": "Alexander Al-Hashimi",
+        "phone": "+971 50 680 7049",
+        "email": "alexander.alhashimi@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Head of Real Estate Acquisitions",
+        "city": "Palm Jumeirah",
+        "intentScore": 91,
+        "budget": "AED 1.8M - 3.3M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_21",
+        "name": "Adil Siddiqui",
+        "phone": "+971 50 278 8339",
+        "email": "adil.siddiqui@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 4.3M - 5.8M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_22",
+        "name": "Kareem Merchant",
+        "phone": "+971 50 692 7302",
+        "email": "kareem.merchant@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 5.4M - 6.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_23",
+        "name": "Rashid Volkov",
+        "phone": "+971 50 419 9403",
+        "email": "rashid.volkov@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 98,
+        "budget": "AED 3.1M - 4.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_24",
+        "name": "Farhan Al-Falasi",
+        "phone": "+971 50 960 8920",
+        "email": "farhan.alfalasi@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 5.0M - 6.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_25",
+        "name": "Yousef Volkov",
+        "phone": "+971 50 941 5283",
+        "email": "yousef.volkov@alwaslcommercialbrokerage.com",
+        "company": "Al-Wasl Commercial Brokerage",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 1.6M - 3.1M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_26",
+        "name": "Marcus Hussain",
+        "phone": "+971 50 276 6304",
+        "email": "marcus.hussain@marinabaycapital.com",
+        "company": "Marina Bay Capital",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 87,
+        "budget": "AED 1.9M - 3.4M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_27",
+        "name": "Kareem Qasimi",
+        "phone": "+971 50 510 9824",
+        "email": "kareem.qasimi@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 5.2M - 6.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_28",
+        "name": "Zayd Merchant",
+        "phone": "+971 50 842 1952",
+        "email": "zayd.merchant@alwaslcommercialbrokerage.com",
+        "company": "Al-Wasl Commercial Brokerage",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 98,
+        "budget": "AED 1.5M - 3.0M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_29",
+        "name": "Dmitry Al-Falasi",
+        "phone": "+971 50 627 2352",
+        "email": "dmitry.alfalasi@marinabaycapital.com",
+        "company": "Marina Bay Capital",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 2.6M - 4.1M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_30",
+        "name": "Vikram Merchant",
+        "phone": "+971 50 227 5833",
+        "email": "vikram.merchant@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 3.3M - 4.8M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_31",
+        "name": "Rashid Khatib",
+        "phone": "+971 50 278 4427",
+        "email": "rashid.khatib@bayviewwaterfrontpartners.com",
+        "company": "Bayview Waterfront Partners",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 94,
+        "budget": "AED 3.5M - 5.0M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_32",
+        "name": "Omar Al-Balooshi",
+        "phone": "+971 50 624 7277",
+        "email": "omar.albalooshi@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 95,
+        "budget": "AED 2.2M - 3.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_33",
+        "name": "Yousef Singhania",
+        "phone": "+971 50 252 5319",
+        "email": "yousef.singhania@emaarinvestmentgroup.com",
+        "company": "Emaar Investment Group",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 94,
+        "budget": "AED 2.9M - 4.4M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_34",
+        "name": "Adil Volkov",
+        "phone": "+971 50 258 7410",
+        "email": "adil.volkov@damacprimeventures.com",
+        "company": "DAMAC Prime Ventures",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 2.6M - 4.1M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_35",
+        "name": "Rashid Volkov",
+        "phone": "+971 50 499 7346",
+        "email": "rashid.volkov@damacprimeventures.com",
+        "company": "DAMAC Prime Ventures",
+        "role": "Family Office Trustee",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 2.8M - 4.3M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_36",
+        "name": "Saeed Singhania",
+        "phone": "+971 50 882 4792",
+        "email": "saeed.singhania@marinabaycapital.com",
+        "company": "Marina Bay Capital",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 93,
+        "budget": "AED 1.7M - 3.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_37",
+        "name": "Mansoor Hussain",
+        "phone": "+971 50 543 4104",
+        "email": "mansoor.hussain@damacprimeventures.com",
+        "company": "DAMAC Prime Ventures",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 2.1M - 3.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_38",
+        "name": "Yousef Al-Zahra",
+        "phone": "+971 50 346 1020",
+        "email": "yousef.alzahra@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 1.8M - 3.3M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_39",
+        "name": "Kareem Qasimi",
+        "phone": "+971 50 965 6476",
+        "email": "kareem.qasimi@damacprimeventures.com",
+        "company": "DAMAC Prime Ventures",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 85,
+        "budget": "AED 3.4M - 4.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_40",
+        "name": "Dev Volkov",
+        "phone": "+971 50 848 8072",
+        "email": "dev.volkov@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 87,
+        "budget": "AED 1.7M - 3.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_41",
+        "name": "Mansoor Mehta",
+        "phone": "+971 50 843 1348",
+        "email": "mansoor.mehta@apexsovereigncapital.com",
+        "company": "Apex Sovereign Capital",
+        "role": "Family Office Trustee",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 2.7M - 4.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_42",
+        "name": "Saeed Qasimi",
+        "phone": "+971 50 241 6748",
+        "email": "saeed.qasimi@palmhorizonholdings.com",
+        "company": "Palm Horizon Holdings",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 87,
+        "budget": "AED 5.1M - 6.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_43",
+        "name": "Mansoor Al-Falasi",
+        "phone": "+971 50 722 4962",
+        "email": "mansoor.alfalasi@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 84,
+        "budget": "AED 4.1M - 5.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_44",
+        "name": "Zayd Al-Balooshi",
+        "phone": "+971 50 463 9759",
+        "email": "zayd.albalooshi@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 84,
+        "budget": "AED 4.0M - 5.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_45",
+        "name": "Dev Al-Kuwari",
+        "phone": "+971 50 677 5864",
+        "email": "dev.alkuwari@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 1.5M - 3.0M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_46",
+        "name": "Nasser Hussain",
+        "phone": "+971 50 597 5545",
+        "email": "nasser.hussain@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 5.2M - 6.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_47",
+        "name": "Saeed Siddiqui",
+        "phone": "+971 50 396 6996",
+        "email": "saeed.siddiqui@apexsovereigncapital.com",
+        "company": "Apex Sovereign Capital",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 2.6M - 4.1M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_48",
+        "name": "Yousef Hussain",
+        "phone": "+971 50 394 8970",
+        "email": "yousef.hussain@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Family Office Trustee",
+        "city": "Palm Jumeirah",
+        "intentScore": 82,
+        "budget": "AED 5.2M - 6.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_49",
+        "name": "Saeed Abbasi",
+        "phone": "+971 50 539 8804",
+        "email": "saeed.abbasi@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 3.1M - 4.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_50",
+        "name": "Alexander Al-Zahra",
+        "phone": "+971 50 619 9694",
+        "email": "alexander.alzahra@emaarinvestmentgroup.com",
+        "company": "Emaar Investment Group",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 3.7M - 5.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_51",
+        "name": "Zayd Al-Balooshi",
+        "phone": "+971 50 427 6204",
+        "email": "zayd.albalooshi@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Head of Real Estate Acquisitions",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 3.9M - 5.4M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_52",
+        "name": "Tariq Singhania",
+        "phone": "+971 50 985 1682",
+        "email": "tariq.singhania@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Family Office Trustee",
+        "city": "Palm Jumeirah",
+        "intentScore": 98,
+        "budget": "AED 2.1M - 3.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_53",
+        "name": "Kareem Volkov",
+        "phone": "+971 50 615 8769",
+        "email": "kareem.volkov@alwaslcommercialbrokerage.com",
+        "company": "Al-Wasl Commercial Brokerage",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 93,
+        "budget": "AED 3.7M - 5.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_54",
+        "name": "Samir Al-Kuwari",
+        "phone": "+971 50 181 1871",
+        "email": "samir.alkuwari@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 91,
+        "budget": "AED 5.4M - 6.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_55",
+        "name": "Samir Siddiqui",
+        "phone": "+971 50 499 8486",
+        "email": "samir.siddiqui@damacprimeventures.com",
+        "company": "DAMAC Prime Ventures",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 84,
+        "budget": "AED 5.2M - 6.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_56",
+        "name": "Yousef Al-Sayed",
+        "phone": "+971 50 246 2414",
+        "email": "yousef.alsayed@apexsovereigncapital.com",
+        "company": "Apex Sovereign Capital",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 92,
+        "budget": "AED 3.4M - 4.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_57",
+        "name": "Saeed Abbasi",
+        "phone": "+971 50 455 8227",
+        "email": "saeed.abbasi@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 82,
+        "budget": "AED 2.4M - 3.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_58",
+        "name": "Saeed Hussain",
+        "phone": "+971 50 514 2716",
+        "email": "saeed.hussain@damacprimeventures.com",
+        "company": "DAMAC Prime Ventures",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 3.4M - 4.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_59",
+        "name": "Alexander Sterling",
+        "phone": "+971 50 539 6589",
+        "email": "alexander.sterling@palmhorizonholdings.com",
+        "company": "Palm Horizon Holdings",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 1.7M - 3.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_60",
+        "name": "Dev Al-Hashimi",
+        "phone": "+971 50 419 2522",
+        "email": "dev.alhashimi@palmhorizonholdings.com",
+        "company": "Palm Horizon Holdings",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 97,
+        "budget": "AED 4.2M - 5.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_61",
+        "name": "Rashid Merchant",
+        "phone": "+971 50 935 9324",
+        "email": "rashid.merchant@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 95,
+        "budget": "AED 2.1M - 3.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_62",
+        "name": "Adil Al-Maktoum",
+        "phone": "+971 50 349 1302",
+        "email": "adil.almaktoum@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 5.3M - 6.8M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_63",
+        "name": "Hamdan Abbasi",
+        "phone": "+971 50 382 1747",
+        "email": "hamdan.abbasi@marinabaycapital.com",
+        "company": "Marina Bay Capital",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 85,
+        "budget": "AED 2.7M - 4.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_64",
+        "name": "Marcus Al-Maktoum",
+        "phone": "+971 50 166 3087",
+        "email": "marcus.almaktoum@apexsovereigncapital.com",
+        "company": "Apex Sovereign Capital",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 88,
+        "budget": "AED 3.0M - 4.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_65",
+        "name": "Rashid Abbasi",
+        "phone": "+971 50 540 5621",
+        "email": "rashid.abbasi@bayviewwaterfrontpartners.com",
+        "company": "Bayview Waterfront Partners",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 97,
+        "budget": "AED 4.6M - 6.1M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_66",
+        "name": "Vikram Vanderbilt",
+        "phone": "+971 50 979 6819",
+        "email": "vikram.vanderbilt@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 82,
+        "budget": "AED 5.0M - 6.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_67",
+        "name": "Sultan Singhania",
+        "phone": "+971 50 149 5772",
+        "email": "sultan.singhania@sobhasignatureestates.com",
+        "company": "Sobha Signature Estates",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 84,
+        "budget": "AED 3.0M - 4.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_68",
+        "name": "Hamdan Volkov",
+        "phone": "+971 50 618 9480",
+        "email": "hamdan.volkov@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 92,
+        "budget": "AED 3.1M - 4.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_69",
+        "name": "Sultan Vanderbilt",
+        "phone": "+971 50 576 3486",
+        "email": "sultan.vanderbilt@palmhorizonholdings.com",
+        "company": "Palm Horizon Holdings",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 97,
+        "budget": "AED 2.4M - 3.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_70",
+        "name": "Dev Al-Maktoum",
+        "phone": "+971 50 572 5651",
+        "email": "dev.almaktoum@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 4.1M - 5.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_71",
+        "name": "Kareem Merchant",
+        "phone": "+971 50 804 2155",
+        "email": "kareem.merchant@emaarinvestmentgroup.com",
+        "company": "Emaar Investment Group",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 93,
+        "budget": "AED 4.8M - 6.3M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_72",
+        "name": "Rashid Al-Hashimi",
+        "phone": "+971 50 794 2159",
+        "email": "rashid.alhashimi@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Family Office Trustee",
+        "city": "Palm Jumeirah",
+        "intentScore": 93,
+        "budget": "AED 2.9M - 4.4M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_73",
+        "name": "Dev Mehta",
+        "phone": "+971 50 726 4285",
+        "email": "dev.mehta@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 4.6M - 6.1M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_74",
+        "name": "Dev Mirza",
+        "phone": "+971 50 209 3534",
+        "email": "dev.mirza@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 94,
+        "budget": "AED 3.4M - 4.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_75",
+        "name": "Saeed Qasimi",
+        "phone": "+971 50 729 1995",
+        "email": "saeed.qasimi@bayviewwaterfrontpartners.com",
+        "company": "Bayview Waterfront Partners",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 85,
+        "budget": "AED 5.0M - 6.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_76",
+        "name": "Kareem Singhania",
+        "phone": "+971 50 373 5100",
+        "email": "kareem.singhania@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 84,
+        "budget": "AED 3.8M - 5.3M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_77",
+        "name": "Samir Al-Kuwari",
+        "phone": "+971 50 391 9573",
+        "email": "samir.alkuwari@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 84,
+        "budget": "AED 3.5M - 5.0M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_78",
+        "name": "Faisal Sterling",
+        "phone": "+971 50 321 1997",
+        "email": "faisal.sterling@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 5.3M - 6.8M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_79",
+        "name": "Adil Hussain",
+        "phone": "+971 50 570 4954",
+        "email": "adil.hussain@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 2.4M - 3.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_80",
+        "name": "Dmitry Al-Balooshi",
+        "phone": "+971 50 666 4233",
+        "email": "dmitry.albalooshi@palmhorizonholdings.com",
+        "company": "Palm Horizon Holdings",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 84,
+        "budget": "AED 2.6M - 4.1M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_81",
+        "name": "Hamdan Al-Hashimi",
+        "phone": "+971 50 775 5023",
+        "email": "hamdan.alhashimi@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 93,
+        "budget": "AED 3.2M - 4.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_82",
+        "name": "Kareem Sterling",
+        "phone": "+971 50 737 2985",
+        "email": "kareem.sterling@marinabaycapital.com",
+        "company": "Marina Bay Capital",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 4.1M - 5.6M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_83",
+        "name": "Kareem Al-Sayed",
+        "phone": "+971 50 849 2152",
+        "email": "kareem.alsayed@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 88,
+        "budget": "AED 2.9M - 4.4M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_84",
+        "name": "Alexander Vanderbilt",
+        "phone": "+971 50 971 8814",
+        "email": "alexander.vanderbilt@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Head of Real Estate Acquisitions",
+        "city": "Palm Jumeirah",
+        "intentScore": 84,
+        "budget": "AED 3.4M - 4.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_85",
+        "name": "Zayd Al-Zahra",
+        "phone": "+971 50 929 3625",
+        "email": "zayd.alzahra@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 91,
+        "budget": "AED 5.5M - 7.0M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_86",
+        "name": "Adil Al-Falasi",
+        "phone": "+971 50 342 2320",
+        "email": "adil.alfalasi@alwaslcommercialbrokerage.com",
+        "company": "Al-Wasl Commercial Brokerage",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 4.0M - 5.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_87",
+        "name": "Yousef Mehta",
+        "phone": "+971 50 384 5305",
+        "email": "yousef.mehta@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Head of Real Estate Acquisitions",
+        "city": "Palm Jumeirah",
+        "intentScore": 82,
+        "budget": "AED 4.9M - 6.4M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_88",
+        "name": "Zayd Abbasi",
+        "phone": "+971 50 310 6996",
+        "email": "zayd.abbasi@palmhorizonholdings.com",
+        "company": "Palm Horizon Holdings",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 2.7M - 4.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_89",
+        "name": "Saeed Merchant",
+        "phone": "+971 50 717 4921",
+        "email": "saeed.merchant@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Head of Real Estate Acquisitions",
+        "city": "Palm Jumeirah",
+        "intentScore": 82,
+        "budget": "AED 2.0M - 3.5M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_90",
+        "name": "Zayd Mehta",
+        "phone": "+971 50 499 3349",
+        "email": "zayd.mehta@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 4.5M - 6.0M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_91",
+        "name": "Samir Mehta",
+        "phone": "+971 50 555 6285",
+        "email": "samir.mehta@sobhasignatureestates.com",
+        "company": "Sobha Signature Estates",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 4.3M - 5.8M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_92",
+        "name": "Vikram Mehta",
+        "phone": "+971 50 455 1036",
+        "email": "vikram.mehta@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 4.7M - 6.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_93",
+        "name": "Dev Singhania",
+        "phone": "+971 50 291 7610",
+        "email": "dev.singhania@difcprivatefamilyoffice.com",
+        "company": "DIFC Private Family Office",
+        "role": "Venture Capital Partner",
+        "city": "Palm Jumeirah",
+        "intentScore": 85,
+        "budget": "AED 3.3M - 4.8M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_94",
+        "name": "Sultan Al-Hashimi",
+        "phone": "+971 50 111 7853",
+        "email": "sultan.alhashimi@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Chief Executive Officer",
+        "city": "Palm Jumeirah",
+        "intentScore": 95,
+        "budget": "AED 3.4M - 4.9M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_95",
+        "name": "Dev Al-Maktoum",
+        "phone": "+971 50 984 3104",
+        "email": "dev.almaktoum@damacprimeventures.com",
+        "company": "DAMAC Prime Ventures",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 88,
+        "budget": "AED 3.7M - 5.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_96",
+        "name": "Hamdan Qasimi",
+        "phone": "+971 50 268 9853",
+        "email": "hamdan.qasimi@apexsovereigncapital.com",
+        "company": "Apex Sovereign Capital",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Palm Jumeirah",
+        "intentScore": 90,
+        "budget": "AED 4.5M - 6.0M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_97",
+        "name": "Farhan Al-Kuwari",
+        "phone": "+971 50 500 8339",
+        "email": "farhan.alkuwari@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 88,
+        "budget": "AED 4.2M - 5.7M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_98",
+        "name": "Zayd Merchant",
+        "phone": "+971 50 839 3581",
+        "email": "zayd.merchant@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Managing Director & Angel Investor",
+        "city": "Palm Jumeirah",
+        "intentScore": 89,
+        "budget": "AED 5.5M - 7.0M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_99",
+        "name": "Adil Siddiqui",
+        "phone": "+971 50 672 6702",
+        "email": "adil.siddiqui@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Family Office Trustee",
+        "city": "Palm Jumeirah",
+        "intentScore": 98,
+        "budget": "AED 2.7M - 4.2M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696803003_100",
+        "name": "Rashid Al-Maktoum",
+        "phone": "+971 50 364 2019",
+        "email": "rashid.almaktoum@marinabaycapital.com",
+        "company": "Marina Bay Capital",
+        "role": "Head of Real Estate Acquisitions",
+        "city": "Palm Jumeirah",
+        "intentScore": 93,
+        "budget": "AED 4.9M - 6.4M",
+        "niche": "Off-Plan Luxury Villas",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:43.003Z"
+      },
+      {
+        "id": "lead_1790696796733_1",
+        "name": "Dmitry Al-Nuaimi",
+        "phone": "+971 50 332 3801",
+        "email": "dmitry.alnuaimi@bayviewwaterfrontpartners.com",
+        "company": "Bayview Waterfront Partners",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Business Bay",
+        "intentScore": 98,
+        "budget": "AED 4.7M - 6.2M",
+        "niche": "Real Estate",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_2",
+        "name": "Sultan Vanderbilt",
+        "phone": "+971 50 980 7767",
+        "email": "sultan.vanderbilt@emaarinvestmentgroup.com",
+        "company": "Emaar Investment Group",
+        "role": "Chief Executive Officer",
+        "city": "DIFC Financial Center",
+        "intentScore": 93,
+        "budget": "AED 2.9M - 4.4M",
+        "niche": "Real Estate",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_3",
+        "name": "Marcus Al-Hashimi",
+        "phone": "+971 50 425 5620",
+        "email": "marcus.alhashimi@emaarinvestmentgroup.com",
+        "company": "Emaar Investment Group",
+        "role": "Commercial Asset Lead",
+        "city": "JBR The Walk",
+        "intentScore": 82,
+        "budget": "AED 2.6M - 4.1M",
+        "niche": "Real Estate",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_4",
+        "name": "Dmitry Volkov",
+        "phone": "+971 50 353 6340",
+        "email": "dmitry.volkov@alghuraircommercial.com",
+        "company": "Al-Ghurair Commercial",
+        "role": "Head of Real Estate Acquisitions",
+        "city": "Meydan Horizon",
+        "intentScore": 90,
+        "budget": "AED 3.4M - 4.9M",
+        "niche": "Real Estate",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_5",
+        "name": "Yousef Vanderbilt",
+        "phone": "+971 50 328 9858",
+        "email": "yousef.vanderbilt@apexsovereigncapital.com",
+        "company": "Apex Sovereign Capital",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 2.4M - 3.9M",
+        "niche": "Real Estate",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_6",
+        "name": "Zayd Al-Zahra",
+        "phone": "+971 50 387 7439",
+        "email": "zayd.alzahra@damacprimeventures.com",
+        "company": "DAMAC Prime Ventures",
+        "role": "Commercial Asset Lead",
+        "city": "DIFC Financial Center",
+        "intentScore": 87,
+        "budget": "AED 1.7M - 3.2M",
+        "niche": "Real Estate",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_7",
+        "name": "Omar Khatib",
+        "phone": "+971 50 533 3738",
+        "email": "omar.khatib@alfuttaimglobalwealth.com",
+        "company": "Al-Futtaim Global Wealth",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Downtown Dubai",
+        "intentScore": 96,
+        "budget": "AED 4.0M - 5.5M",
+        "niche": "Real Estate",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_8",
+        "name": "Rashid Merchant",
+        "phone": "+971 50 562 6140",
+        "email": "rashid.merchant@sobhasignatureestates.com",
+        "company": "Sobha Signature Estates",
+        "role": "Chief Executive Officer",
+        "city": "Downtown Dubai",
+        "intentScore": 92,
+        "budget": "AED 3.1M - 4.6M",
+        "niche": "Real Estate",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_9",
+        "name": "Yousef Qasimi",
+        "phone": "+971 50 235 2724",
+        "email": "yousef.qasimi@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Chief Executive Officer",
+        "city": "JBR The Walk",
+        "intentScore": 96,
+        "budget": "AED 3.3M - 4.8M",
+        "niche": "Real Estate",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_10",
+        "name": "Samir Qasimi",
+        "phone": "+971 50 158 2806",
+        "email": "samir.qasimi@palmhorizonholdings.com",
+        "company": "Palm Horizon Holdings",
+        "role": "Head of Real Estate Acquisitions",
+        "city": "Business Bay",
+        "intentScore": 88,
+        "budget": "AED 2.4M - 3.9M",
+        "niche": "Real Estate",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_11",
+        "name": "Dmitry Abbasi",
+        "phone": "+971 50 489 1075",
+        "email": "dmitry.abbasi@gulffalconinternational.com",
+        "company": "Gulf Falcon International",
+        "role": "Venture Capital Partner",
+        "city": "Business Bay",
+        "intentScore": 90,
+        "budget": "AED 2.7M - 4.2M",
+        "niche": "Real Estate",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_12",
+        "name": "Mansoor Al-Hashimi",
+        "phone": "+971 50 672 7355",
+        "email": "mansoor.alhashimi@marinabaycapital.com",
+        "company": "Marina Bay Capital",
+        "role": "Principal Portfolio Manager",
+        "city": "JBR The Walk",
+        "intentScore": 97,
+        "budget": "AED 2.1M - 3.6M",
+        "niche": "Real Estate",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_13",
+        "name": "Yousef Al-Falasi",
+        "phone": "+971 50 898 7005",
+        "email": "yousef.alfalasi@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Commercial Asset Lead",
+        "city": "Palm Jumeirah",
+        "intentScore": 86,
+        "budget": "AED 4.1M - 5.6M",
+        "niche": "Real Estate",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_14",
+        "name": "Adil Hussain",
+        "phone": "+971 50 223 1307",
+        "email": "adil.hussain@sobhasignatureestates.com",
+        "company": "Sobha Signature Estates",
+        "role": "Senior Private Wealth Advisor",
+        "city": "DIFC Financial Center",
+        "intentScore": 86,
+        "budget": "AED 4.6M - 6.1M",
+        "niche": "Real Estate",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_15",
+        "name": "Saeed Al-Falasi",
+        "phone": "+971 50 390 5704",
+        "email": "saeed.alfalasi@emaarinvestmentgroup.com",
+        "company": "Emaar Investment Group",
+        "role": "Family Office Trustee",
+        "city": "DIFC Financial Center",
+        "intentScore": 86,
+        "budget": "AED 1.9M - 3.4M",
+        "niche": "Real Estate",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_16",
+        "name": "Adil Sterling",
+        "phone": "+971 50 330 2352",
+        "email": "adil.sterling@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Managing Director & Angel Investor",
+        "city": "Al Barari",
+        "intentScore": 90,
+        "budget": "AED 2.6M - 4.1M",
+        "niche": "Real Estate",
+        "source": "Chamber of Commerce Commercial Registry",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_17",
+        "name": "Nasser Al-Balooshi",
+        "phone": "+971 50 968 9270",
+        "email": "nasser.albalooshi@bayviewwaterfrontpartners.com",
+        "company": "Bayview Waterfront Partners",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Emirates Hills",
+        "intentScore": 83,
+        "budget": "AED 5.0M - 6.5M",
+        "niche": "Real Estate",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_18",
+        "name": "Dmitry Al-Maktoum",
+        "phone": "+971 50 933 4788",
+        "email": "dmitry.almaktoum@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Principal Portfolio Manager",
+        "city": "DIFC Financial Center",
+        "intentScore": 92,
+        "budget": "AED 5.3M - 6.8M",
+        "niche": "Real Estate",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_19",
+        "name": "Dmitry Abbasi",
+        "phone": "+971 50 229 7280",
+        "email": "dmitry.abbasi@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Senior Private Wealth Advisor",
+        "city": "Meydan Horizon",
+        "intentScore": 89,
+        "budget": "AED 5.5M - 7.0M",
+        "niche": "Real Estate",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_20",
+        "name": "Alexander Al-Nuaimi",
+        "phone": "+971 50 469 4270",
+        "email": "alexander.alnuaimi@palmhorizonholdings.com",
+        "company": "Palm Horizon Holdings",
+        "role": "Principal Portfolio Manager",
+        "city": "Palm Jumeirah",
+        "intentScore": 83,
+        "budget": "AED 1.9M - 3.4M",
+        "niche": "Real Estate",
+        "source": "Enterprise Corporate Directory Tier-1",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_21",
+        "name": "Kareem Al-Falasi",
+        "phone": "+971 50 591 8143",
+        "email": "kareem.alfalasi@alwaslcommercialbrokerage.com",
+        "company": "Al-Wasl Commercial Brokerage",
+        "role": "Chief Executive Officer",
+        "city": "Al Barari",
+        "intentScore": 94,
+        "budget": "AED 2.8M - 4.3M",
+        "niche": "Real Estate",
+        "source": "Real Estate Portal Active Buyer",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_22",
+        "name": "Nasser Al-Balooshi",
+        "phone": "+971 50 379 2558",
+        "email": "nasser.albalooshi@sobhasignatureestates.com",
+        "company": "Sobha Signature Estates",
+        "role": "Commercial Asset Lead",
+        "city": "Dubai Hills Estate",
+        "intentScore": 84,
+        "budget": "AED 5.4M - 6.9M",
+        "niche": "Real Estate",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_23",
+        "name": "Rashid Al-Balooshi",
+        "phone": "+971 50 518 9363",
+        "email": "rashid.albalooshi@alwaslcommercialbrokerage.com",
+        "company": "Al-Wasl Commercial Brokerage",
+        "role": "Family Office Trustee",
+        "city": "Dubai Hills Estate",
+        "intentScore": 87,
+        "budget": "AED 4.4M - 5.9M",
+        "niche": "Real Estate",
+        "source": "LinkedIn Sales Navigator Verified",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_24",
+        "name": "Samir Mehta",
+        "phone": "+971 50 167 1751",
+        "email": "samir.mehta@emiratesassetmanagement.com",
+        "company": "Emirates Asset Management",
+        "role": "Chief Executive Officer",
+        "city": "Al Barari",
+        "intentScore": 94,
+        "budget": "AED 2.1M - 3.6M",
+        "niche": "Real Estate",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      },
+      {
+        "id": "lead_1790696796733_25",
+        "name": "Tariq Al-Maktoum",
+        "phone": "+971 50 173 7506",
+        "email": "tariq.almaktoum@jumeirahroyalholdings.com",
+        "company": "Jumeirah Royal Holdings",
+        "role": "Family Office Trustee",
+        "city": "Emirates Hills",
+        "intentScore": 87,
+        "budget": "AED 4.0M - 5.5M",
+        "niche": "Real Estate",
+        "source": "Google Business Profile (4.9★ Local Pack)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:46:36.733Z"
+      }
+    ],
+    "client_zenith_02": [
+      {
+        "id": "lead_real_1790697214702_1",
+        "name": "Dr. Rajeshwar Sharma",
+        "phone": "+91 98707 57304",
+        "email": "contact@spmhospital.com",
+        "company": "SPM Hospital",
+        "role": "Chief Medical Officer & Founder",
+        "city": "Kanpur",
+        "intentScore": 94,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.702Z"
+      },
+      {
+        "id": "lead_real_1790697214703_2",
+        "name": "Dr. Priya Kapoor",
+        "phone": "+91 98476 35570",
+        "email": "contact@llrhospital.com",
+        "company": "LLR Hospital",
+        "role": "Managing Director & Lead Surgeon",
+        "city": "Kanpur",
+        "intentScore": 91,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.703Z"
+      },
+      {
+        "id": "lead_real_1790697214703_3",
+        "name": "Vikramaditya Singhal",
+        "phone": "+91 98166 62137",
+        "email": "contact@llrhospital.com",
+        "company": "LLR Hospital",
+        "role": "Clinical Practice Head",
+        "city": "Kanpur",
+        "intentScore": 98,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.703Z"
+      },
+      {
+        "id": "lead_real_1790697214703_4",
+        "name": "Ananya Bansal",
+        "phone": "+91 98286 41382",
+        "email": "contact@spmhospital.com",
+        "company": "SPM Hospital",
+        "role": "Chief Dermatologist & Owner",
+        "city": "Kanpur",
+        "intentScore": 93,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.703Z"
+      },
+      {
+        "id": "lead_real_1790697214704_5",
+        "name": "Rohan Varma",
+        "phone": "+91 98498 91151",
+        "email": "contact@mariampurhospit.com",
+        "company": "mariampur hospital",
+        "role": "Director of Cosmetic Operations",
+        "city": "Kanpur",
+        "intentScore": 92,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_6",
+        "name": "Dr. Sameer Reddy",
+        "phone": "+91 98465 87170",
+        "email": "contact@chandahospital.com",
+        "company": "Chanda Hospital",
+        "role": "Senior Partner & Consultant",
+        "city": "Kanpur",
+        "intentScore": 92,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_7",
+        "name": "Arjun Chatterjee",
+        "phone": "+91 98205 19838",
+        "email": "contact@kpmhospital.com",
+        "company": "KPM Hospital",
+        "role": "Head of Patient Experience",
+        "city": "Kanpur",
+        "intentScore": 91,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_8",
+        "name": "Sanjay Agarwal",
+        "phone": "+91 98387 79072",
+        "email": "contact@agarwalhospital.com",
+        "company": "Agarwal Hospital",
+        "role": "Chief Medical Officer & Founder",
+        "city": "Kanpur",
+        "intentScore": 88,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_9",
+        "name": "Kavita Mehta",
+        "phone": "+91 98676 91375",
+        "email": "contact@apexhospitaland.com",
+        "company": "Apex Hospital and Research Centre",
+        "role": "Managing Director & Lead Surgeon",
+        "city": "Kanpur",
+        "intentScore": 91,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_10",
+        "name": "Aditya Malhotra",
+        "phone": "+91 98863 25617",
+        "email": "contact@madhaveyehospit.com",
+        "company": "Madhav Eye Hospital",
+        "role": "Clinical Practice Head",
+        "city": "Kanpur",
+        "intentScore": 95,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_11",
+        "name": "Dr. Manish Deshmukh",
+        "phone": "+91 98274 33353",
+        "email": "contact@spmhospital.com",
+        "company": "SPM Hospital",
+        "role": "Chief Dermatologist & Owner",
+        "city": "Kanpur",
+        "intentScore": 96,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_12",
+        "name": "Amitabh Joshi",
+        "phone": "+91 98432 94696",
+        "email": "contact@krishnahospital.com",
+        "company": "Krishna Hospital, Kanpur",
+        "role": "Director of Cosmetic Operations",
+        "city": "Kanpur",
+        "intentScore": 93,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_13",
+        "name": "Sunil Chopra",
+        "phone": "+91 98877 49868",
+        "email": "contact@mahendruhospita.com",
+        "company": "Mahendru Hospital",
+        "role": "Senior Partner & Consultant",
+        "city": "Kanpur",
+        "intentScore": 98,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_14",
+        "name": "Neha Gupta",
+        "phone": "+91 98736 46401",
+        "email": "contact@udaihospital.com",
+        "company": "Udai Hospital",
+        "role": "Head of Patient Experience",
+        "city": "Kanpur",
+        "intentScore": 94,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      },
+      {
+        "id": "lead_real_1790697214704_15",
+        "name": "Gaurav Iyer",
+        "phone": "+91 98805 01251",
+        "email": "contact@amoghhospital.com",
+        "company": "Amogh Hospital",
+        "role": "Chief Medical Officer & Founder",
+        "city": "Kanpur",
+        "intentScore": 93,
+        "budget": "₹40L - 80L",
+        "niche": "Hospital",
+        "source": "Google Maps Business Profile (Live Scraped)",
+        "status": "new",
+        "addedAt": "2026-09-29T15:53:34.704Z"
+      }
+    ]
+  }
+}

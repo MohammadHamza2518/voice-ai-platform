@@ -1,0 +1,23 @@
+{
+  "name": "voice-ai-platform",
+  "version": "1.0.0",
+  "description": "Multi-Tenant Enterprise Voice AI Calling & Lead Prospecting Platform",
+  "main": "server/index.js",
+  "scripts": {
+    "install:all": "cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm install && npm run build && cd ../server && npm install",
+    "start": "node server/index.js",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev"
+  },
+  "keywords": [
+    "voice-ai",
+    "telephony",
+    "vapi",
+    "real-estate",
+    "healthcare",
+    "speed-to-lead"
+  ],
+  "author": "Mohammad Hamza",
+  "license": "ISC"
+}
