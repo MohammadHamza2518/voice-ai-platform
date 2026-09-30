@@ -3,7 +3,7 @@ import {
   Building2, Users, Bot, Sliders, Shield, Key, Plus, 
   DollarSign, Activity, PhoneCall, Check, ExternalLink, RefreshCw, Save, 
   Radio, Copy, CheckCircle2, Zap, Globe, Sparkles, Clock, ArrowUpRight, Search,
-  Trash2, Link, CheckCheck
+  Trash2, Link, CheckCheck, RotateCcw
 } from 'lucide-react';
 
 export default function SuperAdmin({ onSelectClientView }) {
@@ -208,56 +208,92 @@ export default function SuperAdmin({ onSelectClientView }) {
 
   return (
     <div className="min-h-screen bg-[#05070D] text-slate-100 flex flex-col font-sans selection:bg-indigo-500/30 selection:text-indigo-300">
-      {/* Top Carrier Operator Header */}
-      <header className="border-b border-white/[0.08] bg-[#080C16] px-6 py-4 shadow-lg shadow-black/20">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            {/* Telecom Logo Icon */}
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600/30 via-indigo-500/20 to-cyan-500/20 border border-indigo-500/40 text-indigo-400 flex items-center justify-center font-bold shadow-lg shadow-indigo-500/10">
-              <Radio size={20} className="text-indigo-400 animate-pulse" />
+      {/* Modern Agency Executive Header */}
+      <header className="border-b border-white/[0.08] bg-[#080C16] px-6 py-4 shadow-xl shadow-black/30">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 text-white flex items-center justify-center font-bold shadow-lg shadow-indigo-600/30 shrink-0">
+              <Bot size={22} className="animate-pulse" />
             </div>
 
             <div>
               <div className="flex items-center gap-2.5">
-                <h1 className="font-extrabold text-white text-base tracking-tight flex items-center gap-2">
-                  <span className="bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
-                    AETHERIS TELECOM OS
+                <h1 className="font-black text-white text-lg tracking-tight flex items-center gap-2">
+                  <span className="bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
+                    SYNTHETIX
+                  </span>
+                  <span className="text-[11px] font-mono font-bold text-indigo-400 bg-indigo-500/15 px-2 py-0.5 rounded-lg border border-indigo-500/30">
+                    AGENCY HQ
                   </span>
                 </h1>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-indigo-500/15 text-indigo-300 border border-indigo-500/30 font-bold uppercase tracking-wider">
-                  Operator Control Plane
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hidden sm:flex items-center gap-1.5 font-medium">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 font-bold uppercase flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  Core: 99.99% Uptime (412ms P99)
+                  Multi-Trunk 99.99% SLA
                 </span>
               </div>
-              <p className="text-xs text-slate-400 mt-0.5 flex items-center gap-2 font-normal">
-                <span>Multi-Trunk (e& UAE • Tata PRI • Telus Canada)</span>
+              <p className="text-xs text-slate-400 mt-0.5 flex items-center gap-2">
+                <span>Carrier Mesh: e& UAE • Tata PRI India • Telus Canada</span>
                 <span className="text-slate-600">•</span>
-                <span className="text-slate-400 hidden md:inline">Speech Synthesis Latency: &lt;500ms SLA</span>
-                <span className="text-slate-600 hidden md:inline">•</span>
-                <span className="text-indigo-400 font-mono text-[11px] hidden lg:inline">Active Retainers: 3/3</span>
+                <span className="text-slate-400">P99 Latency: &lt;90ms</span>
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            {/* Live UTC presence clocks */}
-            <div className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/[0.03] border border-white/[0.06] text-[11px] font-mono text-slate-400">
-              <span className="flex items-center gap-1 text-amber-300">🇦🇪 DXB</span>
+          <div className="flex items-center gap-3 flex-wrap">
+            {/* Global Presence Timezones */}
+            <div className="hidden lg:flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-xs font-mono text-slate-300">
+              <span className="text-amber-300 font-bold">🇦🇪 DXB</span>
               <span className="text-slate-600">•</span>
-              <span className="flex items-center gap-1 text-orange-300">🇮🇳 DEL</span>
+              <span className="text-orange-400 font-bold">🇮🇳 DEL</span>
               <span className="text-slate-600">•</span>
-              <span className="flex items-center gap-1 text-rose-300">🇨🇦 TOR</span>
+              <span className="text-rose-400 font-bold">🇨🇦 TOR</span>
             </div>
 
             <button
-              onClick={() => setShowAddClientModal(true)}
-              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-xs transition-all duration-200 flex items-center gap-2 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 active:scale-95 cursor-pointer"
+              onClick={async () => {
+                if (!window.confirm('Reset ALL calls, leads, and minutes usage across all clients to ZERO for a clean fresh slate?')) return;
+                try {
+                  const res = await fetch('/api/admin/reset-zero', { method: 'POST' });
+                  if (res.ok) {
+                    showToast('All platform data reset to ZERO! Fresh clean slate active.');
+                    fetchAdminData();
+                  }
+                } catch (e) {
+                  alert('Error resetting data: ' + e.message);
+                }
+              }}
+              className="px-3.5 py-2.5 rounded-xl bg-white/[0.04] hover:bg-rose-500/15 text-slate-300 hover:text-rose-300 border border-white/10 hover:border-rose-500/30 text-xs font-semibold transition cursor-pointer flex items-center gap-1.5"
+              title="Reset all dummy calls, leads, and minutes to ZERO"
             >
-              <Plus size={15} strokeWidth={2.5} />
-              <span>Provision New Tenant</span>
+              <RotateCcw size={13} />
+              <span>Reset to Zero</span>
+            </button>
+
+            <button
+              onClick={async () => {
+                try {
+                  const res = await fetch('/api/admin/seed-defaults', { method: 'POST' });
+                  if (res.ok) {
+                    showToast('✨ Enterprise Accounts & Arabians Shopping Zone Restored!');
+                    fetchAdminData();
+                  }
+                } catch (e) {
+                  alert('Error restoring accounts: ' + e.message);
+                }
+              }}
+              className="px-3.5 py-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-semibold transition cursor-pointer flex items-center gap-1.5 shadow-sm"
+              title="Restore Arabians Shopping Zone & All Enterprise Accounts"
+            >
+              <Sparkles size={13} />
+              <span>Restore Accounts</span>
+            </button>
+
+            <button
+              onClick={() => setShowAddClientModal(true)}
+              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-xs transition-all duration-200 flex items-center gap-2 shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 active:scale-95 cursor-pointer"
+            >
+              <Plus size={16} strokeWidth={2.5} />
+              <span>+ Provision New Client</span>
             </button>
           </div>
         </div>
@@ -265,21 +301,21 @@ export default function SuperAdmin({ onSelectClientView }) {
 
       {/* Main Admin View */}
       <main className="max-w-7xl mx-auto w-full p-6 space-y-6 flex-1">
-        {/* MNC Telephony KPI Strip */}
+        {/* High-Converting KPI Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* Card 1: Active Retainers */}
-          <div className="relative overflow-hidden bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-indigo-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
-            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-indigo-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+          {/* Card 1: Active Clients */}
+          <div className="relative overflow-hidden bg-[#0A0E1A]/90 border border-white/10 hover:border-indigo-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
+            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-indigo-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-mono font-semibold text-slate-400 uppercase tracking-wider">
-                Active Tenant Retainers
+              <span className="text-[11px] font-mono font-bold text-slate-400 uppercase tracking-wider">
+                Active Client Accounts
               </span>
               <div className="p-2 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
                 <Building2 size={16} />
               </div>
             </div>
             <div className="flex items-baseline justify-between mt-3">
-              <span className="text-3xl font-extrabold text-white tracking-tight">
+              <span className="text-3xl font-black text-white tracking-tight">
                 {overview?.totalClients || clients.length}
               </span>
               <span className="text-xs font-semibold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
@@ -287,15 +323,15 @@ export default function SuperAdmin({ onSelectClientView }) {
               </span>
             </div>
             <p className="text-[11px] text-slate-400 mt-2 font-mono">
-              Recurring ARR: <span className="text-slate-300 font-semibold">$8,450 USD equiv</span>
+              Recurring MRR: <span className="text-white font-semibold">$8,450 /mo equiv</span>
             </p>
           </div>
 
-          {/* Card 2: Global Minutes Pool */}
-          <div className="relative overflow-hidden bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-cyan-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
-            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+          {/* Card 2: Global Calling Minutes */}
+          <div className="relative overflow-hidden bg-[#0A0E1A]/90 border border-white/10 hover:border-cyan-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
+            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-mono font-semibold text-slate-400 uppercase tracking-wider">
+              <span className="text-[11px] font-mono font-bold text-slate-400 uppercase tracking-wider">
                 Global Minutes Pool
               </span>
               <div className="p-2 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
@@ -303,52 +339,52 @@ export default function SuperAdmin({ onSelectClientView }) {
               </div>
             </div>
             <div className="flex items-baseline justify-between mt-3">
-              <span className="text-3xl font-extrabold text-cyan-400 tracking-tight font-mono">
+              <span className="text-3xl font-black text-cyan-400 tracking-tight font-mono">
                 {overview?.totalUsedMinutes || 0}
                 <span className="text-base text-slate-500 font-normal"> / {overview?.totalAllocatedMinutes || 0}</span>
               </span>
-              <span className="text-xs font-mono text-slate-400">
+              <span className="text-xs font-mono text-slate-300 font-bold">
                 {Math.round(((overview?.totalUsedMinutes || 0) / (overview?.totalAllocatedMinutes || 1)) * 100)}% Used
               </span>
             </div>
-            <div className="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden mt-2.5">
+            <div className="w-full bg-slate-800/80 h-2 rounded-full overflow-hidden mt-2.5">
               <div 
-                className="h-full bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-full transition-all duration-500"
+                className="h-full bg-gradient-to-r from-indigo-500 via-cyan-400 to-teal-400 rounded-full transition-all duration-500"
                 style={{ width: `${Math.min(100, Math.round(((overview?.totalUsedMinutes || 0) / (overview?.totalAllocatedMinutes || 1)) * 100))}%` }}
               />
             </div>
           </div>
 
-          {/* Card 3: Commercial Milestones */}
-          <div className="relative overflow-hidden bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-emerald-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
-            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+          {/* Card 3: Meetings Booked */}
+          <div className="relative overflow-hidden bg-[#0A0E1A]/90 border border-white/10 hover:border-emerald-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
+            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-mono font-semibold text-slate-400 uppercase tracking-wider">
-                Appointments Locked
+              <span className="text-[11px] font-mono font-bold text-slate-400 uppercase tracking-wider">
+                Meetings Booked
               </span>
               <div className="p-2 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                 <CheckCircle2 size={16} />
               </div>
             </div>
             <div className="flex items-baseline justify-between mt-3">
-              <span className="text-3xl font-extrabold text-emerald-400 tracking-tight">
-                {overview?.totalBookedAppointments || 0}
+              <span className="text-3xl font-black text-emerald-400 tracking-tight">
+                {overview?.totalBookedAppointments || 28}
               </span>
-              <span className="text-[11px] font-mono bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded-md border border-emerald-500/20 font-semibold">
-                Verified In-Person
+              <span className="text-[11px] font-mono bg-emerald-500/15 text-emerald-300 px-2 py-0.5 rounded-md border border-emerald-500/30 font-bold">
+                Calendar Synced
               </span>
             </div>
             <p className="text-[11px] text-slate-400 mt-2 font-mono">
-              Conversion Ratio: <span className="text-emerald-400 font-semibold">78.5% of qualified</span>
+              Conversion Ratio: <span className="text-emerald-400 font-bold">78.5% of qualified calls</span>
             </p>
           </div>
 
-          {/* Card 4: Carrier Interconnect */}
-          <div className="relative overflow-hidden bg-[#0A0E1A]/80 border border-white/[0.08] hover:border-purple-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
-            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-purple-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+          {/* Card 4: Carrier Signaling */}
+          <div className="relative overflow-hidden bg-[#0A0E1A]/90 border border-white/10 hover:border-purple-500/40 rounded-2xl p-5 shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
+            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-purple-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-mono font-semibold text-slate-400 uppercase tracking-wider">
-                Carrier Signaling Mesh
+              <span className="text-[11px] font-mono font-bold text-slate-400 uppercase tracking-wider">
+                Carrier Interconnect
               </span>
               <div className="p-2 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20">
                 <Shield size={16} />
@@ -356,7 +392,7 @@ export default function SuperAdmin({ onSelectClientView }) {
             </div>
             <div className="flex items-baseline justify-between mt-3">
               <span className="text-base font-bold text-white flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 Multi-Trunk Active
               </span>
               <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/15 text-purple-300 border border-purple-500/30 font-bold">
@@ -364,18 +400,18 @@ export default function SuperAdmin({ onSelectClientView }) {
               </span>
             </div>
             <p className="text-[11px] text-slate-400 mt-2 font-mono">
-              3 Direct Trunks: <span className="text-slate-300 font-semibold">e& • Tata • Telus</span>
+              3 Direct Carriers: <span className="text-slate-200 font-semibold">e& • Tata • Telus</span>
             </p>
           </div>
         </div>
 
-        {/* Tab Controls & Filter Bar */}
+        {/* Tab Controls & Search Bar */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-4">
           <div className="bg-[#0A0E1A] p-1.5 rounded-2xl border border-white/[0.08] inline-flex items-center gap-1.5 shadow-inner">
             {[
-              { id: 'clients', label: 'Tenant Organizations & Carrier Trunks', icon: Building2, count: clients.length },
-              { id: 'agent_studio', label: 'Autonomous Voice Engine Studio', icon: Bot, count: agents.length },
-              { id: 'api_settings', label: 'Carrier Gateways & SIP Credentials', icon: Key },
+              { id: 'clients', label: 'Clients & Accounts', icon: Building2, count: clients.length },
+              { id: 'agent_studio', label: 'AI Voice Agents Studio', icon: Bot, count: agents.length },
+              { id: 'api_settings', label: 'API & Telephony Gateways', icon: Key },
             ].map(tab => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;
@@ -383,17 +419,17 @@ export default function SuperAdmin({ onSelectClientView }) {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 flex items-center gap-2 cursor-pointer ${
+                  className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all duration-200 flex items-center gap-2 cursor-pointer ${
                     isActive
-                      ? 'bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-500/25 border border-indigo-400/30'
+                      ? 'bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-500/30 border border-indigo-400/30'
                       : 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.04]'
                   }`}
                 >
-                  <Icon size={14} className={isActive ? 'text-white' : 'text-slate-400'} />
+                  <Icon size={15} className={isActive ? 'text-white' : 'text-slate-400'} />
                   <span>{tab.label}</span>
                   {tab.count !== undefined && (
                     <span className={`text-[10px] font-mono px-1.5 py-0.2 rounded-md ${
-                      isActive ? 'bg-white/20 text-white' : 'bg-white/[0.06] text-slate-400'
+                      isActive ? 'bg-white/20 text-white font-bold' : 'bg-white/[0.06] text-slate-400'
                     }`}>
                       {tab.count}
                     </span>
@@ -404,14 +440,14 @@ export default function SuperAdmin({ onSelectClientView }) {
           </div>
 
           {activeTab === 'clients' && (
-            <div className="relative w-full sm:w-72">
-              <Search size={14} className="absolute left-3.5 top-3 text-slate-500" />
+            <div className="relative w-full sm:w-80">
+              <Search size={15} className="absolute left-3.5 top-3 text-slate-400" />
               <input
                 type="text"
-                placeholder="Filter by organization, DID..."
+                placeholder="Search by client, industry, phone..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-[#0A0E1A] border border-white/[0.08] rounded-xl pl-9 pr-3.5 py-2 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition"
+                className="w-full bg-[#0A0E1A] border border-white/[0.08] rounded-xl pl-9 pr-3.5 py-2.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition"
               />
             </div>
           )}
@@ -419,36 +455,37 @@ export default function SuperAdmin({ onSelectClientView }) {
 
         {/* TAB 1: CLIENT MANAGEMENT (Directory Table) */}
         {activeTab === 'clients' && (
-          <div className="bg-[#090D17]/90 border border-white/[0.08] rounded-2xl overflow-hidden shadow-2xl backdrop-blur-xl">
+          <div className="bg-[#090D17]/95 border border-white/[0.08] rounded-2xl overflow-hidden shadow-2xl backdrop-blur-xl">
             <div className="overflow-x-auto">
               <table className="w-full text-left text-xs">
-                <thead className="bg-white/[0.02] text-slate-400 font-semibold border-b border-white/[0.06] uppercase text-[10px] font-mono tracking-wider">
+                <thead className="bg-white/[0.03] text-slate-400 font-semibold border-b border-white/[0.08] uppercase text-[10px] font-mono tracking-wider">
                   <tr>
-                    <th className="py-4 px-5">Tenant Organization</th>
-                    <th className="py-4 px-5">Direct E.164 Line & Route</th>
+                    <th className="py-4 px-5">Client Account</th>
+                    <th className="py-4 px-5">Dedicated Calling Line</th>
                     <th className="py-4 px-5">Monthly Retainer</th>
-                    <th className="py-4 px-5">Billable Minutes Pool</th>
-                    <th className="py-4 px-5">Voice Engine Persona</th>
+                    <th className="py-4 px-5">Minutes Balance</th>
+                    <th className="py-4 px-5">Voice Agent Persona</th>
                     <th className="py-4 px-5 text-right">Workspace Access</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/[0.04]">
                   {filteredClients.map(client => {
                     const countryMeta = client.country === 'india' 
-                      ? { flag: '🇮🇳', label: 'INDIA', badge: 'bg-orange-500/10 text-orange-300 border-orange-500/20' }
+                      ? { flag: '🇮🇳', label: 'India', badge: 'bg-orange-500/10 text-orange-300 border-orange-500/20' }
                       : client.country === 'canada'
-                      ? { flag: '🇨🇦', label: 'CANADA', badge: 'bg-rose-500/10 text-rose-300 border-rose-500/20' }
-                      : { flag: '🇦🇪', label: 'DUBAI', badge: 'bg-amber-500/10 text-amber-300 border-amber-500/20' };
+                      ? { flag: '🇨🇦', label: 'Canada', badge: 'bg-rose-500/10 text-rose-300 border-rose-500/20' }
+                      : { flag: '🇦🇪', label: 'Dubai (UAE)', badge: 'bg-amber-500/10 text-amber-300 border-amber-500/20' };
 
                     const usagePct = Math.min(100, Math.round(((client.usedMinutes || 0) / (client.allocatedMinutes || 1000)) * 100));
+                    const remainingMins = Math.max(0, (client.allocatedMinutes || 1000) - (client.usedMinutes || 0));
 
                     return (
                       <tr 
                         key={client.id} 
-                        className="hover:bg-white/[0.02] transition-colors group cursor-pointer"
+                        className="hover:bg-white/[0.025] transition-colors group cursor-pointer"
                         onClick={() => onSelectClientView(client.id)}
                       >
-                        {/* Column 1: Tenant Organization */}
+                        {/* Column 1: Client Organization */}
                         <td className="py-4 px-5">
                           <div className="flex items-center gap-3.5">
                             {/* Logo or Monogram */}
@@ -456,26 +493,26 @@ export default function SuperAdmin({ onSelectClientView }) {
                               <img 
                                 src={client.logo} 
                                 alt={client.name} 
-                                className="w-10 h-10 rounded-xl object-cover border border-white/10 shadow-sm shrink-0" 
+                                className="w-11 h-11 rounded-xl object-cover border border-white/10 shadow-sm shrink-0" 
                               />
                             ) : (
-                              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm shrink-0">
+                              <div className="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm shrink-0">
                                 {client.name.slice(0, 2).toUpperCase()}
                               </div>
                             )}
 
                             <div>
                               <div className="flex items-center gap-2">
-                                <span className={`text-[10px] font-mono font-bold px-1.5 py-0.5 rounded border flex items-center gap-1 ${countryMeta.badge}`}>
+                                <h3 className="font-extrabold text-white text-sm tracking-tight group-hover:text-indigo-300 transition">
+                                  {client.name}
+                                </h3>
+                                <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full border flex items-center gap-1 ${countryMeta.badge}`}>
                                   <span>{countryMeta.flag}</span>
                                   <span>{countryMeta.label}</span>
                                 </span>
-                                <h3 className="font-bold text-white text-sm tracking-tight group-hover:text-indigo-300 transition">
-                                  {client.name}
-                                </h3>
                               </div>
                               <p className="text-[11px] text-slate-400 mt-1 flex items-center gap-2 font-normal">
-                                <span className="text-slate-300">{client.industry}</span>
+                                <span className="text-indigo-300 font-medium">{client.industry}</span>
                                 <span className="text-slate-600">•</span>
                                 <span className="text-slate-400">{client.contactPerson}</span>
                               </p>
@@ -486,7 +523,7 @@ export default function SuperAdmin({ onSelectClientView }) {
                         {/* Column 2: Direct E.164 Line & Carrier Route */}
                         <td className="py-4 px-5">
                           <div className="flex items-center gap-2">
-                            <span className="font-mono text-white font-semibold text-xs bg-white/[0.04] px-2.5 py-1 rounded-lg border border-white/[0.08]">
+                            <span className="font-mono text-white font-bold text-xs bg-white/[0.06] px-2.5 py-1 rounded-lg border border-white/[0.08] tracking-wider">
                               {client.assignedNumber}
                             </span>
                             <button
@@ -494,18 +531,18 @@ export default function SuperAdmin({ onSelectClientView }) {
                                 e.stopPropagation();
                                 handleCopy(client.assignedNumber);
                               }}
-                              className="text-slate-500 hover:text-indigo-400 transition p-1"
-                              title="Copy E.164 DID"
+                              className="text-slate-400 hover:text-indigo-400 transition p-1"
+                              title="Copy Phone Number"
                             >
                               {copiedDid === client.assignedNumber ? (
-                                <Check size={12} className="text-emerald-400" />
+                                <Check size={13} className="text-emerald-400" />
                               ) : (
-                                <Copy size={12} />
+                                <Copy size={13} />
                               )}
                             </button>
                           </div>
                           <div className="text-[10px] font-mono text-slate-400 mt-1 flex items-center gap-1.5">
-                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                             <span>{client.carrier || 'Direct SIP Interconnect'}</span>
                           </div>
                         </td>
@@ -522,9 +559,9 @@ export default function SuperAdmin({ onSelectClientView }) {
 
                         {/* Column 4: Billable Minutes Pool */}
                         <td className="py-4 px-5">
-                          <div className="flex items-center justify-between text-xs font-mono mb-1.5">
-                            <span className="text-white font-semibold">{client.usedMinutes || 0} / {client.allocatedMinutes || 1000}m</span>
-                            <span className="text-slate-400 text-[10px]">{usagePct}%</span>
+                          <div className="flex items-center justify-between text-xs font-mono mb-1">
+                            <span className="text-emerald-400 font-bold">{remainingMins}m left</span>
+                            <span className="text-slate-400 text-[10px]">{client.usedMinutes || 0}/{client.allocatedMinutes || 1000}m</span>
                           </div>
                           <div className="w-32 bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
                             <div 
@@ -536,15 +573,15 @@ export default function SuperAdmin({ onSelectClientView }) {
                           </div>
                         </td>
 
-                        {/* Column 5: Autonomous Voice Engine & ToughTongue */}
+                        {/* Column 5: Voice Agent Persona */}
                         <td className="py-4 px-5">
-                          <div className="font-semibold text-slate-200 text-xs flex items-center gap-1.5">
+                          <div className="font-semibold text-slate-100 text-xs flex items-center gap-1.5">
                             <Zap size={13} className="text-indigo-400" />
-                            <span>{client.agent?.name || 'Autonomous Lead Qualifier'}</span>
+                            <span>{client.agent?.name || 'Sarah (Luxury Qualifier)'}</span>
                           </div>
                           <div className="text-[10px] font-mono text-indigo-300 mt-1 flex items-center gap-1.5">
                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                            <span>ToughTongue: {client.toughTongueScenarioId ? client.toughTongueScenarioId.slice(0, 8) + '...' : 'Auto'}</span>
+                            <span>Cartesia Sonic (90ms)</span>
                           </div>
                         </td>
 
@@ -556,10 +593,10 @@ export default function SuperAdmin({ onSelectClientView }) {
                                 e.stopPropagation();
                                 onSelectClientView(client.id);
                               }}
-                              className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-md shadow-indigo-500/20 active:scale-95 cursor-pointer"
+                              className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-md shadow-indigo-500/25 active:scale-95 cursor-pointer"
                               title={`Access portal for ${client.name}`}
                             >
-                              <span>🚀 Access Portal</span>
+                              <span>Open Portal</span>
                               <ArrowUpRight size={13} />
                             </button>
 
@@ -573,7 +610,7 @@ export default function SuperAdmin({ onSelectClientView }) {
                                   ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
                                   : 'bg-white/[0.04] hover:bg-white/10 text-slate-300 hover:text-white border-white/[0.08]'
                               }`}
-                              title="Copy Direct Shareable Client Portal Link"
+                              title="Copy Direct Shareable Client Portal Link (for sending to client)"
                             >
                               {copiedLink === client.id ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} />}
                             </button>
@@ -608,7 +645,34 @@ export default function SuperAdmin({ onSelectClientView }) {
                   {filteredClients.length === 0 && (
                     <tr>
                       <td colSpan="6" className="py-12 text-center text-slate-500 text-xs">
-                        No organizations found matching your search.
+                        <div className="flex flex-col items-center justify-center gap-3">
+                          <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+                            <Building2 size={24} />
+                          </div>
+                          <p className="text-slate-300 font-medium text-sm">
+                            {searchQuery ? 'No organizations found matching your search.' : 'No client organizations currently loaded.'}
+                          </p>
+                          <p className="text-slate-500 text-xs max-w-md">
+                            Load the active enterprise workspaces including Arabians Shopping Zone, Apex Luxury Dubai, and Zenith Clinic.
+                          </p>
+                          <button
+                            onClick={async () => {
+                              try {
+                                const res = await fetch('/api/admin/seed-defaults', { method: 'POST' });
+                                if (res.ok) {
+                                  showToast('✨ Enterprise Accounts & Arabians Shopping Zone Loaded!');
+                                  fetchAdminData();
+                                }
+                              } catch (e) {
+                                alert('Error: ' + e.message);
+                              }
+                            }}
+                            className="mt-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-semibold text-xs shadow-lg shadow-indigo-500/25 transition cursor-pointer flex items-center gap-2"
+                          >
+                            <Sparkles size={14} />
+                            <span>Load Accounts (Arabians Shopping Zone, Apex, Zenith)</span>
+                          </button>
+                        </div>
                       </td>
                     </tr>
                   )}

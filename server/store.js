@@ -29,6 +29,80 @@ const initialData = {
   },
   clients: [
     {
+      id: 'client_arabians_zone',
+      name: 'Arabians Shopping Zone',
+      slug: 'arabians-shopping-zone',
+      logo: 'https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=120&auto=format&fit=crop&q=80',
+      industry: 'Islamic Luxury Lifestyle & E-Commerce',
+      contactPerson: 'Mohammad Hamza / Farhan Attari',
+      email: 'support@arabiansshoppingzone.shop',
+      phone: '+91 7233862626',
+      assignedNumber: '+91 72338 62626',
+      toughTongueScenarioId: '6abbefb8077df1a1f09c02e1',
+      monthlyRetainer: '₹35,000/mo',
+      country: 'india',
+      currency: 'INR',
+      planTier: 'Enterprise COD Shield & 24/7 AI Receptionist',
+      carrier: 'ToughTongue Direct SIP / Jio PRI Interconnect',
+      sipTrunkStatus: 'Operational (24ms)',
+      crmIntegration: 'Arabians Shopping Zone Store API & Shipmozo',
+      allocatedMinutes: 2000,
+      usedMinutes: 384,
+      status: 'active',
+      createdAt: '2026-09-30T10:00:00Z',
+      knowledgeBase: {
+        businessDescription: 'Arabians Shopping Zone is an Islamic luxury brand specializing in handcrafted Moroccan and Emirati Thobes (Jubbahs), 100% pure alcohol-free Attar & Oud, Organic Sunnah Talbina, and natural skincare products.',
+        operatingHours: 'Monday - Sunday: 10:00 AM - 10:00 PM IST',
+        location: 'Kanpur, Uttar Pradesh, India',
+        brochureUrl: 'https://arabiansshoppingzone.shop',
+        calendarUrl: 'https://arabiansshoppingzone.shop',
+        whatsappTemplate: 'As-salamu alaykum {{name}} ji! 🛍️ Arabians Shopping Zone se baat karne ka shukriya. Yahan hamara exclusive catalog & VIP discount code dekhein: https://arabiansshoppingzone.shop',
+        services: [
+          {
+            id: 'srv_1',
+            name: 'Moroccan & Emirati Luxury Thobes (Sizes 52, 54, 56, 58, 60)',
+            price: '₹1,499 - ₹2,999',
+            deliverable: 'Wrinkle-resistant luxury fabric with handcrafted Islamic embroidery. Free delivery across India.'
+          },
+          {
+            id: 'srv_2',
+            name: 'Pure Attar & Royal Oud (White Oud, Dehn Al Oud, Kasturi)',
+            price: '₹499 - ₹2,499 (3ml, 6ml, 12ml Tola)',
+            deliverable: '100% Halal, Non-Alcoholic, long-lasting 48-hour fragrance.'
+          },
+          {
+            id: 'srv_3',
+            name: 'Organic Sunnah Talbina (Regular & Dry Fruit)',
+            price: '₹349 - ₹899 (250g, 500g, 1kg)',
+            deliverable: 'Pure barley health food recommended in Sunnah for vitality, heart health & digestive relief.'
+          },
+          {
+            id: 'srv_4',
+            name: 'COD Order Verification & Instant Tracking',
+            price: 'FREE',
+            deliverable: 'Real-time order confirmation to eliminate delivery rejections and reduce RTO courier losses.'
+          }
+        ],
+        faq: [
+          {
+            id: 'faq_1',
+            question: 'Thobe ka kaun sa size meri height ke liye sahi rahega?',
+            answer: "52 size (5'2\"-5'4\"), 54 size (5'5\"-5'7\"), 56 size (5'8\"-5'10\"), 58 size (5'11\"-6'1\"), aur 60 size (6'2\"+) ke liye perfect fit hota hai."
+          },
+          {
+            id: 'faq_2',
+            question: 'Delivery charges kitne hain aur kitne din me aata hai?',
+            answer: 'Standard delivery ₹70 hai aur ₹999 se upar ke sabhi orders par 100% FREE delivery hai. Shipmozo express se 3 se 5 din me poore Hindustan me delivery ho jati hai.'
+          },
+          {
+            id: 'faq_3',
+            question: 'Kya Cash on Delivery (COD) available hai?',
+            answer: 'Ji haan, poore India me COD available hai. Order ke baad hamara AI assistant confirmation call karta hai taaki order turant dispatch ho sake.'
+          }
+        ]
+      }
+    },
+    {
       id: 'client_apex_01',
       name: 'Apex Luxury Properties Dubai',
       slug: 'apex-luxury',
@@ -98,6 +172,55 @@ const initialData = {
     }
   ],
   agents: [
+    {
+      id: 'agent_arabians_zone',
+      clientId: 'client_arabians_zone',
+      name: 'Amina (Arabians Shopping Zone Senior Advisor)',
+      role: '24/7 Inbound Receptionist & COD Order Verification',
+      voiceProvider: 'Deepgram / Cartesia Urdu-Hindi (Warm & Courteous - 85ms)',
+      voiceId: 'amina-urdu-hindi',
+      languageMode: 'hinglish_india',
+      transcriberLanguage: 'hi-Latn',
+      model: 'openai/gpt-4o-mini',
+      vapiAssistantId: 'asst_arabians_live_01',
+      firstMessage: 'As-salamu alaykum! Arabians Shopping Zone se Amina baat kar rahi hoon. Main aapki kya sahayata kar sakti hoon?',
+      systemPrompt: `You are Amina, a polite, highly respectful, and knowledgeable senior customer advisor for Arabians Shopping Zone (arabiansshoppingzone.shop), Kanpur, UP, India.
+Always greet with "As-salamu alaykum". Speak in warm, polite, and fluent Urdu/Hindi (Hinglish) with respectful Islamic etiquette (using Aap, Janab, Shukriya).
+
+About Arabians Shopping Zone:
+- Premium Islamic lifestyle brand based in Kanpur, India.
+- Owner / Merchant: Mohammad Hamza & Farhan Attari (Phone/WhatsApp: +91 7233862626).
+- Official Website: https://arabiansshoppingzone.shop
+
+Product Catalog & Knowledge:
+1. Luxury Thobes / Moroccan Jubbahs:
+   - Sizes: 52 (Small - 5'2" to 5'4"), 54 (Medium - 5'5" to 5'7"), 56 (Large - 5'8" to 5'10"), 58 (XL - 5'11" to 6'1"), 60 (XXL - 6'2"+).
+   - Premium fabric, breathable, wrinkle-resistant, elegant embroidery.
+2. Pure Attar & Oud:
+   - Pure Dehn Al Oud, White Oud, Royal Kasturi, Rooh Gulab.
+   - Non-alcoholic, 100% halal, long-lasting 24-48 hours. Sizes: 3ml, 6ml, 12ml (1 Tola).
+3. Sunnah Food & Organic Talbina:
+   - Pure Barley Talbina (Prophetic Sunnah health food).
+   - Varieties: Regular Sunnah Talbina & Dry Fruit Rich Talbina. Packs: 250g, 500g, 1kg.
+4. Natural & Herbal Skincare:
+   - Halal, chemical-free face washes, saffron glow serums, and herbal care.
+
+Order & Delivery Policies:
+- Cash on Delivery (COD) & Online UPI / Card payment via Razorpay available.
+- Shipping partner: Shipmozo (Delivery across India in 3 to 5 business days).
+- Standard delivery charge: ₹70. FREE delivery on orders above ₹999.
+
+Key Agent Tasks:
+1. COD Verification Call: Verify customer name, item ordered, total price, and shipping address. Ask: "Kya aap is order ko confirm karte hain?"
+2. Inbound Questions: Answer questions about sizes (height guide), oud fragrance longevity, and Talbina benefits with confidence.
+3. WhatsApp Dispatch: Confirm sending full catalog or tracking link to their WhatsApp number (+91 7233862626).`,
+      routing: {
+        inboundDestination: 'ai_agent',
+        fallbackNumber: '+91 7233862626',
+        transferOnHotLead: true
+      },
+      status: 'deployed'
+    },
     {
       id: 'agent_apex_01',
       clientId: 'client_apex_01',
@@ -192,6 +315,79 @@ Key Objectives:
   ],
   calls: [
     {
+      id: 'call_live_arabians_01',
+      clientId: 'client_arabians_zone',
+      agentId: 'agent_arabians_zone',
+      direction: 'outbound',
+      customerName: 'Mohammad Zaid',
+      customerPhone: '+91 98390 12345',
+      durationSeconds: 114,
+      status: 'booked',
+      sentiment: 'High Intent',
+      recordingUrl: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3',
+      summary: 'COD Order Verification for Moroccan Emerald Thobe (Size 56) + 6ml White Oud (Total ₹2,199). Customer verified delivery address in Civil Lines, Kanpur. Marked Confirmed for Shipmozo dispatch.',
+      booking: {
+        slot: 'COD Order Confirmed (#ASZ-8821)',
+        type: 'Ready for Shipmozo Courier Dispatch',
+        verified: true
+      },
+      automations: {
+        whatsapp: {
+          status: 'delivered',
+          sentAt: '2026-09-30T14:15:00Z',
+          phone: '+91 98390 12345',
+          template: 'Order Confirmation & Dispatch Receipt',
+          preview: 'As-salamu alaykum Mohammad Zaid ji! 🛍️ Aapka Arabians Shopping Zone order #ASZ-8821 confirm ho chuka hai (Moroccan Thobe + White Oud - ₹2,199). Tracking: https://arabiansshoppingzone.shop'
+        },
+        email: {
+          status: 'delivered',
+          sentAt: '2026-09-30T14:15:05Z',
+          to: 'zaid@gmail.com',
+          template: 'Official Tax Invoice & Shipmozo Courier Tracking',
+          preview: 'Order #ASZ-8821 Confirmed — Arabians Shopping Zone'
+        }
+      },
+      transcript: [
+        { speaker: 'ai', time: '00:01', text: 'As-salamu alaykum Mohammad Zaid ji! Main Amina bol rahi hoon Arabians Shopping Zone se. Kya main aapse ek minute baat kar sakti hoon?' },
+        { speaker: 'customer', time: '00:07', text: 'Wa alaykumu s-salam, haan boliye Amina ji.' },
+        { speaker: 'ai', time: '00:11', text: 'Shukriya Zaid ji. Hamari website se aapka ₹2,199 ka Cash on Delivery order receive hua hai, jisme Moroccan Emerald Thobe Size 56 aur 6ml White Oud shamil hai. Delivery address Civil Lines, Kanpur dikh raha hai. Kya aap is order ko confirm karte hain?' },
+        { speaker: 'customer', time: '00:27', text: 'Haan bilkul, address sahi hai aur order confirm hai. Kab tak deliver hoga?' },
+        { speaker: 'ai', time: '00:33', text: 'Bahut shukriya! Kanpur me aapko kal sham tak Shipmozo express se delivery mil jayegi. Main order confirmation aur live tracking link aapke WhatsApp par bhej rahi hoon. Jazakallah Khair!' }
+      ],
+      createdAt: '2026-09-30T14:14:00Z'
+    },
+    {
+      id: 'call_live_arabians_02',
+      clientId: 'client_arabians_zone',
+      agentId: 'agent_arabians_zone',
+      direction: 'inbound',
+      customerName: 'Tariq Khan',
+      customerPhone: '+91 91250 88219',
+      durationSeconds: 98,
+      status: 'callback',
+      sentiment: 'Warm',
+      recordingUrl: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3',
+      summary: 'Inbound enquiry from Lucknow regarding Dry Fruit Talbina benefits for elderly parents and weakness. AI explained Sunnah nutrition & digestive benefits, and dispatched product catalog & ₹100 discount coupon via WhatsApp.',
+      booking: null,
+      automations: {
+        whatsapp: {
+          status: 'delivered',
+          sentAt: '2026-09-30T13:20:00Z',
+          phone: '+91 91250 88219',
+          template: 'Dry Fruit Talbina Benefits Guide & Flat ₹100 OFF Coupon',
+          preview: 'As-salamu alaykum Tariq Bhai! 🌾 Talbina ke bare me baat karne ka shukriya. Yahan dekhein Organic Dry Fruit Talbina (1kg) & use code SUNNAH100 for ₹100 OFF: https://arabiansshoppingzone.shop'
+        }
+      },
+      transcript: [
+        { speaker: 'ai', time: '00:01', text: 'As-salamu alaykum! Arabians Shopping Zone me aapka swagat hai. Main Amina bol rahi hoon. Main aapki kya madad kar sakti hoon?' },
+        { speaker: 'customer', time: '00:08', text: 'Wa alaykumu s-salam, mujhe mere parents ke liye Talbina leni thi, kaunsi wali behtar rahegi?' },
+        { speaker: 'ai', time: '00:15', text: 'Buzurgon ki kamzori aur digestion ke liye hamari "Dry Fruit Rich Talbina" sabse behtareen hai. Isme pure organic jau ke sath badam, kaju aur khajoor ka natural blend hota hai, jo Prophetic Sunnah food bhi hai.' },
+        { speaker: 'customer', time: '00:30', text: 'Acha, iska link WhatsApp pe bhej sakti hain kya?' },
+        { speaker: 'ai', time: '00:35', text: 'Ji bilkul Tariq bhai, main abhi aapke isi number pe WhatsApp catalog aur ₹100 discount coupon bhej rahi hoon. Shukriya!' }
+      ],
+      createdAt: '2026-09-30T13:19:00Z'
+    },
+    {
       id: 'call_live_9925',
       clientId: 'client_maple_03',
       agentId: 'agent_maple_03',
@@ -236,6 +432,22 @@ Key Objectives:
         type: 'VIP Showroom Tour & Financial Counseling',
         verified: true
       },
+      automations: {
+        whatsapp: {
+          status: 'delivered',
+          sentAt: '2026-09-29T10:15:05Z',
+          phone: '+971 50 839 2102',
+          template: 'VIP Showroom Pass & 3BHK Brochure PDF',
+          preview: 'Hi Rashid! 👋 Your Sunday 11:00 AM VIP Showroom tour at Apex Luxury Properties is confirmed. Here is your Google Maps pin & 3BHK brochure: https://apexproperties.ae/brochure.pdf'
+        },
+        email: {
+          status: 'delivered',
+          sentAt: '2026-09-29T10:15:10Z',
+          to: 'rashid@al-maktoum.ae',
+          template: 'Calendar Invite (.ics) & Portfolio Presentation Deck',
+          preview: 'Confirmed Showroom Visit (Sunday 11:00 AM) + 3BHK Dubai Marina Floor Plans'
+        }
+      },
       transcript: [
         { speaker: 'ai', time: '00:01', text: 'Good afternoon Rashid! This is Sarah from Apex Luxury Properties. I noticed you just inquired about our 3BHK residences at Dubai Marina. Do you have 60 seconds for a quick update?' },
         { speaker: 'customer', time: '00:08', text: 'Yes, hi Sarah. That was fast! I just submitted the form. What is the starting price for the 3BHK?' },
@@ -260,6 +472,15 @@ Key Objectives:
       recordingUrl: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3',
       summary: 'UK Investor calling to enquire about rental yields on studio and 1BHK off-plan options. Currently in a meeting, requested callback via WhatsApp with ROI projection sheet.',
       booking: null,
+      automations: {
+        whatsapp: {
+          status: 'delivered',
+          sentAt: '2026-09-29T09:41:00Z',
+          phone: '+44 7700 900321',
+          template: 'Off-Plan Net Rental ROI Projections (8.4% - 9.2%)',
+          preview: 'Hello Marcus, as requested during your call with Sarah, here is our complete Dubai Marina & Business Bay ROI analysis sheet: https://apexproperties.ae/roi-sheet-2026.pdf'
+        }
+      },
       transcript: [
         { speaker: 'ai', time: '00:01', text: 'Thank you for calling Apex Luxury Properties. My name is Sarah. How may I assist you with Dubai property investments today?' },
         { speaker: 'customer', time: '00:07', text: 'Hello, what kind of net ROI are you seeing on the off-plan units right now?' },
@@ -328,14 +549,27 @@ class Store {
       if (fs.existsSync(STORE_FILE)) {
         const raw = fs.readFileSync(STORE_FILE, 'utf-8');
         this.data = JSON.parse(raw);
+        if (!this.data.clients || this.data.clients.length === 0) {
+          console.log('Restoring initial enterprise clients into store...');
+          this.data.clients = JSON.parse(JSON.stringify(initialData.clients));
+          this.data.agents = JSON.parse(JSON.stringify(initialData.agents));
+          this.data.calls = JSON.parse(JSON.stringify(initialData.calls));
+          this.save();
+        }
       } else {
-        this.data = initialData;
+        this.data = JSON.parse(JSON.stringify(initialData));
         this.save();
       }
     } catch (e) {
       console.error('Error loading store, using initial data:', e);
-      this.data = initialData;
+      this.data = JSON.parse(JSON.stringify(initialData));
     }
+  }
+
+  seedDefaults() {
+    this.data = JSON.parse(JSON.stringify(initialData));
+    this.save();
+    return this.data;
   }
 
   async initMongo(uri) {
@@ -352,7 +586,7 @@ class Store {
 
       // Check if main_store exists
       const doc = await mongoDb.collection('voice_store').findOne({ _id: 'main_store' });
-      if (doc && doc.data) {
+      if (doc && doc.data && doc.data.clients && doc.data.clients.length > 0) {
         this.data = { ...this.data, ...doc.data };
         console.log('🍃 Loaded persistent data from MongoDB Atlas! Clients:', this.data.clients?.length);
       } else {
@@ -470,6 +704,21 @@ class Store {
     return call;
   }
 
+  getCallById(callId) {
+    return (this.data.calls || []).find(c => c.id === callId) || null;
+  }
+
+  updateCall(callId, updates) {
+    if (!this.data.calls) return null;
+    const idx = this.data.calls.findIndex(c => c.id === callId);
+    if (idx !== -1) {
+      this.data.calls[idx] = { ...this.data.calls[idx], ...updates };
+      this.save();
+      return this.data.calls[idx];
+    }
+    return null;
+  }
+
   getSettings() {
     return this.data.settings;
   }
@@ -508,6 +757,18 @@ class Store {
     this.data.leads[clientId] = [];
     this.save();
     return [];
+  }
+
+  resetAllToZero() {
+    this.data.calls = [];
+    this.data.leads = {};
+    if (this.data.clients) {
+      this.data.clients.forEach(c => {
+        c.usedMinutes = 0;
+      });
+    }
+    this.save();
+    return true;
   }
 }
 

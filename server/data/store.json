@@ -2,246 +2,104 @@
   "settings": {
     "vapiApiKey": "",
     "vapiPhoneNumberId": "",
+    "toughTongueApiKey": "vDOi7KxceJMvUHjLOvS_wF7uAxZb2Cgehvj30dltpNQ",
     "agencyName": "Synthetix AI Telecom",
     "agencySupportEmail": "hamza@synthetix.ai",
     "currency": "AED"
   },
   "clients": [
     {
-      "id": "client_apex_01",
-      "name": "Apex Luxury Properties Dubai",
-      "slug": "apex-luxury",
-      "logo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=200&auto=format&fit=crop&q=80",
-      "industry": "Real Estate",
-      "contactPerson": "Farhan Tariq (Director of Sales)",
-      "email": "sales@apexproperties.ae",
-      "phone": "+971 50 492 8819",
-      "assignedNumber": "+971 4 821 9920",
-      "monthlyRetainer": "2,500 AED/mo",
-      "country": "dubai",
-      "currency": "AED",
-      "planTier": "Enterprise Dedicated Trunk",
-      "carrier": "e& (Etisalat) Direct SIP Trunk",
-      "sipTrunkStatus": "Operational (42ms)",
-      "crmIntegration": "Salesforce Enterprise (Synced)",
-      "allocatedMinutes": 1500,
-      "usedMinutes": 514,
-      "status": "active",
-      "createdAt": "2026-08-15T09:00:00Z",
-      "knowledgeBase": {
-        "businessDescription": "Premier luxury real estate brokerage specializing in high-yield waterfront residences and penthouses in Dubai Marina & Palm Jumeirah.",
-        "operatingHours": "Monday - Sunday: 9:00 AM - 9:00 PM GST",
-        "location": "Level 28, Marina Plaza, Dubai Marina, UAE",
-        "services": [
-          {
-            "name": "3BHK Ultra-Luxury Marina Waterfront",
-            "price": "From 2,600,000 AED",
-            "details": "Full Marina view, private elevator, infinity pool access, handed over Q4 2026."
-          },
-          {
-            "name": "2BHK Downtown Executive Residence",
-            "price": "From 1,850,000 AED",
-            "details": "Burj Khalifa skyline view, 5 min to Dubai Mall, 8% net guaranteed rental yield."
-          },
-          {
-            "name": "Palm Jumeirah Signature Penthouse",
-            "price": "From 8,500,000 AED",
-            "details": "Private beach access, Italian marble finishing, smart home automation."
-          }
-        ],
-        "faq": [
-          {
-            "question": "What is the developer payment plan?",
-            "answer": "20% booking deposit, 60% linked to construction milestones, 20% on key handover."
-          },
-          {
-            "question": "Can foreign investors get UAE Golden Visa?",
-            "answer": "Yes, property investments of 2 Million AED or above qualify for the 10-Year Renewable UAE Golden Visa."
-          },
-          {
-            "question": "Are private site visits available this weekend?",
-            "answer": "Yes, VIP private walkthroughs are open Saturday and Sunday with our Managing Director."
-          }
-        ],
-        "postCallAction": "Automated WhatsApp VIP Brochure & Showroom Calendar Invite dispatch"
-      }
-    },
-    {
-      "id": "client_zenith_02",
-      "name": "Zenith Aesthetic & Hair Clinic",
-      "slug": "zenith-clinic",
-      "logo": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=120&auto=format&fit=crop&q=80",
-      "industry": "Specialized Healthcare / Aesthetics",
-      "contactPerson": "Dr. Sameer Kapoor (Medical Director)",
-      "email": "director@zenithclinic.in",
-      "phone": "+91 98201 44821",
-      "assignedNumber": "+91 80 4719 3320",
-      "monthlyRetainer": "₹25,000/mo",
+      "id": "client_arabians_zone",
+      "name": "Arabians Shopping Zone",
+      "slug": "arabians-shopping-zone",
+      "logo": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=120&auto=format&fit=crop&q=80",
+      "industry": "Islamic Luxury Lifestyle & E-Commerce",
+      "contactPerson": "Mohammad Hamza / Farhan Attari",
+      "email": "support@arabiansshoppingzone.shop",
+      "phone": "+91 7233862626",
+      "assignedNumber": "+91 72338 62626",
+      "toughTongueScenarioId": "6abbefb8077df1a1f09c02e1",
+      "monthlyRetainer": "₹35,000/mo",
       "country": "india",
       "currency": "INR",
-      "planTier": "Growth High-Volume SLA",
-      "carrier": "Tata Communications Enterprise PRI",
-      "sipTrunkStatus": "Operational (58ms)",
-      "crmIntegration": "LeadSquared Healthcare CRM",
-      "allocatedMinutes": 1000,
-      "usedMinutes": 318,
+      "planTier": "Enterprise COD Shield & 24/7 AI Receptionist",
+      "carrier": "ToughTongue Direct SIP / Jio PRI Interconnect",
+      "sipTrunkStatus": "Operational (24ms)",
+      "crmIntegration": "Arabians Shopping Zone Store API & Shipmozo",
+      "allocatedMinutes": 2000,
+      "usedMinutes": 384,
       "status": "active",
-      "createdAt": "2026-08-28T14:30:00Z",
+      "createdAt": "2026-09-30T10:00:00Z",
       "knowledgeBase": {
-        "businessDescription": "Leading specialized hair restoration and computerized skin aesthetic clinic in Bandra Kurla Complex (BKC), Mumbai under Dr. Sameer Kapoor.",
-        "operatingHours": "Monday - Sunday: 10:00 AM - 8:00 PM IST",
-        "location": "Bandra Kurla Complex (BKC), Mumbai, Maharashtra",
+        "businessDescription": "Arabians Shopping Zone is an Islamic luxury brand specializing in handcrafted Moroccan and Emirati Thobes (Jubbahs), 100% pure alcohol-free Attar & Oud, Organic Sunnah Talbina, and natural skincare products.",
+        "operatingHours": "Monday - Sunday: 10:00 AM - 10:00 PM IST",
+        "location": "Kanpur, Uttar Pradesh, India",
+        "brochureUrl": "https://arabiansshoppingzone.shop",
+        "calendarUrl": "https://arabiansshoppingzone.shop",
+        "whatsappTemplate": "As-salamu alaykum {{name}} ji! 🛍️ Arabians Shopping Zone se baat karne ka shukriya. Yahan hamara exclusive catalog & VIP discount code dekhein: https://arabiansshoppingzone.shop",
         "services": [
           {
-            "name": "Advanced FUE Sapphire Hair Transplant",
-            "price": "From ₹45,000",
-            "details": "High-density natural hairline reconstruction, computerized graft count, zero scarring."
+            "id": "srv_1",
+            "name": "Moroccan & Emirati Luxury Thobes (Sizes 52, 54, 56, 58, 60)",
+            "price": "₹1,499 - ₹2,999",
+            "deliverable": "Wrinkle-resistant luxury fabric with handcrafted Islamic embroidery. Free delivery across India."
           },
           {
-            "name": "US-FDA Approved GFC / PRP Hair Regrowth",
-            "price": "₹3,500 / session",
-            "details": "Natural autologous growth factor treatment to arrest shedding and thicken roots."
+            "id": "srv_2",
+            "name": "Pure Attar & Royal Oud (White Oud, Dehn Al Oud, Kasturi)",
+            "price": "₹499 - ₹2,499 (3ml, 6ml, 12ml Tola)",
+            "deliverable": "100% Halal, Non-Alcoholic, long-lasting 48-hour fragrance."
           },
           {
-            "name": "Q-Switched Carbon Laser Skin Glow",
-            "price": "₹2,500 / session",
-            "details": "Deep collagen stimulation, pigmentation clearance, instant red-carpet glow."
+            "id": "srv_3",
+            "name": "Organic Sunnah Talbina (Regular & Dry Fruit)",
+            "price": "₹349 - ₹899 (250g, 500g, 1kg)",
+            "deliverable": "Pure barley health food recommended in Sunnah for vitality, heart health & digestive relief."
+          },
+          {
+            "id": "srv_4",
+            "name": "COD Order Verification & Instant Tracking",
+            "price": "FREE",
+            "deliverable": "Real-time order confirmation to eliminate delivery rejections and reduce RTO courier losses."
           }
         ],
         "faq": [
           {
-            "question": "Dr. Sameer Kapoor ki consultation fees kitni hai?",
-            "answer": "Consultation fees ₹500 hai, jo procedure confirm karne par 100% bill mein adjust ho jati hai."
+            "id": "faq_1",
+            "question": "Thobe ka kaun sa size meri height ke liye sahi rahega?",
+            "answer": "52 size (5'2\"-5'4\"), 54 size (5'5\"-5'7\"), 56 size (5'8\"-5'10\"), 58 size (5'11\"-6'1\"), aur 60 size (6'2\"+) ke liye perfect fit hota hai."
           },
           {
-            "question": "Kya hair transplant dardnaak hota hai?",
-            "answer": "Nahi, yeh needle-free local anesthesia mein hota hai, procedure ke dauran koi dard nahi hota."
+            "id": "faq_2",
+            "question": "Delivery charges kitne hain aur kitne din me aata hai?",
+            "answer": "Standard delivery ₹70 hai aur ₹999 se upar ke sabhi orders par 100% FREE delivery hai. Shipmozo express se 3 se 5 din me poore Hindustan me delivery ho jati hai."
           },
           {
-            "question": "Kya weekend par appointments available hain?",
-            "answer": "Haan, Saturday aur Sunday dono din computerized 3D scalp analysis slots available hain."
+            "id": "faq_3",
+            "question": "Kya Cash on Delivery (COD) available hai?",
+            "answer": "Ji haan, poore India me COD available hai. Order ke baad hamara AI assistant confirmation call karta hai taaki order turant dispatch ho sake."
           }
-        ],
-        "postCallAction": "Appointment Confirmation SMS + Clinic Google Maps pin + Dr. Sameer Kapoor profile"
-      }
-    },
-    {
-      "id": "client_maple_03",
-      "name": "Maple Ridge Realty & Condos Toronto",
-      "slug": "maple-ridge-toronto",
-      "logo": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=120&auto=format&fit=crop&q=80",
-      "industry": "Real Estate & Master-Planned Developments",
-      "contactPerson": "Michael Tremblay (Broker of Record)",
-      "email": "sales@mapleridgerealty.ca",
-      "phone": "+1 416 892 4100",
-      "assignedNumber": "+1 647 800 2931",
-      "monthlyRetainer": "$2,200 CAD/mo",
-      "country": "canada",
-      "currency": "CAD",
-      "planTier": "Enterprise STIR/SHAKEN Level A",
-      "carrier": "Telus / Bandwidth Direct Interconnect",
-      "sipTrunkStatus": "Operational (35ms)",
-      "crmIntegration": "HubSpot Enterprise Real Estate",
-      "allocatedMinutes": 1200,
-      "usedMinutes": 221,
-      "status": "active",
-      "createdAt": "2026-09-01T11:00:00Z",
-      "knowledgeBase": {
-        "businessDescription": "Master-planned residential development and pre-construction condo brokerage in Downtown Toronto & GTA, representing Tier-1 builders.",
-        "operatingHours": "Monday - Saturday: 10:00 AM - 6:00 PM EST",
-        "location": "King Street West & Spadina Ave, Downtown Toronto, ON",
-        "services": [
-          {
-            "name": "2-Bedroom Executive Corner Suites",
-            "price": "From $849,000 CAD",
-            "details": "EV parking included, 9-ft smooth ceilings, extended 15% deposit structure before occupancy."
-          },
-          {
-            "name": "1-Bedroom + Den Waterfront Residences",
-            "price": "From $620,000 CAD",
-            "details": "Direct Lake Ontario views, transit-oriented development, 3 min to TTC subway."
-          },
-          {
-            "name": "3-Bedroom Family Penthouse Collection",
-            "price": "From $1,280,000 CAD",
-            "details": "Wrap-around terraces, gas BBQ connections, premium Miele appliances."
-          }
-        ],
-        "faq": [
-          {
-            "question": "Are builder closing levies and development fees capped?",
-            "answer": "Yes, development charges are legally capped at $10,000 CAD for 1-bed and $12,000 CAD for 2-bed+."
-          },
-          {
-            "question": "Can buyers with a Canadian work permit purchase?",
-            "answer": "Yes, valid work permit holders with eligible federal criteria can purchase without non-resident speculation taxes."
-          },
-          {
-            "question": "Are private presentation center showings available?",
-            "answer": "Yes, private showings are booked every Saturday from 12:00 PM to 4:00 PM EST."
-          }
-        ],
-        "postCallAction": "Email VIP Floor plans & TD Canada Trust mortgage pre-qualification link"
+        ]
       }
     }
   ],
   "agents": [
     {
-      "id": "agent_apex_01",
-      "clientId": "client_apex_01",
-      "name": "Sarah (Luxury Property Qualifier)",
-      "role": "Outbound Speed-to-Lead & Inbound Receptionist",
-      "voiceProvider": "Cartesia Sonic (British/Neutral English - 90ms)",
-      "voiceId": "sonic-en-british-neutral",
-      "languageMode": "english_dubai",
-      "transcriberLanguage": "en",
-      "model": "openai/gpt-4o-mini",
-      "vapiAssistantId": "asst_apex_live_44",
-      "firstMessage": "Good afternoon! This is Sarah from Apex Luxury Properties. I noticed you just inquired about our 3BHK residences at Dubai Marina. Do you have 60 seconds for a quick update?",
-      "systemPrompt": "You are Sarah, an elite and courteous senior sales consultant at Apex Luxury Properties Dubai.\nYour primary objective is NOT to close the deal, but to QUALIFY the lead and SECURE a site visit or VIP Zoom consultation with the Managing Director.\n\nKey Rules:\n1. Always maintain a calm, prestigious, and articulate British/International tone.\n2. Ask one question at a time.\n3. Qualify 3 criteria:\n   - Purpose: End-use (living) or pure investment (ROI)?\n   - Budget range: Under 2M AED, 2M - 4M AED, or 4M+ Ultra-luxury?\n   - Timeline: Ready to move in or off-plan 2026/2027?\n4. When qualified, immediately lock a calendar slot: Saturday 11:00 AM or Sunday 4:00 PM.\n5. If customer is rude or not interested, politely end call without arguing.",
-      "routing": {
-        "inboundDestination": "ai_agent",
-        "fallbackNumber": "+971 50 492 8819",
-        "transferOnHotLead": true
-      },
-      "status": "deployed"
-    },
-    {
-      "id": "agent_zenith_02",
-      "clientId": "client_zenith_02",
-      "name": "Priya (Clinic Front-Desk & Consultation Setter)",
-      "role": "Inbound 24/7 Receptionist & Lead Qualifier",
-      "voiceProvider": "Deepgram Aura Priya (Indian English / Hinglish)",
-      "voiceId": "aura-priya-en-in",
+      "id": "agent_arabians_zone",
+      "clientId": "client_arabians_zone",
+      "name": "Amina (Arabians Shopping Zone Senior Advisor)",
+      "role": "24/7 Inbound Receptionist & COD Order Verification",
+      "voiceProvider": "Deepgram / Cartesia Urdu-Hindi (Warm & Courteous - 85ms)",
+      "voiceId": "amina-urdu-hindi",
       "languageMode": "hinglish_india",
       "transcriberLanguage": "hi-Latn",
       "model": "openai/gpt-4o-mini",
-      "vapiAssistantId": "asst_zenith_live_89",
-      "firstMessage": "Namaste! Zenith Aesthetic Clinic mein aapka swagat hai. Main Priya baat kar rahi hoon. Main aapki kya sahayata kar sakti hoon?",
-      "systemPrompt": "You are Priya, the head patient coordinator at Zenith Aesthetic & Hair Clinic.\nSpeak in polite, empathetic Indian English with natural Hinglish warmth.\n\nGoal:\n1. Greet the patient with utmost respect.\n2. Identify the treatment interested in (Hair Transplant, PRP, Skin Glow Laser, Botox).\n3. Explain that Dr. Sameer conducts a thorough computerized 3D scalp/skin analysis.\n4. Book an in-clinic consultation for ₹500 (waived if treatment confirmed).\n5. Capture patient name and preferred morning/evening slot.",
+      "vapiAssistantId": "asst_arabians_live_01",
+      "firstMessage": "As-salamu alaykum! Arabians Shopping Zone se Amina baat kar rahi hoon. Main aapki kya sahayata kar sakti hoon?",
+      "systemPrompt": "You are Amina, a polite, highly respectful, and knowledgeable senior customer advisor for Arabians Shopping Zone (arabiansshoppingzone.shop), Kanpur, UP, India.\nAlways greet with \"As-salamu alaykum\". Speak in warm, polite, and fluent Urdu/Hindi (Hinglish) with respectful Islamic etiquette (using Aap, Janab, Shukriya).\n\nAbout Arabians Shopping Zone:\n- Premium Islamic lifestyle brand based in Kanpur, India.\n- Owner / Merchant: Mohammad Hamza & Farhan Attari (Phone/WhatsApp: +91 7233862626).\n- Official Website: https://arabiansshoppingzone.shop\n\nProduct Catalog & Knowledge:\n1. Luxury Thobes / Moroccan Jubbahs:\n   - Sizes: 52 (Small - 5'2\" to 5'4\"), 54 (Medium - 5'5\" to 5'7\"), 56 (Large - 5'8\" to 5'10\"), 58 (XL - 5'11\" to 6'1\"), 60 (XXL - 6'2\"+).\n   - Premium fabric, breathable, wrinkle-resistant, elegant embroidery.\n2. Pure Attar & Oud:\n   - Pure Dehn Al Oud, White Oud, Royal Kasturi, Rooh Gulab.\n   - Non-alcoholic, 100% halal, long-lasting 24-48 hours. Sizes: 3ml, 6ml, 12ml (1 Tola).\n3. Sunnah Food & Organic Talbina:\n   - Pure Barley Talbina (Prophetic Sunnah health food).\n   - Varieties: Regular Sunnah Talbina & Dry Fruit Rich Talbina. Packs: 250g, 500g, 1kg.\n4. Natural & Herbal Skincare:\n   - Halal, chemical-free face washes, saffron glow serums, and herbal care.\n\nOrder & Delivery Policies:\n- Cash on Delivery (COD) & Online UPI / Card payment via Razorpay available.\n- Shipping partner: Shipmozo (Delivery across India in 3 to 5 business days).\n- Standard delivery charge: ₹70. FREE delivery on orders above ₹999.\n\nKey Agent Tasks:\n1. COD Verification Call: Verify customer name, item ordered, total price, and shipping address. Ask: \"Kya aap is order ko confirm karte hain?\"\n2. Inbound Questions: Answer questions about sizes (height guide), oud fragrance longevity, and Talbina benefits with confidence.\n3. WhatsApp Dispatch: Confirm sending full catalog or tracking link to their WhatsApp number (+91 7233862626).",
       "routing": {
         "inboundDestination": "ai_agent",
-        "fallbackNumber": "+91 98201 44821",
-        "transferOnHotLead": false
-      },
-      "status": "deployed"
-    },
-    {
-      "id": "agent_maple_03",
-      "clientId": "client_maple_03",
-      "name": "Chloe (Canadian Property Advisor)",
-      "role": "Inbound & Outbound Showing Coordinator",
-      "voiceProvider": "ElevenLabs Turbo v2.5 (Canadian / North American Friendly)",
-      "voiceId": "turbo-en-ca-friendly",
-      "languageMode": "english_canada",
-      "transcriberLanguage": "en-US",
-      "model": "openai/gpt-4o-mini",
-      "vapiAssistantId": "asst_maple_live_12",
-      "firstMessage": "Hi there! This is Chloe calling from Maple Ridge Realty Toronto. Thanks for checking out our new pre-construction condo release! Do you have a quick minute to chat about your search?",
-      "systemPrompt": "You are Chloe, an approachable, highly knowledgeable, and polite senior client advisor at Maple Ridge Realty Toronto.\nSpeak in natural, warm, and friendly Canadian / North American English.\nTarget Audience: Toronto & GTA homebuyers, first-time buyers, and Canadian real estate investors.\n\nKey Objectives:\n1. Always maintain a warm, welcoming, and professional Canadian tone (use natural phrases like \"Hi there\", \"Thanks for taking my call\", \"Awesome\", \"Sounds great\").\n2. Ask one clear question at a time to qualify:\n   - What type of property: Pre-construction condo or move-in ready detached/townhouse?\n   - Target area: Downtown Toronto, Mississauga, Markham, or broader GTA?\n   - Budget range in CAD: $600k-$900k, $1M-$1.5M, or $1.8M+ luxury?\n   - Mortgage status: Pre-approved with a Canadian Big 5 bank or looking for a broker referral?\n3. Lock an appointment: Book a 15-minute 1-on-1 VIP Video Consultation or Private Open House Showing for Saturday at 2:00 PM EST.\n4. If they need floor plans or pricing sent, confirm their email and phone for instant PDF dispatch.",
-      "routing": {
-        "inboundDestination": "ai_agent",
-        "fallbackNumber": "+1 416 892 4100",
+        "fallbackNumber": "+91 7233862626",
         "transferOnHotLead": true
       },
       "status": "deployed"
@@ -249,468 +107,117 @@
   ],
   "calls": [
     {
-      "id": "call_1790696806985_2",
-      "clientId": "client_apex_01",
-      "agentId": "agent_apex_01",
+      "id": "call_live_arabians_01",
+      "clientId": "client_arabians_zone",
+      "agentId": "agent_arabians_zone",
       "direction": "outbound",
-      "customerName": "Marcus Al-Kuwari",
-      "customerPhone": "+971 50 867 6065",
-      "durationSeconds": 151,
+      "customerName": "Mohammad Zaid",
+      "customerPhone": "+91 98390 12345",
+      "durationSeconds": 114,
       "status": "booked",
       "sentiment": "High Intent",
       "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Autonomous Speed-to-Lead Outbound call to Marcus Al-Kuwari (Senior Private Wealth Advisor at DIFC Private Family Office). Qualified AED 5.0M - 6.5M requirement. Locked verified appointment slot for next business day.",
+      "summary": "COD Order Verification for Moroccan Emerald Thobe (Size 56) + 6ml White Oud (Total ₹2,199). Customer verified delivery address in Civil Lines, Kanpur. Marked Confirmed for Shipmozo dispatch.",
       "booking": {
-        "slot": "Tomorrow, 3:00 PM",
-        "type": "VIP Consultation & Presentation",
+        "slot": "COD Order Confirmed (#ASZ-8821)",
+        "type": "Ready for Shipmozo Courier Dispatch",
         "verified": true
+      },
+      "automations": {
+        "whatsapp": {
+          "status": "delivered",
+          "sentAt": "2026-09-30T14:15:00Z",
+          "phone": "+91 98390 12345",
+          "template": "Order Confirmation & Dispatch Receipt",
+          "preview": "As-salamu alaykum Mohammad Zaid ji! 🛍️ Aapka Arabians Shopping Zone order #ASZ-8821 confirm ho chuka hai (Moroccan Thobe + White Oud - ₹2,199). Tracking: https://arabiansshoppingzone.shop"
+        },
+        "email": {
+          "status": "delivered",
+          "sentAt": "2026-09-30T14:15:05Z",
+          "to": "zaid@gmail.com",
+          "template": "Official Tax Invoice & Shipmozo Courier Tracking",
+          "preview": "Order #ASZ-8821 Confirmed — Arabians Shopping Zone"
+        }
       },
       "transcript": [
         {
           "speaker": "ai",
           "time": "00:01",
-          "text": "Good day! This is Sarah calling from Apex Luxury Properties Dubai. I'm reaching out regarding your interest in Off-Plan Luxury Villas."
+          "text": "As-salamu alaykum Mohammad Zaid ji! Main Amina bol rahi hoon Arabians Shopping Zone se. Kya main aapse ek minute baat kar sakti hoon?"
         },
         {
           "speaker": "customer",
           "time": "00:07",
-          "text": "Yes hello, I was looking into options around Palm Jumeirah. What do you currently have available?"
+          "text": "Wa alaykumu s-salam, haan boliye Amina ji."
         },
         {
           "speaker": "ai",
-          "time": "00:14",
-          "text": "We currently have prime exclusive allocations with verified AED 5.0M - 6.5M targets. Would tomorrow at 3:00 PM suit you for a 15-minute walkthrough?"
+          "time": "00:11",
+          "text": "Shukriya Zaid ji. Hamari website se aapka ₹2,199 ka Cash on Delivery order receive hua hai, jisme Moroccan Emerald Thobe Size 56 aur 6ml White Oud shamil hai. Delivery address Civil Lines, Kanpur dikh raha hai. Kya aap is order ko confirm karte hain?"
         },
         {
           "speaker": "customer",
-          "time": "00:23",
-          "text": "Yes, tomorrow at 3:00 PM works well for me. Please WhatsApp the location pin."
+          "time": "00:27",
+          "text": "Haan bilkul, address sahi hai aur order confirm hai. Kab tak deliver hoga?"
+        },
+        {
+          "speaker": "ai",
+          "time": "00:33",
+          "text": "Bahut shukriya! Kanpur me aapko kal sham tak Shipmozo express se delivery mil jayegi. Main order confirmation aur live tracking link aapke WhatsApp par bhej rahi hoon. Jazakallah Khair!"
         }
       ],
-      "createdAt": "2026-09-29T15:46:46.985Z"
+      "createdAt": "2026-09-30T14:14:00Z"
     },
     {
-      "id": "call_1790696806983_1",
-      "clientId": "client_apex_01",
-      "agentId": "agent_apex_01",
-      "direction": "outbound",
-      "customerName": "Tariq Sterling",
-      "customerPhone": "+971 50 357 9667",
-      "durationSeconds": 170,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Autonomous Speed-to-Lead Outbound call to Tariq Sterling (Venture Capital Partner at Sobha Signature Estates). Qualified AED 5.2M - 6.7M requirement. Locked verified appointment slot for next business day.",
-      "booking": {
-        "slot": "Tomorrow, 3:00 PM",
-        "type": "VIP Consultation & Presentation",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Good day! This is Sarah calling from Apex Luxury Properties Dubai. I'm reaching out regarding your interest in Off-Plan Luxury Villas."
-        },
-        {
-          "speaker": "customer",
-          "time": "00:07",
-          "text": "Yes hello, I was looking into options around Palm Jumeirah. What do you currently have available?"
-        },
-        {
-          "speaker": "ai",
-          "time": "00:14",
-          "text": "We currently have prime exclusive allocations with verified AED 5.2M - 6.7M targets. Would tomorrow at 3:00 PM suit you for a 15-minute walkthrough?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:23",
-          "text": "Yes, tomorrow at 3:00 PM works well for me. Please WhatsApp the location pin."
-        }
-      ],
-      "createdAt": "2026-09-29T15:46:46.983Z"
-    },
-    {
-      "id": "call_1790696444126",
-      "clientId": "client_apex_01",
-      "agentId": "agent_apex_01",
+      "id": "call_live_arabians_02",
+      "clientId": "client_arabians_zone",
+      "agentId": "agent_arabians_zone",
       "direction": "inbound",
-      "customerName": "Hamza Al-Maktoum",
-      "customerPhone": "+971 50 882 1200",
-      "durationSeconds": 148,
-      "status": "booked",
-      "sentiment": "High Intent",
+      "customerName": "Tariq Khan",
+      "customerPhone": "+91 91250 88219",
+      "durationSeconds": 98,
+      "status": "callback",
+      "sentiment": "Warm",
       "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Inbound Direct Call from Hamza Al-Maktoum to line +971 4 821 9920. Inquired regarding 3BHK Ultra-Luxury Marina Waterfront, qualified 2M+ AED budget, and reserved VIP showroom walkthrough for Sunday at 11:00 AM.",
-      "booking": {
-        "slot": "Sunday, 11:00 AM",
-        "type": "Inbound VIP Showroom Walkthrough",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Good afternoon! Thank you for calling Apex Luxury Properties Dubai Dubai. My name is Sarah at client concierge. How may I assist you today?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:08",
-          "text": "Hi Sarah, I saw your release for 3BHK Ultra-Luxury Marina Waterfront. Could you share the current pricing and handover timeline?"
-        },
-        {
-          "speaker": "ai",
-          "time": "00:17",
-          "text": "Certainly! Our 3BHK Ultra-Luxury Marina Waterfront start from From 2,600,000 AED with an 8% guaranteed rental yield and 10-Year Golden Visa eligibility. Would you like to reserve a private VIP showroom walkthrough this Sunday at 11:00 AM?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:29",
-          "text": "Yes, Sunday 11 AM is perfect for me."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:34",
-          "text": "Confirmed! Sunday at 11:00 AM is reserved for you. I have immediately dispatched the location pass and project brochure to your WhatsApp. Have a pleasant day!"
+      "summary": "Inbound enquiry from Lucknow regarding Dry Fruit Talbina benefits for elderly parents and weakness. AI explained Sunnah nutrition & digestive benefits, and dispatched product catalog & ₹100 discount coupon via WhatsApp.",
+      "booking": null,
+      "automations": {
+        "whatsapp": {
+          "status": "delivered",
+          "sentAt": "2026-09-30T16:05:32.520Z",
+          "phone": "+91 91250 88219",
+          "template": "VIP Brochure & Location Pin",
+          "preview": "Hi Tariq! 👋 Thank you for connecting with Arabians Shopping Zone. As discussed with our AI assistant, here is your official brochure & presentation: https://arabiansshoppingzone.shop"
         }
-      ],
-      "createdAt": "2026-09-29T15:40:44.126Z"
-    },
-    {
-      "id": "call_1790694723783",
-      "clientId": "client_maple_03",
-      "agentId": "agent_maple_03",
-      "direction": "outbound",
-      "customerName": "David Miller",
-      "customerPhone": "+14168924100",
-      "durationSeconds": 128,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Live Canadian English Call to David Miller. Verified Canadian buyer requirement, $850k CAD budget confirmed with TD pre-approval, and locked presentation center walkthrough for Saturday at 2:00 PM EST.",
-      "booking": {
-        "slot": "Saturday, 2:00 PM EST",
-        "type": "Private Presentation Gallery Walkthrough",
-        "verified": true
       },
       "transcript": [
         {
           "speaker": "ai",
           "time": "00:01",
-          "text": "Hi there David Miller! This is Chloe (Canadian Property Advisor) reaching out from Maple Ridge Realty & Condos Toronto. Thanks for checking out our new project release! Do you have a quick minute to chat about what you are looking for?"
+          "text": "As-salamu alaykum! Arabians Shopping Zone me aapka swagat hai. Main Amina bol rahi hoon. Main aapki kya madad kar sakti hoon?"
         },
         {
           "speaker": "customer",
           "time": "00:08",
-          "text": "Hey Chloe, yes I do! We were looking at 2-bedroom units and wanted to see what pricing is looking like in the $850k CAD range."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:16",
-          "text": "Great news! We have spacious 2-bedroom corner layouts starting from $849,000 CAD with parking included and capped development levies. Are you pre-approved with a Canadian lender?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:27",
-          "text": "Yes, we are pre-approved with TD Canada Trust. Can we come view the presentation center this weekend?"
-        },
-        {
-          "speaker": "ai",
-          "time": "00:34",
-          "text": "Awesome! I have a private walkthrough slot open this Saturday at 2:00 PM EST at our downtown presentation center. Would that work for you?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:45",
-          "text": "Saturday 2 PM works great for both of us."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:50",
-          "text": "Superb! Saturday at 2:00 PM EST is booked for you. I just sent the VIP presentation pass and directions to your phone. Have a wonderful day!"
-        }
-      ],
-      "createdAt": "2026-09-29T15:12:03.783Z"
-    },
-    {
-      "id": "call_1790694723778",
-      "clientId": "client_zenith_02",
-      "agentId": "agent_zenith_02",
-      "direction": "outbound",
-      "customerName": "Rohan Sharma",
-      "customerPhone": "+919820144821",
-      "durationSeconds": 128,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Live Natural Hinglish Call to Rohan Sharma. Verified requirement, budget discussed, and locked confirmed in-person visit for Sunday at 11:00 AM.",
-      "booking": {
-        "slot": "Sunday, 11:00 AM",
-        "type": "Sample Flat In-Person Site Visit",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Namaste Rohan Sharma! Main Priya (Clinic Front-Desk & Consultation Setter) baat kar rahi hoon Zenith Aesthetic & Hair Clinic se. Aapne inquiry submit ki thi—kya main aapka 1 minute le sakti hoon?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:08",
-          "text": "Haan ji, mujhe pricing aur availability ke baare mein janna tha."
+          "text": "Wa alaykumu s-salam, mujhe mere parents ke liye Talbina leni thi, kaunsi wali behtar rahegi?"
         },
         {
           "speaker": "ai",
           "time": "00:15",
-          "text": "Ji bilkul! Hamare units prime location mein ready hain. Kya aap ready-to-move dekh rahe hain ya investment purpose se?"
+          "text": "Buzurgon ki kamzori aur digestion ke liye hamari \"Dry Fruit Rich Talbina\" sabse behtareen hai. Isme pure organic jau ke sath badam, kaju aur khajoor ka natural blend hota hai, jo Prophetic Sunnah food bhi hai."
         },
         {
           "speaker": "customer",
-          "time": "00:24",
-          "text": "Khud rehne ke liye dekh rahe hain family ke sath."
-        },
-        {
-          "speaker": "ai",
           "time": "00:30",
-          "text": "Bohot badhiya! Kal Saturday sham 4 baje ya Sunday subah 11 baje—aapke liye site visit kab convenient rahega?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:39",
-          "text": "Sunday subah 11 baje rakh lijiye."
+          "text": "Acha, iska link WhatsApp pe bhej sakti hain kya?"
         },
         {
           "speaker": "ai",
-          "time": "00:44",
-          "text": "Done! Sunday 11 AM ka slot confirm ho gaya hai. Location map aur brochure maine WhatsApp pe bhej diya hai. Dhanyawad!"
+          "time": "00:35",
+          "text": "Ji bilkul Tariq bhai, main abhi aapke isi number pe WhatsApp catalog aur ₹100 discount coupon bhej rahi hoon. Shukriya!"
         }
       ],
-      "createdAt": "2026-09-29T15:12:03.778Z"
-    },
-    {
-      "id": "call_1790694723764",
-      "clientId": "client_apex_01",
-      "agentId": "agent_apex_01",
-      "direction": "outbound",
-      "customerName": "Zayed Al Mansoor",
-      "customerPhone": "+971504928819",
-      "durationSeconds": 128,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Live International English Call to Zayed Al Mansoor. Verified luxury inventory preference, and scheduled VIP walkthrough for Sunday at 11:00 AM.",
-      "booking": {
-        "slot": "Sunday, 11:00 AM",
-        "type": "VIP Executive Showroom Walkthrough",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Good afternoon Zayed Al Mansoor! This is Sarah (Luxury Property Qualifier) reaching out from Apex Luxury Properties Dubai. I received your inquiry and wanted to check if this is a good moment for a quick update?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:07",
-          "text": "Yes, hi! I wanted to check your options and pricing availability in Dubai Marina."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:13",
-          "text": "Certainly! We have tailored high-floor residences with marina views starting from 2.6M AED. May I confirm if you are looking for living or pure investment?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:22",
-          "text": "For our family relocation. Can we set up a private walkthrough?"
-        },
-        {
-          "speaker": "ai",
-          "time": "00:28",
-          "text": "Absolutely! I have Sunday morning at 11:00 AM open for an exclusive VIP showroom walkthrough. Shall I reserve that for you?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:36",
-          "text": "Yes, Sunday 11 AM works perfectly."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:40",
-          "text": "Confirmed! Your VIP slot is locked and the brochure has been dispatched to your WhatsApp. Have a pleasant day!"
-        }
-      ],
-      "createdAt": "2026-09-29T15:12:03.764Z"
-    },
-    {
-      "id": "call_1790693965411",
-      "clientId": "client_apex_01",
-      "agentId": "agent_apex_01",
-      "direction": "outbound",
-      "customerName": "Tariq Mansoor",
-      "customerPhone": "+971501234567",
-      "durationSeconds": 128,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Live International English Call to Tariq Mansoor. Verified luxury inventory preference, and scheduled VIP walkthrough for Sunday at 11:00 AM.",
-      "booking": {
-        "slot": "Sunday, 11:00 AM",
-        "type": "VIP Executive Showroom Walkthrough",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Good afternoon Tariq Mansoor! This is Sarah (Luxury Property Qualifier) reaching out from Apex Luxury Properties Dubai. I received your inquiry and wanted to check if this is a good moment for a quick update?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:07",
-          "text": "Yes, hi! I wanted to check your options and pricing availability in Dubai Marina."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:13",
-          "text": "Certainly! We have tailored high-floor residences with marina views starting from 2.6M AED. May I confirm if you are looking for living or pure investment?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:22",
-          "text": "For our family relocation. Can we set up a private walkthrough?"
-        },
-        {
-          "speaker": "ai",
-          "time": "00:28",
-          "text": "Absolutely! I have Sunday morning at 11:00 AM open for an exclusive VIP showroom walkthrough. Shall I reserve that for you?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:36",
-          "text": "Yes, Sunday 11 AM works perfectly."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:40",
-          "text": "Confirmed! Your VIP slot is locked and the brochure has been dispatched to your WhatsApp. Have a pleasant day!"
-        }
-      ],
-      "createdAt": "2026-09-29T14:59:25.411Z"
-    },
-    {
-      "id": "call_1790693960041",
-      "clientId": "client_zenith_02",
-      "agentId": "agent_zenith_02",
-      "direction": "outbound",
-      "customerName": "Vikram Malhotra",
-      "customerPhone": "+919876543210",
-      "durationSeconds": 128,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Live Natural Hinglish Call to Vikram Malhotra. Verified requirement, budget discussed, and locked confirmed in-person visit for Sunday at 11:00 AM.",
-      "booking": {
-        "slot": "Sunday, 11:00 AM",
-        "type": "Sample Flat In-Person Site Visit",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Namaste Vikram Malhotra! Main Priya (Clinic Front-Desk & Consultation Setter) baat kar rahi hoon Zenith Aesthetic & Hair Clinic se. Aapne inquiry submit ki thi—kya main aapka 1 minute le sakti hoon?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:08",
-          "text": "Haan ji, mujhe pricing aur availability ke baare mein janna tha."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:15",
-          "text": "Ji bilkul! Hamare units prime location mein ready hain. Kya aap ready-to-move dekh rahe hain ya investment purpose se?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:24",
-          "text": "Khud rehne ke liye dekh rahe hain family ke sath."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:30",
-          "text": "Bohot badhiya! Kal Saturday sham 4 baje ya Sunday subah 11 baje—aapke liye site visit kab convenient rahega?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:39",
-          "text": "Sunday subah 11 baje rakh lijiye."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:44",
-          "text": "Done! Sunday 11 AM ka slot confirm ho gaya hai. Location map aur brochure maine WhatsApp pe bhej diya hai. Dhanyawad!"
-        }
-      ],
-      "createdAt": "2026-09-29T14:59:20.041Z"
-    },
-    {
-      "id": "call_1790693953919",
-      "clientId": "client_maple_03",
-      "agentId": "agent_maple_03",
-      "direction": "outbound",
-      "customerName": "Jordan Bennett",
-      "customerPhone": "+14169908821",
-      "durationSeconds": 128,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Live Canadian English Call to Jordan Bennett. Verified Canadian buyer requirement, $850k CAD budget confirmed with TD pre-approval, and locked presentation center walkthrough for Saturday at 2:00 PM EST.",
-      "booking": {
-        "slot": "Saturday, 2:00 PM EST",
-        "type": "Private Presentation Gallery Walkthrough",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Hi there Jordan Bennett! This is Chloe (Canadian Property Advisor) reaching out from Maple Ridge Realty & Condos Toronto. Thanks for checking out our new project release! Do you have a quick minute to chat about what you are looking for?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:08",
-          "text": "Hey Chloe, yes I do! We were looking at 2-bedroom units and wanted to see what pricing is looking like in the $850k CAD range."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:16",
-          "text": "Great news! We have spacious 2-bedroom corner layouts starting from $849,000 CAD with parking included and capped development levies. Are you pre-approved with a Canadian lender?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:27",
-          "text": "Yes, we are pre-approved with TD Canada Trust. Can we come view the presentation center this weekend?"
-        },
-        {
-          "speaker": "ai",
-          "time": "00:34",
-          "text": "Awesome! I have a private walkthrough slot open this Saturday at 2:00 PM EST at our downtown presentation center. Would that work for you?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:45",
-          "text": "Saturday 2 PM works great for both of us."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:50",
-          "text": "Superb! Saturday at 2:00 PM EST is booked for you. I just sent the VIP presentation pass and directions to your phone. Have a wonderful day!"
-        }
-      ],
-      "createdAt": "2026-09-29T14:59:13.919Z"
+      "createdAt": "2026-09-30T13:19:00Z"
     },
     {
       "id": "call_live_9925",
@@ -769,174 +276,6 @@
       "createdAt": "2026-09-29T11:05:00Z"
     },
     {
-      "id": "call_1790663704379",
-      "clientId": "client_apex_01",
-      "agentId": "agent_apex_01",
-      "direction": "outbound",
-      "customerName": "Sheikh Hamdan",
-      "customerPhone": "+971509988776",
-      "durationSeconds": 128,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Live International English Call to Sheikh Hamdan. Verified family requirement, confirmed high-floor inventory preference, and scheduled VIP walkthrough for Sunday at 11:00 AM.",
-      "booking": {
-        "slot": "Sunday, 11:00 AM",
-        "type": "VIP Executive Showroom Walkthrough",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Good afternoon Sheikh Hamdan! This is Sarah (Luxury Property Qualifier) reaching out from Apex Luxury Properties Dubai. I received your inquiry and wanted to check if this is a good moment for a quick update?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:07",
-          "text": "Yes, hi! I wanted to check your options and pricing availability."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:13",
-          "text": "Certainly! We have tailored high-floor options available. May I confirm if you are looking for living or pure investment?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:22",
-          "text": "For our family residence. Can we set up a walkthrough?"
-        },
-        {
-          "speaker": "ai",
-          "time": "00:28",
-          "text": "Absolutely! I have Sunday morning at 11:00 AM open for an exclusive VIP walkthrough. Shall I reserve that for you?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:36",
-          "text": "Yes, Sunday 11 AM works perfectly."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:40",
-          "text": "Confirmed! Your slot is locked and the brochure has been dispatched to your WhatsApp. Have a pleasant day!"
-        }
-      ],
-      "createdAt": "2026-09-29T06:35:04.379Z"
-    },
-    {
-      "id": "call_1790663699088",
-      "clientId": "client_apex_01",
-      "agentId": "agent_apex_01",
-      "direction": "outbound",
-      "customerName": "Rahul Sharma",
-      "customerPhone": "+919876543210",
-      "durationSeconds": 128,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Live Hinglish Call to Rahul Sharma. Verified requirement, budget discussed, and locked confirmed in-person visit for Sunday at 11:00 AM.",
-      "booking": {
-        "slot": "Sunday, 11:00 AM",
-        "type": "Sample Flat In-Person Site Visit",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Namaste Rahul Sharma! Main Sarah (Luxury Property Qualifier) baat kar rahi hoon Apex Luxury Properties Dubai se. Aapne inquiry submit ki thi—kya main aapka 1 minute le sakti hoon?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:08",
-          "text": "Haan ji, mujhe pricing aur availability ke baare mein janna tha."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:15",
-          "text": "Ji bilkul! Hamare units prime location mein ready hain. Kya aap ready-to-move dekh rahe hain ya investment purpose se?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:24",
-          "text": "Khud rehne ke liye dekh rahe hain family ke sath."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:30",
-          "text": "Bohot badhiya! Kal Saturday sham 4 baje ya Sunday subah 11 baje—aapke liye site visit kab convenient rahega?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:39",
-          "text": "Sunday subah 11 baje rakh lijiye."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:44",
-          "text": "Done! Sunday 11 AM ka slot confirm ho gaya hai. Location map aur brochure maine WhatsApp pe bhej diya hai. Dhanyawad!"
-        }
-      ],
-      "createdAt": "2026-09-29T06:34:59.088Z"
-    },
-    {
-      "id": "call_1790662917782",
-      "clientId": "client_apex_01",
-      "agentId": "agent_apex_01",
-      "direction": "outbound",
-      "customerName": "Sheikh Hamdan",
-      "customerPhone": "+971508889999",
-      "durationSeconds": 124,
-      "status": "booked",
-      "sentiment": "High Intent",
-      "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
-      "summary": "Live Outbound Call to Sheikh Hamdan. Verified requirement, answered pricing questions, and locked confirmed appointment for tomorrow at 4:30 PM.",
-      "booking": {
-        "slot": "Tomorrow, 4:30 PM",
-        "type": "Executive Video Consultation / Site Walkthrough",
-        "verified": true
-      },
-      "transcript": [
-        {
-          "speaker": "ai",
-          "time": "00:01",
-          "text": "Hello Sheikh Hamdan! This is Sarah (Luxury Property Qualifier) reaching out from Apex Luxury Properties Dubai. I received your inquiry and wanted to check if this is a good moment?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:07",
-          "text": "Yes, hi! I wanted to check your options and pricing availability."
-        },
-        {
-          "speaker": "ai",
-          "time": "00:13",
-          "text": "Certainly! We have tailored packages ready. May I confirm if you prefer our prime location portfolio or custom consultation?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:22",
-          "text": "Prime portfolio would be great. Can we set up a call tomorrow?"
-        },
-        {
-          "speaker": "ai",
-          "time": "00:28",
-          "text": "Absolutely! I have tomorrow afternoon at 4:30 PM open. Shall I lock that in for you?"
-        },
-        {
-          "speaker": "customer",
-          "time": "00:35",
-          "text": "Yes, 4:30 PM works. Thank you!"
-        },
-        {
-          "speaker": "ai",
-          "time": "00:38",
-          "text": "Confirmed! I have locked tomorrow 4:30 PM and dispatched the confirmation via WhatsApp. Have a great day!"
-        }
-      ],
-      "createdAt": "2026-09-29T06:21:57.782Z"
-    },
-    {
       "id": "call_live_9921",
       "clientId": "client_apex_01",
       "agentId": "agent_apex_01",
@@ -952,6 +291,22 @@
         "slot": "Sunday, 11:00 AM",
         "type": "VIP Showroom Tour & Financial Counseling",
         "verified": true
+      },
+      "automations": {
+        "whatsapp": {
+          "status": "delivered",
+          "sentAt": "2026-09-29T10:15:05Z",
+          "phone": "+971 50 839 2102",
+          "template": "VIP Showroom Pass & 3BHK Brochure PDF",
+          "preview": "Hi Rashid! 👋 Your Sunday 11:00 AM VIP Showroom tour at Apex Luxury Properties is confirmed. Here is your Google Maps pin & 3BHK brochure: https://apexproperties.ae/brochure.pdf"
+        },
+        "email": {
+          "status": "delivered",
+          "sentAt": "2026-09-29T10:15:10Z",
+          "to": "rashid@al-maktoum.ae",
+          "template": "Calendar Invite (.ics) & Portfolio Presentation Deck",
+          "preview": "Confirmed Showroom Visit (Sunday 11:00 AM) + 3BHK Dubai Marina Floor Plans"
+        }
       },
       "transcript": [
         {
@@ -1005,6 +360,15 @@
       "recordingUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=short-voice-note.mp3",
       "summary": "UK Investor calling to enquire about rental yields on studio and 1BHK off-plan options. Currently in a meeting, requested callback via WhatsApp with ROI projection sheet.",
       "booking": null,
+      "automations": {
+        "whatsapp": {
+          "status": "delivered",
+          "sentAt": "2026-09-29T09:41:00Z",
+          "phone": "+44 7700 900321",
+          "template": "Off-Plan Net Rental ROI Projections (8.4% - 9.2%)",
+          "preview": "Hello Marcus, as requested during your call with Sarah, here is our complete Dubai Marina & Business Bay ROI analysis sheet: https://apexproperties.ae/roi-sheet-2026.pdf"
+        }
+      },
       "transcript": [
         {
           "speaker": "ai",
@@ -1113,987 +477,5 @@
       "createdAt": "2026-09-29T07:15:10Z"
     }
   ],
-  "leads": {
-    "client_apex_01": [
-      {
-        "id": "lead_1790703134627_1",
-        "name": "Zayd Al-Nuaimi",
-        "phone": "+971 50 938 3084",
-        "email": "zayd.alnuaimi@marinabaycapital.com",
-        "company": "Marina Bay Capital",
-        "role": "Head of Real Estate Acquisitions",
-        "city": "Dubai Marina",
-        "intentScore": 94,
-        "budget": "AED 1.6M - 3.1M",
-        "niche": "Real Estate",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.627Z"
-      },
-      {
-        "id": "lead_1790703134627_2",
-        "name": "Sultan Al-Maktoum",
-        "phone": "+971 50 213 1876",
-        "email": "sultan.almaktoum@emaarinvestmentgroup.com",
-        "company": "Emaar Investment Group",
-        "role": "Commercial Asset Lead",
-        "city": "Meydan Horizon",
-        "intentScore": 88,
-        "budget": "AED 4.8M - 6.3M",
-        "niche": "Real Estate",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.627Z"
-      },
-      {
-        "id": "lead_1790703134627_3",
-        "name": "Mansoor Siddiqui",
-        "phone": "+971 50 751 5898",
-        "email": "mansoor.siddiqui@alwaslcommercialbrokerage.com",
-        "company": "Al-Wasl Commercial Brokerage",
-        "role": "Head of Real Estate Acquisitions",
-        "city": "Meydan Horizon",
-        "intentScore": 93,
-        "budget": "AED 3.9M - 5.4M",
-        "niche": "Real Estate",
-        "source": "Real Estate Portal Active Buyer",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.627Z"
-      },
-      {
-        "id": "lead_1790703134627_4",
-        "name": "Mansoor Al-Hashimi",
-        "phone": "+971 50 338 1958",
-        "email": "mansoor.alhashimi@difcprivatefamilyoffice.com",
-        "company": "DIFC Private Family Office",
-        "role": "Venture Capital Partner",
-        "city": "JBR The Walk",
-        "intentScore": 95,
-        "budget": "AED 3.0M - 4.5M",
-        "niche": "Real Estate",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.627Z"
-      },
-      {
-        "id": "lead_1790703134627_5",
-        "name": "Hamdan Singhania",
-        "phone": "+971 50 347 8925",
-        "email": "hamdan.singhania@alfuttaimglobalwealth.com",
-        "company": "Al-Futtaim Global Wealth",
-        "role": "Commercial Asset Lead",
-        "city": "Dubai Hills Estate",
-        "intentScore": 98,
-        "budget": "AED 5.2M - 6.7M",
-        "niche": "Real Estate",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.627Z"
-      },
-      {
-        "id": "lead_1790703134627_6",
-        "name": "Rashid Al-Falasi",
-        "phone": "+971 50 244 6178",
-        "email": "rashid.alfalasi@jumeirahroyalholdings.com",
-        "company": "Jumeirah Royal Holdings",
-        "role": "Principal Portfolio Manager",
-        "city": "Dubai Marina",
-        "intentScore": 87,
-        "budget": "AED 4.6M - 6.1M",
-        "niche": "Real Estate",
-        "source": "Enterprise Corporate Directory Tier-1",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.627Z"
-      },
-      {
-        "id": "lead_1790703134627_7",
-        "name": "Tariq Al-Falasi",
-        "phone": "+971 50 232 9244",
-        "email": "tariq.alfalasi@difcprivatefamilyoffice.com",
-        "company": "DIFC Private Family Office",
-        "role": "Managing Director & Angel Investor",
-        "city": "Palm Jumeirah",
-        "intentScore": 84,
-        "budget": "AED 2.1M - 3.6M",
-        "niche": "Real Estate",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.627Z"
-      },
-      {
-        "id": "lead_1790703134627_8",
-        "name": "Dev Al-Balooshi",
-        "phone": "+971 50 923 7092",
-        "email": "dev.albalooshi@sobhasignatureestates.com",
-        "company": "Sobha Signature Estates",
-        "role": "Principal Portfolio Manager",
-        "city": "DIFC Financial Center",
-        "intentScore": 92,
-        "budget": "AED 3.4M - 4.9M",
-        "niche": "Real Estate",
-        "source": "Enterprise Corporate Directory Tier-1",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.627Z"
-      },
-      {
-        "id": "lead_1790703134628_9",
-        "name": "Vikram Al-Nuaimi",
-        "phone": "+971 50 525 7761",
-        "email": "vikram.alnuaimi@marinabaycapital.com",
-        "company": "Marina Bay Capital",
-        "role": "Head of Real Estate Acquisitions",
-        "city": "Meydan Horizon",
-        "intentScore": 90,
-        "budget": "AED 1.8M - 3.3M",
-        "niche": "Real Estate",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_10",
-        "name": "Kareem Singhania",
-        "phone": "+971 50 453 7816",
-        "email": "kareem.singhania@alfuttaimglobalwealth.com",
-        "company": "Al-Futtaim Global Wealth",
-        "role": "Family Office Trustee",
-        "city": "Business Bay",
-        "intentScore": 94,
-        "budget": "AED 1.6M - 3.1M",
-        "niche": "Real Estate",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_11",
-        "name": "Samir Mehta",
-        "phone": "+971 50 384 1413",
-        "email": "samir.mehta@marinabaycapital.com",
-        "company": "Marina Bay Capital",
-        "role": "Senior Private Wealth Advisor",
-        "city": "DIFC Financial Center",
-        "intentScore": 87,
-        "budget": "AED 3.5M - 5.0M",
-        "niche": "Real Estate",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_12",
-        "name": "Dev Al-Zahra",
-        "phone": "+971 50 796 2991",
-        "email": "dev.alzahra@jumeirahroyalholdings.com",
-        "company": "Jumeirah Royal Holdings",
-        "role": "Principal Portfolio Manager",
-        "city": "Al Barari",
-        "intentScore": 97,
-        "budget": "AED 4.6M - 6.1M",
-        "niche": "Real Estate",
-        "source": "Enterprise Corporate Directory Tier-1",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_13",
-        "name": "Faisal Hussain",
-        "phone": "+971 50 195 2368",
-        "email": "faisal.hussain@alwaslcommercialbrokerage.com",
-        "company": "Al-Wasl Commercial Brokerage",
-        "role": "Head of Real Estate Acquisitions",
-        "city": "Downtown Dubai",
-        "intentScore": 87,
-        "budget": "AED 5.1M - 6.6M",
-        "niche": "Real Estate",
-        "source": "Real Estate Portal Active Buyer",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_14",
-        "name": "Faisal Qasimi",
-        "phone": "+971 50 591 7383",
-        "email": "faisal.qasimi@palmhorizonholdings.com",
-        "company": "Palm Horizon Holdings",
-        "role": "Managing Director & Angel Investor",
-        "city": "JBR The Walk",
-        "intentScore": 91,
-        "budget": "AED 4.1M - 5.6M",
-        "niche": "Real Estate",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_15",
-        "name": "Dmitry Vanderbilt",
-        "phone": "+971 50 614 9773",
-        "email": "dmitry.vanderbilt@damacprimeventures.com",
-        "company": "DAMAC Prime Ventures",
-        "role": "Chief Executive Officer",
-        "city": "JBR The Walk",
-        "intentScore": 84,
-        "budget": "AED 4.3M - 5.8M",
-        "niche": "Real Estate",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_16",
-        "name": "Zayd Siddiqui",
-        "phone": "+971 50 265 5578",
-        "email": "zayd.siddiqui@alwaslcommercialbrokerage.com",
-        "company": "Al-Wasl Commercial Brokerage",
-        "role": "Principal Portfolio Manager",
-        "city": "Downtown Dubai",
-        "intentScore": 98,
-        "budget": "AED 3.2M - 4.7M",
-        "niche": "Real Estate",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_17",
-        "name": "Saeed Al-Sayed",
-        "phone": "+971 50 836 2290",
-        "email": "saeed.alsayed@alghuraircommercial.com",
-        "company": "Al-Ghurair Commercial",
-        "role": "Commercial Asset Lead",
-        "city": "Al Barari",
-        "intentScore": 88,
-        "budget": "AED 5.1M - 6.6M",
-        "niche": "Real Estate",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_18",
-        "name": "Saeed Singhania",
-        "phone": "+971 50 457 9605",
-        "email": "saeed.singhania@alwaslcommercialbrokerage.com",
-        "company": "Al-Wasl Commercial Brokerage",
-        "role": "Chief Executive Officer",
-        "city": "Dubai Hills Estate",
-        "intentScore": 83,
-        "budget": "AED 2.4M - 3.9M",
-        "niche": "Real Estate",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_19",
-        "name": "Nasser Mehta",
-        "phone": "+971 50 687 5199",
-        "email": "nasser.mehta@palmhorizonholdings.com",
-        "company": "Palm Horizon Holdings",
-        "role": "Managing Director & Angel Investor",
-        "city": "Emirates Hills",
-        "intentScore": 87,
-        "budget": "AED 3.0M - 4.5M",
-        "niche": "Real Estate",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_20",
-        "name": "Farhan Mirza",
-        "phone": "+971 50 612 1022",
-        "email": "farhan.mirza@sobhasignatureestates.com",
-        "company": "Sobha Signature Estates",
-        "role": "Commercial Asset Lead",
-        "city": "Palm Jumeirah",
-        "intentScore": 89,
-        "budget": "AED 4.3M - 5.8M",
-        "niche": "Real Estate",
-        "source": "Real Estate Portal Active Buyer",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_21",
-        "name": "Zayd Al-Balooshi",
-        "phone": "+971 50 783 7202",
-        "email": "zayd.albalooshi@gulffalconinternational.com",
-        "company": "Gulf Falcon International",
-        "role": "Commercial Asset Lead",
-        "city": "Palm Jumeirah",
-        "intentScore": 82,
-        "budget": "AED 3.1M - 4.6M",
-        "niche": "Real Estate",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_22",
-        "name": "Omar Al-Hashimi",
-        "phone": "+971 50 936 9149",
-        "email": "omar.alhashimi@marinabaycapital.com",
-        "company": "Marina Bay Capital",
-        "role": "Chief Executive Officer",
-        "city": "Al Barari",
-        "intentScore": 89,
-        "budget": "AED 5.3M - 6.8M",
-        "niche": "Real Estate",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_23",
-        "name": "Sultan Singhania",
-        "phone": "+971 50 647 3889",
-        "email": "sultan.singhania@damacprimeventures.com",
-        "company": "DAMAC Prime Ventures",
-        "role": "Venture Capital Partner",
-        "city": "Al Barari",
-        "intentScore": 82,
-        "budget": "AED 3.3M - 4.8M",
-        "niche": "Real Estate",
-        "source": "Real Estate Portal Active Buyer",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_24",
-        "name": "Marcus Siddiqui",
-        "phone": "+971 50 503 3017",
-        "email": "marcus.siddiqui@alghuraircommercial.com",
-        "company": "Al-Ghurair Commercial",
-        "role": "Venture Capital Partner",
-        "city": "Dubai Marina",
-        "intentScore": 85,
-        "budget": "AED 5.5M - 7.0M",
-        "niche": "Real Estate",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      },
-      {
-        "id": "lead_1790703134628_25",
-        "name": "Kareem Mehta",
-        "phone": "+971 50 310 3648",
-        "email": "kareem.mehta@apexsovereigncapital.com",
-        "company": "Apex Sovereign Capital",
-        "role": "Venture Capital Partner",
-        "city": "Business Bay",
-        "intentScore": 98,
-        "budget": "AED 4.3M - 5.8M",
-        "niche": "Real Estate",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T17:32:14.628Z"
-      }
-    ],
-    "client_zenith_02": [
-      {
-        "id": "lead_real_1790697214702_1",
-        "name": "Dr. Rajeshwar Sharma",
-        "phone": "+91 98707 57304",
-        "email": "contact@spmhospital.com",
-        "company": "SPM Hospital",
-        "role": "Chief Medical Officer & Founder",
-        "city": "Kanpur",
-        "intentScore": 94,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.702Z"
-      },
-      {
-        "id": "lead_real_1790697214703_2",
-        "name": "Dr. Priya Kapoor",
-        "phone": "+91 98476 35570",
-        "email": "contact@llrhospital.com",
-        "company": "LLR Hospital",
-        "role": "Managing Director & Lead Surgeon",
-        "city": "Kanpur",
-        "intentScore": 91,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.703Z"
-      },
-      {
-        "id": "lead_real_1790697214703_3",
-        "name": "Vikramaditya Singhal",
-        "phone": "+91 98166 62137",
-        "email": "contact@llrhospital.com",
-        "company": "LLR Hospital",
-        "role": "Clinical Practice Head",
-        "city": "Kanpur",
-        "intentScore": 98,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.703Z"
-      },
-      {
-        "id": "lead_real_1790697214703_4",
-        "name": "Ananya Bansal",
-        "phone": "+91 98286 41382",
-        "email": "contact@spmhospital.com",
-        "company": "SPM Hospital",
-        "role": "Chief Dermatologist & Owner",
-        "city": "Kanpur",
-        "intentScore": 93,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.703Z"
-      },
-      {
-        "id": "lead_real_1790697214704_5",
-        "name": "Rohan Varma",
-        "phone": "+91 98498 91151",
-        "email": "contact@mariampurhospit.com",
-        "company": "mariampur hospital",
-        "role": "Director of Cosmetic Operations",
-        "city": "Kanpur",
-        "intentScore": 92,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_6",
-        "name": "Dr. Sameer Reddy",
-        "phone": "+91 98465 87170",
-        "email": "contact@chandahospital.com",
-        "company": "Chanda Hospital",
-        "role": "Senior Partner & Consultant",
-        "city": "Kanpur",
-        "intentScore": 92,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_7",
-        "name": "Arjun Chatterjee",
-        "phone": "+91 98205 19838",
-        "email": "contact@kpmhospital.com",
-        "company": "KPM Hospital",
-        "role": "Head of Patient Experience",
-        "city": "Kanpur",
-        "intentScore": 91,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_8",
-        "name": "Sanjay Agarwal",
-        "phone": "+91 98387 79072",
-        "email": "contact@agarwalhospital.com",
-        "company": "Agarwal Hospital",
-        "role": "Chief Medical Officer & Founder",
-        "city": "Kanpur",
-        "intentScore": 88,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_9",
-        "name": "Kavita Mehta",
-        "phone": "+91 98676 91375",
-        "email": "contact@apexhospitaland.com",
-        "company": "Apex Hospital and Research Centre",
-        "role": "Managing Director & Lead Surgeon",
-        "city": "Kanpur",
-        "intentScore": 91,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_10",
-        "name": "Aditya Malhotra",
-        "phone": "+91 98863 25617",
-        "email": "contact@madhaveyehospit.com",
-        "company": "Madhav Eye Hospital",
-        "role": "Clinical Practice Head",
-        "city": "Kanpur",
-        "intentScore": 95,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_11",
-        "name": "Dr. Manish Deshmukh",
-        "phone": "+91 98274 33353",
-        "email": "contact@spmhospital.com",
-        "company": "SPM Hospital",
-        "role": "Chief Dermatologist & Owner",
-        "city": "Kanpur",
-        "intentScore": 96,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_12",
-        "name": "Amitabh Joshi",
-        "phone": "+91 98432 94696",
-        "email": "contact@krishnahospital.com",
-        "company": "Krishna Hospital, Kanpur",
-        "role": "Director of Cosmetic Operations",
-        "city": "Kanpur",
-        "intentScore": 93,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_13",
-        "name": "Sunil Chopra",
-        "phone": "+91 98877 49868",
-        "email": "contact@mahendruhospita.com",
-        "company": "Mahendru Hospital",
-        "role": "Senior Partner & Consultant",
-        "city": "Kanpur",
-        "intentScore": 98,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_14",
-        "name": "Neha Gupta",
-        "phone": "+91 98736 46401",
-        "email": "contact@udaihospital.com",
-        "company": "Udai Hospital",
-        "role": "Head of Patient Experience",
-        "city": "Kanpur",
-        "intentScore": 94,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      },
-      {
-        "id": "lead_real_1790697214704_15",
-        "name": "Gaurav Iyer",
-        "phone": "+91 98805 01251",
-        "email": "contact@amoghhospital.com",
-        "company": "Amogh Hospital",
-        "role": "Chief Medical Officer & Founder",
-        "city": "Kanpur",
-        "intentScore": 93,
-        "budget": "₹40L - 80L",
-        "niche": "Hospital",
-        "source": "Google Maps Business Profile (Live Scraped)",
-        "status": "new",
-        "addedAt": "2026-09-29T15:53:34.704Z"
-      }
-    ],
-    "client_maple_03": [
-      {
-        "id": "lead_1790697665060_1",
-        "name": "Sophie Tremblay",
-        "phone": "+1 416 458 2499",
-        "email": "sophie.tremblay@torontowaterfrontholdings.com",
-        "company": "Toronto Waterfront Holdings",
-        "role": "Managing Partner",
-        "city": "North Vancouver",
-        "intentScore": 98,
-        "budget": "CAD $0.9M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Real Estate Portal Active Buyer",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_2",
-        "name": "Jessica Morrison",
-        "phone": "+1 416 786 8117",
-        "email": "jessica.morrison@trilliumcapitalpartners.com",
-        "company": "Trillium Capital Partners",
-        "role": "Vice President Acquisitions",
-        "city": "Mississauga City Centre",
-        "intentScore": 89,
-        "budget": "CAD $2.2M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_3",
-        "name": "Michael Leblanc",
-        "phone": "+1 416 537 5973",
-        "email": "michael.leblanc@vancouverbaydevelopments.com",
-        "company": "Vancouver Bay Developments",
-        "role": "Senior Commercial Broker",
-        "city": "Richmond Hill",
-        "intentScore": 96,
-        "budget": "CAD $1.1M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Enterprise Corporate Directory Tier-1",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_4",
-        "name": "Nathan Chen",
-        "phone": "+1 416 371 8859",
-        "email": "nathan.chen@metropolitancondosgta.com",
-        "company": "Metropolitan Condos GTA",
-        "role": "Vice President Acquisitions",
-        "city": "Downtown Vancouver",
-        "intentScore": 94,
-        "budget": "CAD $1.6M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Enterprise Corporate Directory Tier-1",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_5",
-        "name": "Nathan Martin",
-        "phone": "+1 416 446 3932",
-        "email": "nathan.martin@greatlakesinvestmenttrust.com",
-        "company": "Great Lakes Investment Trust",
-        "role": "Wealth & Estate Director",
-        "city": "Yorkville, Toronto",
-        "intentScore": 97,
-        "budget": "CAD $2.6M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_6",
-        "name": "Matthew Campbell",
-        "phone": "+1 416 362 1239",
-        "email": "matthew.campbell@vancouverbaydevelopments.com",
-        "company": "Vancouver Bay Developments",
-        "role": "Portfolio Operations Lead",
-        "city": "North Vancouver",
-        "intentScore": 86,
-        "budget": "CAD $2.2M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_7",
-        "name": "David MacDonald",
-        "phone": "+1 416 776 3933",
-        "email": "david.macdonald@pacificnorthstarventures.com",
-        "company": "Pacific NorthStar Ventures",
-        "role": "Portfolio Operations Lead",
-        "city": "Downtown Vancouver",
-        "intentScore": 86,
-        "budget": "CAD $2.2M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_8",
-        "name": "Daniel Gagnon",
-        "phone": "+1 416 446 6336",
-        "email": "daniel.gagnon@metropolitancondosgta.com",
-        "company": "Metropolitan Condos GTA",
-        "role": "Vice President Acquisitions",
-        "city": "Richmond Hill",
-        "intentScore": 87,
-        "budget": "CAD $1.0M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_9",
-        "name": "Ava Dubois",
-        "phone": "+1 416 453 8554",
-        "email": "ava.dubois@baystreetcommercialgroup.com",
-        "company": "Bay Street Commercial Group",
-        "role": "Chief Investment Officer",
-        "city": "Downtown Vancouver",
-        "intentScore": 97,
-        "budget": "CAD $2.1M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_10",
-        "name": "Michael Smith",
-        "phone": "+1 416 423 9322",
-        "email": "michael.smith@vancouverbaydevelopments.com",
-        "company": "Vancouver Bay Developments",
-        "role": "Portfolio Operations Lead",
-        "city": "Downtown Vancouver",
-        "intentScore": 92,
-        "budget": "CAD $2.5M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_11",
-        "name": "David Ross",
-        "phone": "+1 416 292 6826",
-        "email": "david.ross@ontariorealestateadvisory.com",
-        "company": "Ontario Real Estate Advisory",
-        "role": "Principal Real Estate Investor",
-        "city": "Richmond Hill",
-        "intentScore": 85,
-        "budget": "CAD $2.3M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_12",
-        "name": "Daniel Smith",
-        "phone": "+1 416 834 6064",
-        "email": "daniel.smith@vancouverbaydevelopments.com",
-        "company": "Vancouver Bay Developments",
-        "role": "Chief Investment Officer",
-        "city": "Yorkville, Toronto",
-        "intentScore": 96,
-        "budget": "CAD $2.3M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Enterprise Corporate Directory Tier-1",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_13",
-        "name": "James Morrison",
-        "phone": "+1 416 658 9738",
-        "email": "james.morrison@yorkvilleprivatewealth.com",
-        "company": "Yorkville Private Wealth",
-        "role": "Managing Partner",
-        "city": "Downtown Vancouver",
-        "intentScore": 82,
-        "budget": "CAD $1.9M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_14",
-        "name": "Lucas Campbell",
-        "phone": "+1 416 436 5074",
-        "email": "lucas.campbell@metropolitancondosgta.com",
-        "company": "Metropolitan Condos GTA",
-        "role": "Wealth & Estate Director",
-        "city": "Richmond Hill",
-        "intentScore": 90,
-        "budget": "CAD $2.1M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Real Estate Portal Active Buyer",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_15",
-        "name": "Grace Smith",
-        "phone": "+1 416 218 5847",
-        "email": "grace.smith@vancouverbaydevelopments.com",
-        "company": "Vancouver Bay Developments",
-        "role": "Vice President Acquisitions",
-        "city": "Downtown Vancouver",
-        "intentScore": 93,
-        "budget": "CAD $2.6M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Real Estate Portal Active Buyer",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_16",
-        "name": "Sarah O'Connor",
-        "phone": "+1 416 368 1571",
-        "email": "sarah.oconnor@metropolitancondosgta.com",
-        "company": "Metropolitan Condos GTA",
-        "role": "Portfolio Operations Lead",
-        "city": "Calgary Beltline",
-        "intentScore": 87,
-        "budget": "CAD $2.3M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_17",
-        "name": "Olivia Campbell",
-        "phone": "+1 416 517 5969",
-        "email": "olivia.campbell@greatlakesinvestmenttrust.com",
-        "company": "Great Lakes Investment Trust",
-        "role": "Managing Partner",
-        "city": "Richmond Hill",
-        "intentScore": 86,
-        "budget": "CAD $1.7M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_18",
-        "name": "James Gagnon",
-        "phone": "+1 416 887 4778",
-        "email": "james.gagnon@mapleridgeassetmanagement.com",
-        "company": "Maple Ridge Asset Management",
-        "role": "Vice President Acquisitions",
-        "city": "Montreal Westmount",
-        "intentScore": 89,
-        "budget": "CAD $2.3M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_19",
-        "name": "Daniel Smith",
-        "phone": "+1 416 675 1410",
-        "email": "daniel.smith@vancouverbaydevelopments.com",
-        "company": "Vancouver Bay Developments",
-        "role": "Chief Investment Officer",
-        "city": "Montreal Westmount",
-        "intentScore": 86,
-        "budget": "CAD $1.2M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Google Business Profile (4.9★ Local Pack)",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_20",
-        "name": "James Morrison",
-        "phone": "+1 416 449 8324",
-        "email": "james.morrison@torontowaterfrontholdings.com",
-        "company": "Toronto Waterfront Holdings",
-        "role": "Vice President Acquisitions",
-        "city": "Downtown Vancouver",
-        "intentScore": 97,
-        "budget": "CAD $1.2M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_21",
-        "name": "Chloe Anderson",
-        "phone": "+1 416 735 3856",
-        "email": "chloe.anderson@mapleridgeassetmanagement.com",
-        "company": "Maple Ridge Asset Management",
-        "role": "Chief Investment Officer",
-        "city": "Richmond Hill",
-        "intentScore": 82,
-        "budget": "CAD $2.2M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Real Estate Portal Active Buyer",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_22",
-        "name": "William Clark",
-        "phone": "+1 416 665 1427",
-        "email": "william.clark@pacificnorthstarventures.com",
-        "company": "Pacific NorthStar Ventures",
-        "role": "Wealth & Estate Director",
-        "city": "Calgary Beltline",
-        "intentScore": 92,
-        "budget": "CAD $1.2M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "LinkedIn Sales Navigator Verified",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_23",
-        "name": "Olivia Campbell",
-        "phone": "+1 416 400 8974",
-        "email": "olivia.campbell@torontowaterfrontholdings.com",
-        "company": "Toronto Waterfront Holdings",
-        "role": "Senior Commercial Broker",
-        "city": "Oakville Waterfront",
-        "intentScore": 87,
-        "budget": "CAD $1.1M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_24",
-        "name": "Hannah Tremblay",
-        "phone": "+1 416 703 5610",
-        "email": "hannah.tremblay@torontowaterfrontholdings.com",
-        "company": "Toronto Waterfront Holdings",
-        "role": "Managing Partner",
-        "city": "Downtown Vancouver",
-        "intentScore": 87,
-        "budget": "CAD $2.5M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Real Estate Portal Active Buyer",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      },
-      {
-        "id": "lead_1790697665060_25",
-        "name": "Hannah Chen",
-        "phone": "+1 416 538 6351",
-        "email": "hannah.chen@yorkvilleprivatewealth.com",
-        "company": "Yorkville Private Wealth",
-        "role": "Principal Real Estate Investor",
-        "city": "North Vancouver",
-        "intentScore": 90,
-        "budget": "CAD $2.7M",
-        "niche": "Real Estate & Master-Planned Developments",
-        "source": "Chamber of Commerce Commercial Registry",
-        "status": "new",
-        "addedAt": "2026-09-29T16:01:05.060Z"
-      }
-    ]
-  }
+  "leads": {}
 }
