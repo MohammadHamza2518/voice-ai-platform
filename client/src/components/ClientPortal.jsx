@@ -5,19 +5,22 @@ import {
   Trash2, Plus, Save, Volume2, Calendar, Clock,
   ChevronDown, ChevronUp, Radio, User, MapPin, 
   Loader2, CheckCircle2, AlertCircle, X, ExternalLink,
-  MessageSquare, Send, Mail, FileText, PhoneIncoming, PhoneOutgoing, Headphones
+  MessageSquare, Send, Mail, FileText, PhoneIncoming, PhoneOutgoing, Headphones,
+  Bot, Zap
 } from 'lucide-react';
 import AudioPlayer from './AudioPlayer';
 import AiPipelineOverview from './AiPipelineOverview';
+import JarvisVoiceAssistant from './JarvisVoiceAssistant';
 
 export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmin, fromAdmin = false }) {
   const [clientData, setClientData] = useState(null);
   const [calls, setCalls] = useState([]);
   const [leads, setLeads] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState('overview'); // overview | find_leads | auto_dialer | recordings | business_info
+  const [activeTab, setActiveTab] = useState('overview'); // overview | jarvis | find_leads | auto_dialer | recordings | business_info
   const [copiedDid, setCopiedDid] = useState(false);
   const [expandedCallId, setExpandedCallId] = useState(null);
+  const [jarvisDrawerOpen, setJarvisDrawerOpen] = useState(false);
 
   // Tab 1: Find Leads State
   const [nicheQuery, setNicheQuery] = useState('');
@@ -561,6 +564,19 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
               <span>{simulatingInbound ? 'Answering Call...' : 'Test Inbound Call'}</span>
             </button>
 
+            {/* Ask JARVIS AI Voice Companion Button */}
+            <button
+              onClick={() => setJarvisDrawerOpen(true)}
+              className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-cyan-600 via-sky-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white font-bold text-xs flex items-center gap-1.5 shadow-md shadow-cyan-600/30 cursor-pointer active:scale-95 border border-cyan-400/40"
+              title="Ask JARVIS about calls, leads, and performance in English or Hinglish"
+            >
+              <Bot size={13} className="text-cyan-200" />
+              <span>Ask JARVIS</span>
+              <span className="text-[9px] font-mono px-1.5 py-0.2 rounded-full bg-cyan-400/20 text-cyan-200 font-bold border border-cyan-300/30">
+                Voice
+              </span>
+            </button>
+
             {/* Test AI Voice via Mic */}
             <button
               onClick={handleStartLiveVoiceCall}
@@ -575,11 +591,12 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
         </div>
       </header>
 
-      {/* 5 Navigation Tabs (Light Theme) */}
+      {/* 6 Navigation Tabs (Light Theme) */}
       <div className="border-b border-slate-200 bg-white px-4 md:px-6">
         <div className="max-w-6xl mx-auto flex items-center gap-2 overflow-x-auto py-2">
           {[
             { id: 'overview', label: 'Pipeline Dashboard', icon: Sparkles, badge: 'Viral Reel' },
+            { id: 'jarvis', label: 'JARVIS Voice Intelligence', icon: Bot, badge: 'English & Hinglish' },
             { id: 'find_leads', label: '1. Search Apollo Leads', icon: Search, count: leads.length },
             { id: 'auto_dialer', label: '2. Auto-Dialer', icon: PhoneCall, badge: `${leads.length} in Queue` },
             { id: 'recordings', label: '3. Call Recordings & Scripts', icon: Volume2, count: calls.length },
@@ -635,6 +652,21 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
             clientName={clientData?.name}
             assignedNumber={clientData?.assignedNumber || '+91 80-48799695'}
           />
+        )}
+        
+        {/* =========================================================
+            TAB 0.5: JARVIS AUTONOMOUS VOICE INTELLIGENCE CONSOLE
+            ========================================================= */}
+        {activeTab === 'jarvis' && (
+          <div className="space-y-4">
+            <JarvisVoiceAssistant 
+              clientId={clientId}
+              clientData={clientData}
+              calls={calls}
+              leads={leads}
+              isFloating={false}
+            />
+          </div>
         )}
         
         {/* =========================================================
@@ -1776,6 +1808,49 @@ export default function ClientPortal({ clientId = 'client_apex_01', onBackToAdmi
           <CheckCircle2 size={18} className="text-emerald-400 shrink-0" />
           <span className="text-xs font-semibold">Calling Agent updated with latest business info!</span>
         </div>
+      )}
+
+      {/* Floating JARVIS Interactive Voice Modal */}
+      {jarvisDrawerOpen && (
+        <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="w-full max-w-2xl animate-in zoom-in-95 duration-200 relative">
+            <button
+              onClick={() => setJarvisDrawerOpen(false)}
+              className="absolute -top-3 -right-3 z-50 p-2 rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-white shadow-lg cursor-pointer"
+              title="Close Jarvis"
+            >
+              <X size={16} />
+            </button>
+            <JarvisVoiceAssistant 
+              clientId={clientId}
+              clientData={clientData}
+              calls={calls}
+              leads={leads}
+              isFloating={false}
+              onClose={() => setJarvisDrawerOpen(false)}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Persistent Floating JARVIS Action Button (Arc-Reactor FAB) */}
+      {!jarvisDrawerOpen && activeTab !== 'jarvis' && (
+        <button
+          onClick={() => setJarvisDrawerOpen(true)}
+          className="fixed bottom-6 right-6 z-40 px-4 py-3.5 rounded-full bg-gradient-to-r from-cyan-600 via-sky-600 to-indigo-600 text-white shadow-[0_0_25px_rgba(6,182,212,0.6)] hover:shadow-[0_0_35px_rgba(6,182,212,0.9)] hover:scale-105 active:scale-95 transition-all duration-300 border-2 border-cyan-300/60 cursor-pointer flex items-center gap-2 group"
+          title="Talk to JARVIS (AI Voice Intelligence in English & Hinglish)"
+        >
+          <div className="relative flex items-center justify-center">
+            <Bot size={20} className="text-white group-hover:rotate-12 transition-transform" />
+            <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-300 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-200"></span>
+            </span>
+          </div>
+          <span className="text-xs font-black tracking-wider uppercase pr-1">
+            JARVIS Voice
+          </span>
+        </button>
       )}
     </div>
   );
